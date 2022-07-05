@@ -1,20 +1,27 @@
 \documentclass[10pt]{beamer}
 
 \usetheme[progressbar=frametitle,block=fill,background=light]{metropolis}
-%\usefonttheme{serif}
+\usefonttheme{serif}
 
 \usepackage{appendixnumberbeamer}
 
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
-\usepackage{nicefrac}
+
 
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 \usepackage{pgfplotsthemetol}
+\usepackage{amsmath,amssymb,amsthm,amsfonts,amstext}
+\usepackage{bbm}
 
 \usepackage{xspace}
+
+\usepackage{import}
+\import{}{Packages/custom_macros.tex}
+
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\renewcommand{\emph}{\alert}
 
 \title{Group theory, Topology and Spin-$1/2$ Particles}
 \subtitle{From Dirac's belt to fermions}
@@ -29,11 +36,91 @@
 \maketitle
 
 \begin{frame}{Table of contents}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \tableofcontents%[hideallsubsections]
+    \setbeamertemplate{section in toc}[sections numbered]
+    \tableofcontents%[hideallsubsections]
 \end{frame}
 
-\section[Intro]{Dirac's belt trick and rotations}
+\section{Dirac's belt trick and rotations}
+
+\begin{frame}{Dirac's belt trick}
+    
+    \visible<1->{
+    You need:
+    \begin{itemize}
+      \item a belt (not necessarily Dirac's)
+      \item a heavy book
+    \end{itemize}
+    Rules:
+    \begin{enumerate}
+      \item you can only move the end of the belt
+      \item you cannot twist or rotate it
+    \end{enumerate}
+    \textbf{Goal:} untwist a $2\pi$-twist.\\[0.5cm]}
+
+    \visible<2->{
+      $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$. \\[0.5cm]
+    }
+    \visible<3->{
+      Therefore, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
+    }
+
+\end{frame}
+
+\begin{frame}{Space of rotations: $\SO(3)$ as a group}
+      
+      Rotations in $3$-dimensional space: matrices that acts on $\R^3$ and that \emph{preserve the scalar product}, and in particular \emph{lengths}.\\[0.3cm]
+      In other words: matrix $O$ such that $O^TO=\mathbbm{1}$ ($\Leftrightarrow$ $O$ is orthogonal)\\[0.3cm]
+      Additional requirement: orientation preserving $\Leftrightarrow$ $\det O=1$\\[0.3cm]
+
+      \begin{block}{Special othogonal group}
+        $\SO(3)$ is the set of $3\times 3$ real matrices such that $O^TO=\mathbbm{1}$ and $\det O=1$.
+      \end{block}
+      Three ``fundamental'' rotations:
+      \begin{equation*}
+        {\tiny
+        x:
+        \begin{bmatrix}
+          1 & 0 & 0 \\
+          0 & \cos\theta & -\sin\theta \\
+          0 & \sin\theta & \cos\theta
+        \end{bmatrix}\qquad
+        y:
+        \begin{bmatrix}
+          \cos\theta & 0 & -\sin\theta \\
+          0 & 1 & 0 \\
+          \sin\theta & 0 & \cos\theta
+        \end{bmatrix}\qquad
+        z:
+        \begin{bmatrix}
+          \cos\theta & -\sin\theta & 0 \\
+          \sin\theta & \cos\theta & 0 \\
+          0 & 0 & 1
+        \end{bmatrix}}
+      \end{equation*}
+
+      $\Rightarrow$ It forms a \emph{group}.
+    
+\end{frame}
+
+\begin{frame}{Space of rotations: $\SO(3)$ as a topological space}
+  
+\end{frame}
+
+
+
+\begin{frame}
+  The belt trick is a way of physically demonstrating the the fundamental group of $\SO(3)$ is $\Z_2$.
+\end{frame}
+
+% How is that useful ?
+
+\begin{frame}{Electrons}
+  \visible<1->{
+    In quantum mechanics
+  }
+\end{frame}
+
+\begin{frame}
 
     \includegraphics[scale=0.1]{Pictures/SO3sphere.png}
 
@@ -74,6 +161,8 @@
     \includegraphics[scale=0.1]{Pictures/4pisphere4.png}
 
     \includegraphics[scale=0.1]{Pictures/flatbelt.png}
+
+\end{frame}
 
 \section{Section 2}
 
