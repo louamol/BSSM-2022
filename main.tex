@@ -14,6 +14,7 @@
 \usepackage{pgfplotsthemetol}
 \usepackage{amsmath,amssymb,amsthm,amsfonts,amstext}
 \usepackage{bbm}
+\usepackage{array}
 
 \usepackage{xspace}
 
@@ -68,9 +69,11 @@
 
 \begin{frame}{Space of rotations: $\SO(3)$ as a group}
       
-      Rotations in $3$-dimensional space: matrices that acts on $\R^3$ and that \emph{preserve the scalar product}, and in particular \emph{lengths}.\\[0.3cm]
-      In other words: matrix $O$ such that $O^TO=\mathbbm{1}$ ($\Leftrightarrow$ $O$ is orthogonal)\\[0.3cm]
-      Additional requirement: orientation preserving $\Leftrightarrow$ $\det O=1$\\[0.3cm]
+      Rotations in $3$-dimensional space: matrices that acts on $\R^3$ s.t. 
+      \begin{enumerate}
+        \item preserve the \emph{scalar product}: $O^TO=\mathbbm{1}$ ($\Leftrightarrow$ $O$ is orthogonal)
+        \item preserve the \emph{orientation}: $\det O=1$
+      \end{enumerate}
 
       \begin{block}{Special othogonal group}
         $\SO(3)$ is the set of $3\times 3$ real matrices such that $O^TO=\mathbbm{1}$ and $\det O=1$.
@@ -103,12 +106,98 @@
 \end{frame}
 
 \begin{frame}{Space of rotations: $\SO(3)$ as a topological space}
+    Fundamental data that describes a rotation:
+    \begin{itemize}
+      \item an \emph{axis} of rotation, i.e. a  unit vector $\overrightarrow{n}$ \hspace{1.07cm}\textcolor{blue}{$\to$ 2 parameters}
+      \item an \emph{angle} of rotation $\theta\in[-\pi,\pi]$ (with $-\pi\sim\pi$) \textcolor{blue}{$\to$ 1 parameter}
+    \end{itemize}
+    The space of rotations can then alternately be defined as a \textbf{$\boldsymbol{3}$-sphere of radius $\boldsymbol{\pi}$ and its antipodal points identified}:
+    
+
+    \begin{columns}[T,onlytextwidth]
+      \column{0.5\textwidth}
+          \vspace{0.5cm}
+          \begin{equation*}
+            \boxed{\SO(3)\cong B^3(\pi)/\sim}
+          \end{equation*}
+          and for each point:
+          \begin{align*}
+              \text{direction} &\leftrightarrow \text{axis}\\
+              \text{norm} &\leftrightarrow \text{angle}
+          \end{align*}
+          $\Rightarrow$ It forms a \emph{topological space}.
   
+      \column{0.5\textwidth}
+  
+          \begin{figure}
+              \centering
+              \includegraphics[scale=0.16]{Pictures/SO3sphere.png}
+          \end{figure}
+  
+    \end{columns}
+
+    (group $+$ topological space $=$ Lie group)
+    
 \end{frame}
 
+\begin{frame}{Back to the belt}
+    Lets ``mathematicalize'' the belt:\\[0.3cm]
 
+    A belt (strip) is just a \emph{path} $+$ an \emph{orientation}.
 
-\begin{frame}
+    There is a bijection:
+    \begin{equation*}
+        \boxed{\text{belt configuration} \Leftrightarrow \text{path in $\SO(3)$}}
+    \end{equation*}
+    This gives us a new language to analyze the problem !
+\end{frame}
+
+\begin{frame}{Dictionary}
+    \begin{center}
+    \begin{tabular}{m{3cm} m{2cm} m{3cm}}
+        \textbf{\underline{Belt}} & & \textbf{\underline{Path}} \\
+        \includegraphics[scale=0.15]{Pictures/xaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} \\
+        \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/yaxissphere.png}\\
+        \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
+    \end{tabular}\\
+    (The color code is consistent.)
+    \end{center}
+\end{frame}
+
+\begin{frame}{Dictionary}
+    \begin{center}
+    \begin{tabular}{m{3cm} m{2cm} m{3cm}}
+        \textbf{\underline{Belt}} & & \textbf{\underline{Path}} \\
+        \includegraphics[scale=0.15]{Pictures/randomrotbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/randomrotsphere.png} \\
+        \includegraphics[scale=0.15]{Pictures/flatbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/4pisphere4.png}
+    \end{tabular}\\
+    (The color code is consistent.)
+    \end{center}
+\end{frame}
+
+\begin{frame}{Back to Dirac's belt trick}
+  Recall the rules of the game:
+  \begin{enumerate}
+    \item translating the end of the belt
+    \item not turning the end of the belt
+  \end{enumerate}
+  \begin{center}
+    \begin{tabular}{m{3cm} m{1cm} m{3cm}}
+        \includegraphics[scale=0.15]{Pictures/contractiblepathbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/contractiblepathsphere.png} \\
+        \includegraphics[scale=0.15]{Pictures/noncontractiblepathbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/noncontractiblepathsphere.png}
+    \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Back to Dirac's belt trick}
+
+\end{frame}
+
+\begin{frame}{Back to Dirac's belt trick}
+
+\end{frame}
+
+\begin{frame}{Paths in topological spaces (homotopy theory)}
   The belt trick is a way of physically demonstrating the the fundamental group of $\SO(3)$ is $\Z_2$.
 \end{frame}
 
@@ -122,33 +211,9 @@
 
 \begin{frame}
 
-    \includegraphics[scale=0.1]{Pictures/SO3sphere.png}
+    
 
     \includegraphics[scale=0.1]{Pictures/beltaxis.png}
-
-    \includegraphics[scale=0.1]{Pictures/xaxisbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/xaxissphere.png}
-
-    \includegraphics[scale=0.1]{Pictures/yaxisbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/yaxissphere.png}
-
-    \includegraphics[scale=0.1]{Pictures/zaxisbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
-
-    \includegraphics[scale=0.1]{Pictures/randomrotbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/randomrotsphere.png}
-
-    \includegraphics[scale=0.1]{Pictures/contractiblepathbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/contractiblepathsphere.png}
-
-    \includegraphics[scale=0.1]{Pictures/noncontractiblepathbelt.png}
-
-    \includegraphics[scale=0.1]{Pictures/noncontractiblepathsphere.png}
 
     \includegraphics[scale=0.1]{Pictures/4pibelt.png}
 
