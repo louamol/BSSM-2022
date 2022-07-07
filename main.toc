@@ -1,5 +1,4 @@
 \beamer@sectionintoc {1}{Dirac's belt trick and rotations}{3}{0}{1}
-\beamer@sectionintoc {2}{Section 2}{18}{0}{2}
-\beamer@sectionintoc {3}{Section 3}{19}{0}{3}
-\beamer@sectionintoc {4}{Section 4}{20}{0}{4}
-\beamer@sectionintoc {5}{Section 5}{21}{0}{5}
+\beamer@sectionintoc {2}{Homotopy theory}{12}{0}{2}
+\beamer@sectionintoc {3}{Quantum spin and $\text {SU}(2)$}{18}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{19}{0}{4}
