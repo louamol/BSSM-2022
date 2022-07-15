@@ -1,8 +1,12 @@
 \begin{thebibliography}{1}
 
-\bibitem{ConcreteMath}
-R.~Graham, D.~Knuth, and O.~Patashnik.
-\newblock {\em Concrete mathematics}.
-\newblock Addison-Wesley, Reading, MA, 1989.
+\bibitem{hatcher2002algebraic}
+A.~Hatcher.
+\newblock {\em Algebraic Topology}.
+\newblock Algebraic Topology. Cambridge University Press, 2002.
+
+\bibitem{millerreprqm}
+N.~Miller.
+\newblock Representation theory and quantum mechanics, 2018.
 
 \end{thebibliography}

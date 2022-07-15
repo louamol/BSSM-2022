@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[9pt]{beamer}
 
 \usetheme[progressbar=frametitle,block=fill,background=light]{metropolis}
 \usefonttheme{serif}
@@ -35,6 +35,8 @@
 \begin{document}
 
 \maketitle
+
+\nocite{*}
 
 \begin{frame}{Table of contents}
     \setbeamertemplate{section in toc}[sections numbered]
@@ -154,34 +156,27 @@
 \end{frame}
 
 \begin{frame}{Dictionary}
-    \begin{center}
-    \begin{tabular}{m{3cm} m{2cm} m{3cm}}
-        \textbf{\underline{Belt}} & & \textbf{\underline{Path}} \\
-        \includegraphics[scale=0.15]{Pictures/xaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} \\
-        \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/yaxissphere.png}\\
-        \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
-    \end{tabular}\\
-    (The color code is consistent.)
-    \end{center}
+      \makebox[315pt][r]{
+        \begin{tabular}{cccc}
+            \textbf{\underline{trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
+            \includegraphics[scale=0.12]{Pictures/flatbelt.png} & \includegraphics[scale=0.12]{Pictures/xaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} \\
+            $\updownarrow$ & $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
+            \includegraphics[scale=0.1]{Pictures/4pisphere4.png} & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} & \includegraphics[scale=0.1]{Pictures/yaxissphere.png} & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
+        \end{tabular}}
 \end{frame}
 
 \begin{frame}{Dictionary}
     \begin{center}
-    \begin{tabular}{m{4cm} m{2cm} m{3cm}}
-        \textbf{\underline{Belt}} & & \textbf{\underline{Path}} \\
-        \includegraphics[scale=0.15]{Pictures/randomrotbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/randomrotsphere.png} \\
-        \includegraphics[scale=0.15]{Pictures/flatbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.1]{Pictures/4pisphere4.png}
-    \end{tabular}\\
-    (The color code is consistent.)
-    \end{center}
+    \begin{tabular}{ccc}
+        \textbf{\underline{random rotation}} & \textbf{\underline{closed}} & \textbf{\underline{open path}}\\
+        \includegraphics[scale=0.15]{Pictures/randomrotbelt.png} & \includegraphics[scale=0.1]{Pictures/contractiblepathbelt.png} & \includegraphics[scale=0.1]{Pictures/noncontractiblepathbelt.png} \\
+        $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
+        \includegraphics[scale=0.1]{Pictures/randomrotsphere.png} & \includegraphics[scale=0.08]{Pictures/contractiblepathsphere.png} & \includegraphics[scale=0.08]{Pictures/noncontractiblepathsphere.png}
+    \end{tabular}
+  \end{center}
 \end{frame}
 
-\begin{frame}{Back to Dirac's belt trick}
-    \begin{center}
-    \begin{tabular}{m{2cm} m{0.5cm} m{2cm} m{2cm} m{0.5cm} m{2cm}}
-        \includegraphics[scale=0.1]{Pictures/contractiblepathbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.08]{Pictures/contractiblepathsphere.png} & \includegraphics[scale=0.1]{Pictures/noncontractiblepathbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.08]{Pictures/noncontractiblepathsphere.png}
-    \end{tabular}
-    \end{center}
+\begin{frame}{Dictionary}
     \begin{center}
     \begin{tabular}{|ccc|}
         \hline
@@ -192,45 +187,56 @@
         \emph{can be flattened} & $\longleftrightarrow$ & \emph{contractible} \\ \hline
     \end{tabular}
     \end{center}
-    $\Rightarrow$ we are allowed to continuously deform the paths while keeping its \\ \hspace{0.4cm} starting and ending points at the origin \\[0.3cm]
-    The question is then: \textbf{which loops are contractible ?}
+    \textbf{Back to Dirac's belt trick:}
+    \begin{enumerate}
+      \item ends of the belt have same orientation \textcolor{blue}{$\to$ we consider loops} \\
+      \hspace{5.8cm} {\tiny \textcolor{blue}{(passing through the origin)}}
+      \item moving the ends of the belt \textcolor{blue}{$\to$ continuous deformation} \\
+      \item belt in original (flat) position \textcolor{blue}{$\to$ trivial path}
+    \end{enumerate}
+    The question then becomes: \textbf{which loops are contractible ?}
 \end{frame}
 
-\begin{frame}{The $4\pi$-twist}
-    
+\begin{frame}{Problem solved ?}
+    \begin{itemize}
+      \item \textbf{\underline{$4\pi$-twist:}}
     We saw in the beginning the the $4\pi$-twist can be flattened, how can we see this in terms of paths ?
     \begin{center}
         \begin{tabular}{m{2cm} m{0.5cm} m{2cm} m{0.5cm} m{2cm}}
-            \includegraphics[scale=0.1]{Pictures/4pibelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.09]{Pictures/4pisphere1.png} & $\longrightarrow$ &  \includegraphics[scale=0.09]{Pictures/4pisphere2.png} \\
+            \includegraphics[scale=0.1]{Pictures/4pibelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere1.png} & $\longrightarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere2.png} \\
             & & & & \hspace{0.7cm} $\downarrow$ \\
-            \includegraphics[scale=0.1]{Pictures/flatbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.09]{Pictures/4pisphere4.png} & $\longleftarrow$ & \includegraphics[scale=0.09]{Pictures/4pisphere3.png}
+            \includegraphics[scale=0.1]{Pictures/flatbelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere4.png} & $\longleftarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere3.png}
         \end{tabular}
     \end{center}
-    $\Rightarrow$ the $4\pi$-twist is \emph{contractible} ! What about the $2\pi$-twist ?\\[0.2cm]
-    Problems of our ``proof'': \emph{difficult} to see and \emph{case by case} ...\\[0.2cm]
-    We want a more consistent study of paths in topological spaces.
+    $\Rightarrow$ the $4\pi$-twist is \emph{contractible} ! Great.
+    \item \textbf{\underline{$2\pi$-twist:}} we ``clearly'' see that is not contractible... no ?! Great..?..  \\[0.2cm]
+  \end{itemize}
+  \textbf{Wierd aftertaste:} our ``proof'' is good to show contractibility but bad to show non-contractibility and it only works for simple examples.\\
+  $\Rightarrow$ We want a consistent and general way of studying paths in topological spaces.
 \end{frame}
 
 \section{Homotopy theory}
 
 \begin{frame}{Homotopoy theory primer}
     \textbf{Starting observation:} depending on the topological space, all loops might not be contractible. Moreover, some loops are ``fundamentally different'' from each other.\\
-    Examples: $\R^3$, $2$-sphere, torus, etc.
+    Examples: $\R^3$, $S^2$, $\mathbb{T}^2$, etc.
 
-    Topological space $X$.\\[0.2cm]
-
-    \textit{Path} in $X$: continuous map $\gamma:S^1\to X$\\[0.2cm]
-
-    $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} ($\sim$) if one can be deformed into the other. I.e. if there exists
-    $H:[0,1]\times S^1\to X$ such that
-    \begin{equation*}
-        H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
-    \end{equation*}
-    This is an equivalence relation.\\[0.2cm]
+    \begin{block}{Paths and homotopies}
+         For a topological space $X$:
+        \begin{itemize}
+          \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$, \textit{loop} if closed
+          \item $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} if one can be deformed into the other: there exists
+          $H:[0,1]\times [0,1]\to X$ such that
+          \begin{equation*}
+              H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
+          \end{equation*}
+          This is an equivalence relation.
+        \end{itemize}
+    \end{block}
     
     For each $x_0\in X$, we define
     \begin{equation*}
-        \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim,
+        \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim_{\text{hom.}},
     \end{equation*}
     it is the set of ``fundamentally different'' loops passing through $x_0$.
 \end{frame}
@@ -240,9 +246,10 @@
     \begin{itemize}
       \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ $\gamma_1$ then $\gamma_2$ 
       \item \textbf{Inverse} path: $\gamma^{-1}=$ $\gamma$ traversed in the opposite direction
+      \item \textbf{Neutral} path: $e=$ constant path at the identity
       \item For equivalence classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
     \end{itemize}
-    Important fact: up the isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
+    Important fact: up to isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
     Contractible loops are the ones in $[e]$ ($\sim$ to a point).\\[0.2cm]
 
