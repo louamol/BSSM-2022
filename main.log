@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  15 JUL 2022 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  15 JUL 2022 15:46
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
@@ -1026,7 +1026,7 @@ Overfull \vbox (6.2002pt too high) detected at line 216
  <./Pictures/4pibelt.png> <./Pictures/4pisphere1.png> <./Pictures/4pisphere2.png> <./Pictures/4pisphere3.png>] [12
 
 ]
-Overfull \vbox (5.73584pt too high) detected at line 242
+Overfull \vbox (6.23584pt too high) detected at line 242
  []
 
 [13
@@ -1035,41 +1035,35 @@ Overfull \vbox (5.73584pt too high) detected at line 242
 <Pictures/torushomotopy3.png, id=168, 563.10374pt x 338.26375pt>
 File: Pictures/torushomotopy3.png Graphic file (type png)
 <use Pictures/torushomotopy3.png>
-Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 278.
+Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 279.
 (pdftex.def)             Requested size: 112.61874pt x 67.65154pt.
- [14
+
+Overfull \vbox (20.40631pt too high) detected at line 279
+ []
+
+[14
 
  <./Pictures/torushomotopy3.png>] [15
 
-] [16
-
 ]
-<Pictures/4pitxistecontractibility.png, id=186, 884.30376pt x 281.05pt>
-File: Pictures/4pitxistecontractibility.png Graphic file (type png)
-<use Pictures/4pitxistecontractibility.png>
-Package pdftex.def Info: Pictures/4pitxistecontractibility.png  used on input line 306.
-(pdftex.def)             Requested size: 88.43555pt x 28.10664pt.
- [17
-
- <./Pictures/4pitxistecontractibility.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 307.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 308.
+(hyperref)                removing `math shift' on input line 307.
 
-[18
+[16
 
-] [19
+] [17
 
-] [20
+] [18
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 340.
+(hyperref)                removing `\translate ' on input line 339.
 
 \openout4 = `main.vrb'.
 
@@ -1079,11 +1073,11 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
 (Font)              using `OT1/cmr/bx/n' instead on input line 8.
 
 
-LaTeX Warning: Citation `ConcreteMath' on page 21 undefined on input line 9.
+LaTeX Warning: Citation `ConcreteMath' on page 19 undefined on input line 9.
 
-) [21
+) [19
 
-] (main.bbl) [22
+] (main.bbl) [20
 
  </home/louan/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1106,17 +1100,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 59D8938D6F0C925B4D2159B4B3E35D08;678.
  ) 
 Here is how much of TeX's memory you used:
- 35398 strings out of 478865
- 837189 string characters out of 2853437
+ 35383 strings out of 478865
+ 836838 string characters out of 2853437
  1250232 words of memory out of 3000000
- 52507 multiletter control sequences out of 15000+600000
+ 52497 multiletter control sequences out of 15000+600000
  418038 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,124p,1895b,810s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 2059188 bytes).
+Output written on main.pdf (20 pages, 2016367 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

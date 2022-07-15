@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1657882362 "main.aux" "main.bbl" "main" 1657882739
+["bibtex main"] 1657892587 "main.aux" "main.bbl" "main" 1657892806
   "/home/louan/.miktex/texmfs/install/bibtex/bst/bibtex/abbrv.bst" 1623060340 20329 b5fed53e10044d0f8112183785c759b1 ""
   "bibliography.bib" 1657878492 331 8384d74d56b7b808d1a6852d7b9326dc ""
-  "main.aux" 1657882739 5902 52502a2e6f4197f714149d5e6d42bb6e "pdflatex"
+  "main.aux" 1657892805 5646 2afc0a95a797c5b2969ea6a22f79b4d2 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1657882737 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1657882739
+["pdflatex"] 1657892803 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1657892806
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1657189595 10472 dfeec969657b30b42bc18dac97f0af07 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk" 1657877301 6184 7ed5407a1415c32fe19a359c8edfdcbd ""
   "/home/louan/.miktex/texmfs/data/fonts/tfm/public/bbm/bbm10.tfm" 1609679797 560 39fd35b5e4a6aca3672660cc548ba860 ""
@@ -316,14 +316,13 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/url/url.sty" 1623060370 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1623060370 55589 34128738f682d033422ca125f82e5d62 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1623060370 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1657882736 13314 20f145e9775d766e11d3683ca4f62351 ""
+  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1657892803 13913 af08961a47d1e3d1812116ad566bd71f ""
   "Packages/custom_macros.tex" 1657042912 5385 9947bbf5acefa7aef7365cfcb607fa0d ""
   "Pictures/4pibelt.png" 1656666368 62472 cfb14efbe3f9346ac6234f2b66c8401b ""
   "Pictures/4pisphere1.png" 1656666389 127399 0f046cd85cf6779587c666b8befce210 ""
   "Pictures/4pisphere2.png" 1656666414 143096 1a733a7cad98500c006b1f3058b3f559 ""
   "Pictures/4pisphere3.png" 1656666421 137476 44b56cfb8236ea72254c0efc1fedda20 ""
   "Pictures/4pisphere4.png" 1656666430 132598 8b2d784030b992829e53d1a42afeb286 ""
-  "Pictures/4pitxistecontractibility.png" 1657042160 55460 a50245eeb6c8655fe8e98bbcdcce7d36 ""
   "Pictures/SO3sphere.png" 1656666024 141193 b4733c219aee6b9c9bcde0a1384af84d ""
   "Pictures/beltaxis.png" 1656666046 82572 24918b1c25e84c555342994332c63cb0 ""
   "Pictures/contractiblepathbelt.png" 1656666286 68966 642b76e2003796a3ba27567b315725d8 ""
@@ -340,13 +339,13 @@
   "Pictures/yaxissphere.png" 1656666202 125439 a5a18b810595fd2b884ae91c38f9d82c ""
   "Pictures/zaxisbelt.png" 1656666217 44206 a7d6c87547fa6776438b83716789347b ""
   "Pictures/zaxissphere.png" 1656666226 131165 73a63efadba5fd62ce265df30d36e6a2 ""
-  "main.aux" 1657882739 5902 52502a2e6f4197f714149d5e6d42bb6e "pdflatex"
-  "main.bbl" 1657882362 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
-  "main.nav" 1657882739 3312 923c4026348c6d5ac5ccb6000d1b07c2 "pdflatex"
-  "main.out" 1657882739 678 59d8938d6f0c925b4d2159b4b3e35d08 "pdflatex"
-  "main.tex" 1657882736 13314 20f145e9775d766e11d3683ca4f62351 ""
-  "main.toc" 1657882739 236 4d35b8e5b0c3304f86a437df8b691858 "pdflatex"
-  "main.vrb" 1657882739 418 c224095f257ea0e41a06d73bfda9f888 "pdflatex"
+  "main.aux" 1657892805 5646 2afc0a95a797c5b2969ea6a22f79b4d2 "pdflatex"
+  "main.bbl" 1657892588 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
+  "main.nav" 1657892805 3128 effbda7f07c995442478939de67896cc "pdflatex"
+  "main.out" 1657892805 678 59d8938d6f0c925b4d2159b4b3e35d08 "pdflatex"
+  "main.tex" 1657892803 13913 af08961a47d1e3d1812116ad566bd71f ""
+  "main.toc" 1657892805 236 84c3fa9c9132c7747d26b064940a3349 "pdflatex"
+  "main.vrb" 1657892805 418 c224095f257ea0e41a06d73bfda9f888 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

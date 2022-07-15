@@ -230,40 +230,40 @@
           \begin{equation*}
               H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
           \end{equation*}
-          This is an equivalence relation.
+          This is an equivalence relation ($\sim$).
         \end{itemize}
     \end{block}
     
     For each $x_0\in X$, we define
     \begin{equation*}
-        \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim_{\text{hom.}},
+        \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim,
     \end{equation*}
     it is the set of ``fundamentally different'' loops passing through $x_0$.
 \end{frame}
 
 \begin{frame}{Fundamental group}
-    Group structure:
+    Group structure on $\pi_1(X,x_0)$:
     \begin{itemize}
-      \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ $\gamma_1$ then $\gamma_2$ 
-      \item \textbf{Inverse} path: $\gamma^{-1}=$ $\gamma$ traversed in the opposite direction
-      \item \textbf{Neutral} path: $e=$ constant path at the identity
+      \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ ``$\gamma_1$ then $\gamma_2$''
+      \item \textbf{Inverse} path: $\gamma^{-1}=$ ``$\gamma$ traversed in the opposite direction''
+      \item \textbf{Neutral} path: $e=$ ``constant path at the identity''
       \item For equivalence classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
     \end{itemize}
     Important fact: up to isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
-    Contractible loops are the ones in $[e]$ ($\sim$ to a point).\\[0.2cm]
+    Contractible loops are $\sim$ to a point, i.e. they are the element of $[e]$.\\[0.2cm]
 
-    How to compute the fundamental group ? Difficult task, not discussed here.\\[0.2cm]
+    How to compute $\pi_1(X)$ ? Can be difficult, not discussed here.\\[0.2cm]
 
     \begin{columns}[T,onlytextwidth]
       \column{0.35\textwidth}
         
         \textbf{Examples:}
         \begin{itemize}
-          \item $\pi_1(\R^2)=\{e\}$
+          \item $\pi_1(\R^3)=\{e\}$
           \item $\pi_1(S^2) = \{e\}$
           \item $\pi_1(\mathbb{T}^2)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
-          \item $\pi_1(\R^2\backslash\{pt\})=\Z$
+          \item $\pi_1(\R^2\backslash\{p\})=\Z$
         \end{itemize}
   
       \column{0.65\textwidth}
@@ -274,34 +274,33 @@
         \end{figure}
   
     \end{columns}
+    Remark: $\pi_1(\R^3\backslash\{p\})=\{e\}$, higher homotopy groups for higher-dimensional holes ?
 
 \end{frame}
 
-\begin{frame}{Fundamental group of $\SO(3)$}
-  Question we had: \textbf{are all loops in $\SO(3)$ contractible ?}\\[0.3cm]
+\begin{frame}{Back to $\SO(3)$}
+    \textbf{Question we had:} are all loops in $\SO(3)$ contractible ?\\
+    In homotopy language: is $\pi_1(\SO(3))$ trivial ?\\[0.2cm]
+    \textbf{Answer:} \emph{NO}, one can compute that
+    \begin{equation*}
+        \boxed{\pi_1(\SO(3))=\Z_2}
+    \end{equation*}
+    $\Rightarrow$ There only two ``fundamentally different'' loops in $\SO(3)$ !\\
+    $\Rightarrow$ all non-contractible loops are deformations of the $2\pi$-twist !
 
-  In homotopy language: \textbf{is $\pi_1(\SO(3))$ trivial ?}
+    \begin{center}
+      \begin{tabular}{|l|}
+          \hline
+          The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
+      \end{tabular}
+    \end{center}
 
-  \begin{center}
-    \begin{tabular}{|l|}
-        \hline
-        The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
-    \end{tabular}
-  \end{center}
-  
-\end{frame}
+    We can now say, with more confidence, that we understood Dirac's belt trick.\\[0.3cm]
 
-% How is that useful ?
+    Are there other manifestation of homotopy in our practical world ?\\[0.3cm]
 
-\begin{frame}{Electrons}
-  \visible<1->{
-    In quantum mechanics
-  }
-\end{frame}
-
-\begin{frame}
-
-    \includegraphics[scale=0.1]{Pictures/4pitxistecontractibility.png}
+    Yes: the \emph{spin} ! (Pro: you don't need a belt, Con: you need an electron)\\
+    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 
 \end{frame}
 
