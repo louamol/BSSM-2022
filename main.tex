@@ -49,87 +49,88 @@
     
     You need:
     \begin{itemize}
-      \item a belt (not necessarily Dirac's)
-      \item a heavy book
+        \item a belt (not necessarily Dirac's)
+        \item a heavy book
     \end{itemize}
     Rules:
     \begin{enumerate}
-      \item you can only move the end of the belt
-      \item you cannot twist or rotate it
+        \item you can only move the end of the belt
+        \item you cannot twist or rotate it
     \end{enumerate}
     \textbf{Goal:} untwist a $2\pi$-twist.\\[0.5cm]
-      $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$. \\[0.5cm]
+    $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$. \\[0.5cm]
 
-      Therefore, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
+    Therefore, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
 
 \end{frame}
 
 \begin{frame}{Space of rotations: $\SO(3)$ as a group}
       
-      Rotations in $3$-dimensional space: matrices that acts on $\R^3$ s.t. 
-      \begin{enumerate}
+    Rotations in $3$-dimensional space: matrices that acts on $\R^3$ s.t. 
+    \begin{enumerate}
         \item preserve the \emph{scalar product}: $O^TO=\mathbbm{1}$ ($\Leftrightarrow$ $O$ is orthogonal)
         \item preserve the \emph{orientation}: $\det O=1$
-      \end{enumerate}
+    \end{enumerate}
 
-      \begin{block}{Special othogonal group}
+    \begin{block}{Special othogonal group}
         $\SO(3)$ is the set of $3\times 3$ real matrices such that $O^TO=\mathbbm{1}$ and $\det O=1$.
-      \end{block}
-      Three ``fundamental'' rotations:
-      \begin{equation*}
-        {\tiny
-        x:
-        \begin{bmatrix}
+    \end{block}
+    Three ``fundamental'' rotations:
+    \begin{equation*}
+      {\tiny
+      x:
+      \begin{bmatrix}
           1 & 0 & 0 \\
           0 & \cos\theta & -\sin\theta \\
           0 & \sin\theta & \cos\theta
-        \end{bmatrix}\qquad
-        y:
-        \begin{bmatrix}
+      \end{bmatrix}\qquad
+      y:
+      \begin{bmatrix}
           \cos\theta & 0 & -\sin\theta \\
           0 & 1 & 0 \\
           \sin\theta & 0 & \cos\theta
-        \end{bmatrix}\qquad
-        z:
-        \begin{bmatrix}
+      \end{bmatrix}\qquad
+      z:
+      \begin{bmatrix}
           \cos\theta & -\sin\theta & 0 \\
           \sin\theta & \cos\theta & 0 \\
           0 & 0 & 1
-        \end{bmatrix}}
-      \end{equation*}
+      \end{bmatrix}}
+    \end{equation*}
 
-      $\Rightarrow$ It forms a \emph{group}.
+    $\Rightarrow$ It forms a \emph{group}.
     
 \end{frame}
 
 \begin{frame}{Space of rotations: $\SO(3)$ as a topological space}
     Fundamental data that describes a rotation:
     \begin{itemize}
-      \item an \emph{axis} of rotation, i.e. a  unit vector $\overrightarrow{n}$ \hspace{1.07cm}\textcolor{blue}{$\to$ 2 parameters}
-      \item an \emph{angle} of rotation $\theta\in[-\pi,\pi]$ (with $-\pi\sim\pi$) \textcolor{blue}{$\to$ 1 parameter}
+        \item an \emph{axis} of rotation, i.e. a  unit vector $\overrightarrow{n}$ \hspace{1.07cm}\textcolor{blue}{$\to$ 2 parameters}
+        \item an \emph{angle} of rotation $\theta\in[-\pi,\pi]$ (with $-\pi\sim\pi$) \textcolor{blue}{$\to$ 1 parameter}
     \end{itemize}
     The space of rotations can then alternately be defined as a \textbf{$\boldsymbol{3}$-sphere of radius $\boldsymbol{\pi}$ and its antipodal points identified}:
     
 
     \begin{columns}[T,onlytextwidth]
-      \column{0.5\textwidth}
-          \vspace{0.5cm}
-          \begin{equation*}
-            \boxed{\SO(3)\cong B^3(\pi)/\sim}
-          \end{equation*}
-          and for each point:
-          \begin{align*}
-              \text{direction} &\leftrightarrow \text{axis}\\
-              \text{norm} &\leftrightarrow \text{angle}
-          \end{align*}
-          $\Rightarrow$ It forms a \emph{topological space}.
+        \column{0.5\textwidth}
+
+            \vspace{0.5cm}
+            \begin{equation*}
+              \boxed{\SO(3)\cong B^3(\pi)/\sim}
+            \end{equation*}
+            and for each point:
+            \begin{align*}
+                \text{direction} &\leftrightarrow \text{axis}\\
+                \text{norm} &\leftrightarrow \text{angle}
+            \end{align*}
+            $\Rightarrow$ It forms a \emph{topological space}.
   
-      \column{0.5\textwidth}
+        \column{0.5\textwidth}
   
-          \begin{figure}
-              \centering
-              \includegraphics[scale=0.16]{Pictures/SO3sphere.png}
-          \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.16]{Pictures/SO3sphere.png}
+            \end{figure}
   
     \end{columns}
 
@@ -156,13 +157,13 @@
 \end{frame}
 
 \begin{frame}{Dictionary}
-      \makebox[315pt][r]{
-        \begin{tabular}{cccc}
-            \textbf{\underline{trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
-            \includegraphics[scale=0.12]{Pictures/flatbelt.png} & \includegraphics[scale=0.12]{Pictures/xaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} \\
-            $\updownarrow$ & $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
-            \includegraphics[scale=0.1]{Pictures/4pisphere4.png} & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} & \includegraphics[scale=0.1]{Pictures/yaxissphere.png} & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
-        \end{tabular}}
+    \makebox[315pt][r]{
+    \begin{tabular}{cccc}
+        \textbf{\underline{trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
+        \includegraphics[scale=0.12]{Pictures/flatbelt.png} & \includegraphics[scale=0.12]{Pictures/xaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} \\
+        $\updownarrow$ & $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
+        \includegraphics[scale=0.1]{Pictures/4pisphere4.png} & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} & \includegraphics[scale=0.1]{Pictures/yaxissphere.png} & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
+    \end{tabular}}
 \end{frame}
 
 \begin{frame}{Dictionary}
@@ -173,7 +174,7 @@
         $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
         \includegraphics[scale=0.1]{Pictures/randomrotsphere.png} & \includegraphics[scale=0.08]{Pictures/contractiblepathsphere.png} & \includegraphics[scale=0.08]{Pictures/noncontractiblepathsphere.png}
     \end{tabular}
-  \end{center}
+    \end{center}
 \end{frame}
 
 \begin{frame}{Dictionary}
@@ -189,17 +190,17 @@
     \end{center}
     \textbf{Back to Dirac's belt trick:}
     \begin{enumerate}
-      \item ends of the belt have same orientation \textcolor{blue}{$\to$ we consider loops} \\
-      \hspace{5.8cm} {\tiny \textcolor{blue}{(passing through the origin)}}
-      \item moving the ends of the belt \textcolor{blue}{$\to$ continuous deformation} \\
-      \item belt in original (flat) position \textcolor{blue}{$\to$ trivial path}
+        \item ends of the belt have same orientation \textcolor{blue}{$\to$ we consider loops} \\
+        \hspace{5.8cm} {\tiny \textcolor{blue}{(passing through the origin)}}
+        \item moving the ends of the belt \textcolor{blue}{$\to$ continuous deformation} \\
+        \item belt in original (flat) position \textcolor{blue}{$\to$ trivial path}
     \end{enumerate}
     The question then becomes: \textbf{which loops are contractible ?}
 \end{frame}
 
 \begin{frame}{Problem solved ?}
     \begin{itemize}
-      \item \textbf{\underline{$4\pi$-twist:}}
+        \item \textbf{\underline{$4\pi$-twist:}}
     We saw in the beginning the the $4\pi$-twist can be flattened, how can we see this in terms of paths ?
     \begin{center}
         \begin{tabular}{m{2cm} m{0.5cm} m{2cm} m{0.5cm} m{2cm}}
@@ -210,9 +211,9 @@
     \end{center}
     $\Rightarrow$ the $4\pi$-twist is \emph{contractible} ! Great.
     \item \textbf{\underline{$2\pi$-twist:}} we ``clearly'' see that is not contractible... no ?! Great..?..  \\[0.2cm]
-  \end{itemize}
-  \textbf{Wierd aftertaste:} our ``proof'' is good to show contractibility but bad to show non-contractibility and it only works for simple examples.\\
-  $\Rightarrow$ We want a consistent and general way of studying paths in topological spaces.
+    \end{itemize}
+    \textbf{Wierd aftertaste:} our ``proof'' is good to show contractibility but bad to show non-contractibility and it only works for simple examples.\\
+    $\Rightarrow$ We want a consistent and general way of studying paths in topological spaces.
 \end{frame}
 
 \section{Homotopy theory}
@@ -222,15 +223,15 @@
     Examples: $\R^3$, $S^2$, $\mathbb{T}^2$, etc.
 
     \begin{block}{Paths and homotopies}
-         For a topological space $X$:
+        For a topological space $X$:
         \begin{itemize}
-          \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$, \textit{loop} if closed
-          \item $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} if one can be deformed into the other: there exists
-          $H:[0,1]\times [0,1]\to X$ such that
-          \begin{equation*}
-              H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
-          \end{equation*}
-          This is an equivalence relation ($\sim$).
+            \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$, \textit{loop} if closed
+            \item $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} if one can be deformed into the other: there exists
+            $H:[0,1]\times [0,1]\to X$ such that
+            \begin{equation*}
+                H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
+            \end{equation*}
+            This is an equivalence relation ($\sim$).
         \end{itemize}
     \end{block}
     
@@ -244,10 +245,10 @@
 \begin{frame}{Fundamental group}
     Group structure on $\pi_1(X,x_0)$:
     \begin{itemize}
-      \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ ``$\gamma_1$ then $\gamma_2$''
-      \item \textbf{Inverse} path: $\gamma^{-1}=$ ``$\gamma$ traversed in the opposite direction''
-      \item \textbf{Neutral} path: $e=$ ``constant path at the identity''
-      \item For equivalence classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
+        \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ ``$\gamma_1$ then $\gamma_2$''
+        \item \textbf{Inverse} path: $\gamma^{-1}=$ ``$\gamma$ traversed in the opposite direction''
+        \item \textbf{Neutral} path: $e=$ ``constant path at the identity''
+        \item For equivalence classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
     \end{itemize}
     Important fact: up to isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
@@ -256,22 +257,22 @@
     How to compute $\pi_1(X)$ ? Can be difficult, not discussed here.\\[0.2cm]
 
     \begin{columns}[T,onlytextwidth]
-      \column{0.35\textwidth}
+        \column{0.35\textwidth}
         
-        \textbf{Examples:}
-        \begin{itemize}
-          \item $\pi_1(\R^3)=\{e\}$
-          \item $\pi_1(S^2) = \{e\}$
-          \item $\pi_1(\mathbb{T}^2)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
-          \item $\pi_1(\R^2\backslash\{p\})=\Z$
-        \end{itemize}
+            \textbf{Examples:}
+            \begin{itemize}
+                \item $\pi_1(\R^3)=\{e\}$
+                \item $\pi_1(S^2) = \{e\}$
+                \item $\pi_1(\mathbb{T}^2)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
+                \item $\pi_1(\R^2\backslash\{p\})=\Z$
+            \end{itemize}
   
-      \column{0.65\textwidth}
+        \column{0.65\textwidth}
   
-        \begin{figure}
-          \centering
-          \includegraphics[scale=0.2]{Pictures/torushomotopy3.png}
-        \end{figure}
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.2]{Pictures/torushomotopy3.png}
+            \end{figure}
   
     \end{columns}
     Remark: $\pi_1(\R^3\backslash\{p\})=\{e\}$, higher homotopy groups for higher-dimensional holes ?
@@ -289,22 +290,137 @@
     $\Rightarrow$ all non-contractible loops are deformations of the $2\pi$-twist !
 
     \begin{center}
-      \begin{tabular}{|l|}
-          \hline
-          The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
-      \end{tabular}
+        \begin{tabular}{|l|}
+            \hline
+            The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
+        \end{tabular}
     \end{center}
 
     We can now say, with more confidence, that we understood Dirac's belt trick.\\[0.3cm]
 
     Are there other manifestation of homotopy in our practical world ?\\[0.3cm]
 
-    Yes: the \emph{spin} ! (Pro: you don't need a belt, Con: you need an electron)\\
+    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\
     Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 
 \end{frame}
 
 \section{Quantum spin and $\SU(2)$}
+
+\begin{frame}{What is the spin ?}
+
+    Skipping most of the physics background:
+    \begin{block}{Spin in quantum mechanics}
+        \begin{enumerate}
+            \item the \emph{spin}  is an inherent property of any ``particle'':
+            \begin{itemize}
+                \item number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
+                \item does not change, like the mass, charge, etc
+                \item classifies particles into different classes
+            \end{itemize}
+            \item a particle of spin $s$ is, at a given moment, in a certain \emph{spin state}:
+            \begin{itemize}
+                \item unit vector of $v\in\C^{2s+1}$\textcolor{blue}{, in our case $\begin{bmatrix}\alpha\\ \beta\end{bmatrix}\in\C^2$}
+                \item can evolve over time
+            \end{itemize}
+            \item what we can measure is the \emph{observed spin}:
+            \begin{itemize}
+              \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$ ($2s+1$ possibilities).\\
+              \textcolor{blue}{In our case, $s_{\text{obs.}}=1/2,-1/2$ that we denote $\uparrow$ and $\downarrow$}
+              \item given a direction, e.g. $i=x,y,z$
+              \item outcome is random, we can only compute de probabilities of the different outcome (repeat experience)
+            \end{itemize}
+        \end{enumerate}
+    \end{block}
+\end{frame}
+
+\begin{frame}{What is the spin ?}
+    Let us introduce
+    {\tiny
+    \begin{align*}
+        v_{x,\uparrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ 1/\sqrt{2}
+        \end{bmatrix},
+        v_{x,\downarrow }=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ -1/\sqrt{2}
+        \end{bmatrix},
+        v_{y,\uparrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ i/\sqrt{2}
+        \end{bmatrix},
+        v_{y,\downarrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ -i/\sqrt{2}
+        \end{bmatrix},
+        v_{z,\uparrow}=
+        \begin{bmatrix}
+            1 \\ 0
+        \end{bmatrix},
+        v_{z,\downarrow}=
+        \begin{bmatrix}
+            0 \\ 1
+        \end{bmatrix}.
+    \end{align*}}
+    The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by
+    \begin{equation}
+        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle}^2
+    \end{equation}
+    where $v$ is the spin state of the particle.\\[0.2cm]
+    \textbf{Example}: in the direction $z$,
+    \begin{equation}
+      P(z,\uparrow)= \abs{\alpha}^2,\qquad P(z,\downarrow)= \abs{\beta}^2.
+    \end{equation}
+    Note: we must have $\abs{\alpha}^2+\abs{\beta}^2=1$.
+\end{frame}
+
+\begin{frame}{Special unitary group}
+    \begin{block}{Special unitary group}
+      $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
+    \end{block}
+    Like $\SO(3)$ it is a Lie group so it can be viewed
+    \begin{itemize}
+      \item as a group
+      \item as a topological space $\SU(2)\cong S^3$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{$\SU(2)$ and $\SO(3)$: isometries}
+    If we take a step back:
+    \begin{columns}[T,onlytextwidth]
+        \column{0.5\textwidth}
+        
+            Scalar product on $\R^3$:
+            \begin{equation*}
+                \langle v_1,v_2\rangle=(v_1)^Tv_2
+            \end{equation*}
+            is such that
+            \begin{equation*}
+              \langle Rv_1,Rv_2\rangle=\langle v_1,v_2\rangle
+            \end{equation*}
+            if and only if $R^T R=\mathbbm{1}$.\\[0.2cm]
+            $\Rightarrow$ $\SO(3)$ is the (orientation preserving) isometry group
+
+        \column{0.5\textwidth}
+
+            Scalar product on $\C^2$:
+            \begin{equation*}
+                \langle v_1,v_2\rangle=(v_1)^\dagger v_2
+            \end{equation*}
+            is such that
+            \begin{equation*}
+              \langle Uv_1,Uv_2\rangle=\langle v_1,v_2\rangle
+            \end{equation*}
+            if and only if $U^\dagger U=\mathbbm{1}$.\\[0.2cm]
+            $\Rightarrow$ $\SU(2)$ is the (orientation preserving) isometry group
+
+    \end{columns}
+\end{frame}
+
+\begin{frame}{$\SU(2)$ and $\SO(3$: covering space}
+    
+\end{frame}
 
 \section{Conclusion}
 
@@ -320,39 +436,78 @@
     
         \column{0.5\textwidth}
     
-          \begin{block}{Default}
-            Block content.
-          \end{block}
+            \begin{block}{Default}
+              Block content.
+            \end{block}
+      
+            \begin{alertblock}{Alert}
+              Block content.
+            \end{alertblock}
+      
+            \begin{exampleblock}{Example}
+              Block content.
+            \end{exampleblock}
     
-          \begin{alertblock}{Alert}
-            Block content.
-          \end{alertblock}
-    
-          \begin{exampleblock}{Example}
-            Block content.
-          \end{exampleblock}
-    
-      \end{columns}
+    \end{columns}
 
-  \end{frame}
+\end{frame}
 
 \appendix
 
-\begin{frame}[fragile]{Backup slides}
-  Sometimes, it is useful to add slides at the end of your presentation to
-  refer to during audience questions.
+{
+\setbeamercolor{background canvas}{bg=green!10}
 
-  The best way to do this is to include the \verb|appendixnumberbeamer|
-  package in your preamble and call \verb|\appendix| before your backup slides.
+\begin{frame}{Introduction to the spin}
+    
+    \begin{block}{Spin in quantum mechanics}
+        The \emph{spin} of an ``particle'' is a number $s\in\frac{1}{2}\N$.\\
+        The \emph{spin state} of a particle of spin $s$ is a unit vector in $\C^{2s+1}$.
+    \end{block}
+    The spin is a \emph{property}, it cannot change (e.g. mass, charge)\\
+    The spin state is a \emph{characteristic}, it evolves
 
-  \themename will automatically turn off slide numbering and progress bars for
-  slides in the appendix.  \cite{ConcreteMath}
+    How to interpret it ? 
+    \begin{enumerate}
+        \item \textbf{directions:} we choose the direction in which we want to measure it
+        \item \textbf{probabilistic theory:} the outcome of the measure, we can only compute the probabilities of the different outcomes
+        \item \textbf{discrete quantity:} in the chosen direction, the spin will either appear to up or down ($\uparrow$ or $\downarrow$)
+    \end{enumerate}
+    The probability of measuring the spin $k=\uparrow,\downarrow$ in the direction $i=x,y,z$ is given by
+    \begin{equation}
+        P(i,k) = \abs{\langle v_{i,k},v \rangle}^2
+    \end{equation}
+    where $v$ is the spin state of the particle, for some given vectors $v_{i,k}$.
+
 \end{frame}
+
+\begin{frame}{Spin in quantum mechanics}
+    The Lie algebra $\mathfrak{su}(2)$ is generated by the \emph{Pauli matrices}
+    \begin{equation}
+        \sigma_x =
+        \begin{bmatrix}
+            0 & 1\\
+            1 & 0
+        \end{bmatrix},\qquad
+        \sigma_y =
+        \begin{bmatrix}
+            0 & -i\\
+            i & 0
+        \end{bmatrix},\qquad
+        \sigma_z =
+        \begin{bmatrix}
+            1 & 0\\
+            0 & -1
+        \end{bmatrix}.
+    \end{equation}
+    
+\end{frame}
+
+}
 
 \begin{frame}[allowframebreaks]{References}
 
-  \bibliography{bibliography}
-  \bibliographystyle{abbrv}
+\bibliography{bibliography}
+\bibliographystyle{abbrv}
 
 \end{frame}
 
