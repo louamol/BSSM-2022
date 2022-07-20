@@ -15,11 +15,19 @@
 \usepackage{amsmath,amssymb,amsthm,amsfonts,amstext}
 \usepackage{bbm}
 \usepackage{array}
+\usepackage{multimedia}
+\usepackage{media9}
 
 \usepackage{xspace}
 
 \usepackage{import}
 \import{}{Packages/custom_macros.tex}
+
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{2pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{2pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{2pt}
+\makeatother
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \renewcommand{\emph}{\alert}
@@ -304,6 +312,24 @@
     Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 
 \end{frame}
+
+{
+\setbeamercolor{background canvas}{bg=black!100}
+\begin{frame}{Animation 1}
+    \begin{center}
+        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster1.jpg}}{Videos/video1.wmv}
+    \end{center}
+    {\small\textcolor{white}{An object attached to belts or strings can spin continuously without becoming tangled. Notice that after the cube completes a 360° rotation, the spiral is reversed from its initial configuration. The belts return to their original configuration after spinning a full 720°.}}
+\end{frame}
+
+\begin{frame}{Animation 2}
+    \begin{center}
+        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2.jpg}}{Videos/video2.wmv}
+    \end{center}
+    {\small\textcolor{white}{A more extreme example demonstrating that this works with any number of strings. In the limit, a piece of solid continuous space can rotate in place like this without tearing or intersecting itself.}}
+\end{frame}
+}
+% https://bloerg.net/posts/beamer-movies-and-linux/
 
 \section{Quantum spin and $\SU(2)$}
 
