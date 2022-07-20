@@ -51,7 +51,7 @@
     \tableofcontents%[hideallsubsections]
 \end{frame}
 
-\section{Dirac's belt trick and rotations}
+\section{Dirac's belt trick and the rotation group}
 
 \begin{frame}{Dirac's belt trick}
     
@@ -247,7 +247,7 @@
     \begin{equation*}
         \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim,
     \end{equation*}
-    it is the set of ``fundamentally different'' loops passing through $x_0$.
+    it is the set of ``fundamentally different'' loops passing through $x_0$. $[\gamma]$ is called the \textit{homotopy class} of $\gamma$.
 \end{frame}
 
 \begin{frame}{Fundamental group}
@@ -256,7 +256,7 @@
         \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ ``$\gamma_1$ then $\gamma_2$''
         \item \textbf{Inverse} path: $\gamma^{-1}=$ ``$\gamma$ traversed in the opposite direction''
         \item \textbf{Neutral} path: $e=$ ``constant path at the identity''
-        \item For equivalence classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
+        \item For homotopy classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
     \end{itemize}
     Important fact: up to isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
@@ -444,11 +444,38 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{$\SU(2)$ and $\SO(3$: covering space}
+\begin{frame}{$\SU(2)$ and $\SO(3)$: covering space}
     
 \end{frame}
 
+\section{Spinors}
+
+% we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
+% motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
+% how to distinguish the topoogically inequivalent rotations ? Universal cover of the group, double cover, spin groups
+% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achiving a rotation, i.e. it is lways a DOUBLE cover, it is unique, maximal, etc
+% def of spinor
+% other definition of spinor: Clifford algebras, def the algebra
+% link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
+% representation theory of the CLifford algebra, i.e. spinors in all dimensions
+% come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
+
+\section{Spinors in Physics}
+
+% instead of SO(3), SO(1,3), which somewhat resembles SO(4)
+% why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
+% veri very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
+
 \section{Conclusion}
+
+\begin{frame}
+    \begin{enumerate}
+        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension)
+        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
+        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two inequivalent ways as the endpoint of a path.
+        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
+    \end{enumerate}
+\end{frame}
 
 \begin{frame}{Blocks}
     Three different block environments are pre-defined and may be styled with an
