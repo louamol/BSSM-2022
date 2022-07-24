@@ -19,6 +19,7 @@
 \usepackage{media9}
 
 \usepackage{xspace}
+\usepackage{emoji}
 
 \usepackage{import}
 \import{}{Packages/custom_macros.tex}
@@ -342,25 +343,26 @@
             \begin{itemize}
                 \item number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
                 \item does not change, like the mass, charge, etc
-                \item classifies particles into different classes
+                \item classifies particles
             \end{itemize}
-            \item a particle of spin $s$ is, at a given moment, in a certain \emph{spin state}:
+            \item a particle of spin $s$ is, at a given moment, in a certain state described by the \emph{spin vector}:
             \begin{itemize}
                 \item unit vector of $v\in\C^{2s+1}$\textcolor{blue}{, in our case $\begin{bmatrix}\alpha\\ \beta\end{bmatrix}\in\C^2$}
                 \item can evolve over time
             \end{itemize}
-            \item what we can measure is the \emph{observed spin}:
+            \item what we can measure yet another quantity, called \emph{observed spin}:
             \begin{itemize}
-              \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$ ($2s+1$ possibilities).\\
-              \textcolor{blue}{In our case, $s_{\text{obs.}}=1/2,-1/2$ that we denote $\uparrow$ and $\downarrow$}
+              \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$\\
+              \textcolor{blue}{In our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
               \item given a direction, e.g. $i=x,y,z$
-              \item outcome is random, we can only compute de probabilities of the different outcome (repeat experience)
+              \item outcome is random, we can only compute de probabilities of the different outcomes
             \end{itemize}
         \end{enumerate}
     \end{block}
 \end{frame}
 
 \begin{frame}{What is the spin ?}
+    \textbf{How do measures happen ?}\\[0.2cm]
     Let us introduce
     {\tiny
     \begin{align*}
@@ -389,67 +391,116 @@
             0 \\ 1
         \end{bmatrix}.
     \end{align*}}
-    The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by
+    The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by the projection
     \begin{equation}
-        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle}^2
+        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle_{\C^2}}^2
     \end{equation}
-    where $v$ is the spin state of the particle.\\[0.2cm]
+    where $v$ is the spin vector of the particle.\\[0.2cm]
     \textbf{Example}: in the direction $z$,
     \begin{equation}
       P(z,\uparrow)= \abs{\alpha}^2,\qquad P(z,\downarrow)= \abs{\beta}^2.
     \end{equation}
-    Note: we must have $\abs{\alpha}^2+\abs{\beta}^2=1$.
-\end{frame}
-
-\begin{frame}{Special unitary group}
-    \begin{block}{Special unitary group}
-      $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
-    \end{block}
-    Like $\SO(3)$ it is a Lie group so it can be viewed
+    Consequently:
     \begin{itemize}
-      \item as a group
-      \item as a topological space $\SU(2)\cong S^3$
+        \item we must have $\langle v,v\rangle_{\C^2}=\abs{\alpha}^2+\abs{\beta}^2=1$
+        \item to ``measure'' the spin state, we must repeat the experience many times
+        \item there are states that are always spin $\uparrow$ or always spin $\downarrow$
     \end{itemize}
 \end{frame}
 
-\begin{frame}{$\SU(2)$ and $\SO(3)$: isometries}
-    If we take a step back:
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-        
-            Scalar product on $\R^3$:
-            \begin{equation*}
-                \langle v_1,v_2\rangle=(v_1)^Tv_2
-            \end{equation*}
-            is such that
-            \begin{equation*}
-              \langle Rv_1,Rv_2\rangle=\langle v_1,v_2\rangle
-            \end{equation*}
-            if and only if $R^T R=\mathbbm{1}$.\\[0.2cm]
-            $\Rightarrow$ $\SO(3)$ is the (orientation preserving) isometry group
-
-        \column{0.5\textwidth}
-
-            Scalar product on $\C^2$:
-            \begin{equation*}
-                \langle v_1,v_2\rangle=(v_1)^\dagger v_2
-            \end{equation*}
-            is such that
-            \begin{equation*}
-              \langle Uv_1,Uv_2\rangle=\langle v_1,v_2\rangle
-            \end{equation*}
-            if and only if $U^\dagger U=\mathbbm{1}$.\\[0.2cm]
-            $\Rightarrow$ $\SU(2)$ is the (orientation preserving) isometry group
-
-    \end{columns}
+\begin{frame}{Rotating a spin vector}
+    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
+    \begin{equation*}
+        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
+    \end{equation*}
+    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
+    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
+    \begin{equation*}
+        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
+    \end{equation*}
+    so, similarly,
+    \begin{block}{Special unitary group}
+        $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
+    \end{block}
+    and $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
+    Like $\SO(3)$ it is a Lie group so it can be viewed
 \end{frame}
 
-\begin{frame}{$\SU(2)$ and $\SO(3)$: covering space}
+\begin{frame}{$\SU(2)$ and $\S0(3)$}
+    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
+    \begin{equation}
+        U=
+        \begin{bmatrix}
+            X+iY & Z+iW \\
+            -Z+iY & X-iY
+        \end{bmatrix}
+    \end{equation}
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
+    so $\SU(2)$ can be viewed as a group and a manifold, it is a Lie group\\[0.2cm]
+    $\SU(2)$ and $\SO(3)$:
+    \begin{enumerate}
+        \item both Lie groups of dimension three
+        \item both are connected
+        \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
+    \end{enumerate}
+    How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
+    Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
+    Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
+    \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
+    In other words: how are the two notions of rotations related ?\\[0.2cm]
+    $\Rightarrow$ covering spaces !
+\end{frame}
+
+\section{Covering spaces}
+
+\begin{frame}{Covering spaces}
+
     
+    \begin{columns}[T,onlytextwidth]
+        \column{0.65\textwidth}
+        
+        \begin{block}{Covering space}
+            For a topological space $X$, a \textit{covering space} is a topological space $E$ with a \textit{projection map} $\pi=E\to X$ such that
+            \begin{itemize}
+                \item $\pi$ is continuous
+                \item there exists a discrete set $D$ and $U$ and open neighborhood of $x\in X$ such that
+                \begin{equation*}
+                    \pi^{-1}(U)=\bigsqcup_{d\in D}V_d
+                \end{equation*}
+                and $\pi|_{V_d}=V_d\to U$ is a homeomorphism. $V_d$ are called the \textit{sheets}.
+            \end{itemize}
+        \end{block}
+  
+        \column{0.35\textwidth}
+  
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.5]{Pictures/Covering_map.png}
+            \end{figure}
+  
+    \end{columns}
+    \textbf{Examples:}
+    \begin{itemize}
+        \item $\R$ can cover $S^1$ with $\pi(t)=(\cos(2\pi t),\sin(2\pi t))$
+        \item $S^1$ can cover $S^1$ in several ways, with $\pi(z)=z^n$, $n\in\N$ ($1$ turn in covering space is $n$ turns in $S^1$) \includegraphics[scale=0.06]{Pictures/pen.png}
+    \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Properties of the coverin space}
+    Important remarks:
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    Proof that $2\pi$-twist is non-contractible in $\SO(3)$
 \end{frame}
 
 \section{Spinors}
 
+% take a step back on the first part
 % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
 % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
 % how to distinguish the topoogically inequivalent rotations ? Universal cover of the group, double cover, spin groups
@@ -460,7 +511,7 @@
 % representation theory of the CLifford algebra, i.e. spinors in all dimensions
 % come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
 
-\section{Spinors in Physics}
+\section{Short detour: spinors in Physics}
 
 % instead of SO(3), SO(1,3), which somewhat resembles SO(4)
 % why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson

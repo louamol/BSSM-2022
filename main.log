@@ -1,29 +1,27 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.6.7)  20 JUL 2022 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  24 JUL 2022 17:08
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
-LaTeX2e <2021-06-01>
-L3 programming layer <2021-06-01> (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamer.cls
-Document Class: beamer 2021/05/26 v3.63 A class for typesetting presentations
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-07-04> (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamer.cls
+Document Class: beamer 2022/05/17 v3.67 A class for typesetting presentations
 (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasemodes.sty (/home/louan/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count182
+\etb@tempcnta=\count185
 )
-\beamer@tempbox=\box50
-\beamer@tempcount=\count183
-\c@beamerpauses=\count184
+\beamer@tempbox=\box51
+\beamer@tempcount=\count186
+\c@beamerpauses=\count187
  (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasedecode.sty
-\beamer@slideinframe=\count185
-\beamer@minimum=\count186
-\beamer@decode@box=\box51
+\beamer@slideinframe=\count188
+\beamer@minimum=\count189
+\beamer@decode@box=\box52
 )
-\beamer@commentbox=\box52
-\beamer@modecount=\count187
-) (/home/louan/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
- (/home/louan/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-))
+\beamer@commentbox=\box53
+\beamer@modecount=\count190
+) (/home/louan/.miktex/texmfs/install/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
 \headdp=\dimen138
 \footheight=\dimen139
 \sidebarheight=\dimen140
@@ -41,34 +39,34 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \beamer@descdefault=\dimen152
 \beamer@descriptionwidth=\dimen153
 \beamer@lastskip=\skip47
-\beamer@areabox=\box53
-\beamer@animcurrent=\box54
-\beamer@animshowbox=\box55
-\beamer@sectionbox=\box56
-\beamer@logobox=\box57
-\beamer@linebox=\box58
-\beamer@sectioncount=\count188
-\beamer@subsubsectionmax=\count189
-\beamer@subsectionmax=\count190
-\beamer@sectionmax=\count191
-\beamer@totalheads=\count192
-\beamer@headcounter=\count193
-\beamer@partstartpage=\count194
-\beamer@sectionstartpage=\count195
-\beamer@subsectionstartpage=\count196
-\beamer@animationtempa=\count197
-\beamer@animationtempb=\count198
-\beamer@xpos=\count199
-\beamer@ypos=\count266
-\beamer@ypos@offset=\count267
-\beamer@showpartnumber=\count268
-\beamer@currentsubsection=\count269
-\beamer@coveringdepth=\count270
-\beamer@sectionadjust=\count271
-\beamer@toclastsection=\count272
-\beamer@tocsectionnumber=\count273
+\beamer@areabox=\box54
+\beamer@animcurrent=\box55
+\beamer@animshowbox=\box56
+\beamer@sectionbox=\box57
+\beamer@logobox=\box58
+\beamer@linebox=\box59
+\beamer@sectioncount=\count191
+\beamer@subsubsectionmax=\count192
+\beamer@subsectionmax=\count193
+\beamer@sectionmax=\count194
+\beamer@totalheads=\count195
+\beamer@headcounter=\count196
+\beamer@partstartpage=\count197
+\beamer@sectionstartpage=\count198
+\beamer@subsectionstartpage=\count199
+\beamer@animationtempa=\count266
+\beamer@animationtempb=\count267
+\beamer@xpos=\count268
+\beamer@ypos=\count269
+\beamer@ypos@offset=\count270
+\beamer@showpartnumber=\count271
+\beamer@currentsubsection=\count272
+\beamer@coveringdepth=\count273
+\beamer@sectionadjust=\count274
+\beamer@toclastsection=\count275
+\beamer@tocsectionnumber=\count276
  (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoptions.sty (/home/louan/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 ))
 \beamer@paperwidth=\skip48
@@ -78,9 +76,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/home/louan/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
 \Gm@bindingoffset=\dimen154
 \Gm@wd@mp=\dimen155
 \Gm@odd@mp=\dimen156
@@ -90,14 +88,49 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen160
 \Gm@layoutvoffset=\dimen161
 \Gm@dimlist=\toks17
- (/home/louan/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/louan/.miktex/texmfs/install/tex/latex/extsizes/size9.clo
+ (/home/louan/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg)) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks18
+\pgfutil@tempdima=\dimen162
+\pgfutil@tempdimb=\dimen163
+ (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box60
+) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+)) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+ (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks21
+))) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex
+\pgf@x=\dimen164
+\pgf@xa=\dimen165
+\pgf@xb=\dimen166
+\pgf@xc=\dimen167
+\pgf@y=\dimen168
+\pgf@ya=\dimen169
+\pgf@yb=\dimen170
+\pgf@yc=\dimen171
+\c@pgf@counta=\count280
+\c@pgf@countb=\count281
+\c@pgf@countc=\count282
+\c@pgf@countd=\count283
+) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen172
+\pgfmath@count=\count284
+\pgfmath@box=\box61
+\pgfmath@toks=\toks22
+\pgfmath@stack@operand=\toks23
+\pgfmath@stack@operation=\toks24
+) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count285
+))) (/home/louan/.miktex/texmfs/install/tex/latex/extsizes/size9.clo
 File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 ) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty (/home/louan/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (/home/louan/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
  (/home/louan/.miktex/texmfs/install/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 ) (/home/louan/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
@@ -105,44 +138,31 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
  (/home/louan/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen162
-\Gin@req@width=\dimen163
-) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen164
-\pgfutil@tempdimb=\dimen165
- (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
-) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
-)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
- (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks19
-\pgfkeys@temptoks=\toks20
- (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks21
-))
-\pgf@x=\dimen166
-\pgf@y=\dimen167
-\pgf@xa=\dimen168
-\pgf@ya=\dimen169
-\pgf@xb=\dimen170
-\pgf@yb=\dimen171
-\pgf@xc=\dimen172
-\pgf@yc=\dimen173
-\pgf@xd=\dimen174
-\pgf@yd=\dimen175
+ (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex)
+\pgf@x=\dimen175
+\pgf@y=\dimen176
+\pgf@xa=\dimen177
+\pgf@ya=\dimen178
+\pgf@xb=\dimen179
+\pgf@yb=\dimen180
+\pgf@xc=\dimen181
+\pgf@yc=\dimen182
+\pgf@xd=\dimen183
+\pgf@yd=\dimen184
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count277
-\c@pgf@countb=\count278
-\c@pgf@countc=\count279
-\c@pgf@countd=\count280
-\t@pgf@toka=\toks22
-\t@pgf@tokb=\toks23
-\t@pgf@tokc=\toks24
-\pgf@sys@id@count=\count281
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count290
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -153,74 +173,66 @@ File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count282
-\pgfsyssoftpath@bigbuffer@items=\count283
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (/home/louan/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (/home/louan/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/home/louan/.miktex/texmfs/install/tex/latex-dev/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
- (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen176
-\pgfmath@count=\count284
-\pgfmath@box=\box60
-\pgfmath@toks=\toks25
-\pgfmath@stack@operand=\toks26
-\pgfmath@stack@operation=\toks27
-) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count285
-)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+ (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen177
-\pgf@picmaxx=\dimen178
-\pgf@picminy=\dimen179
-\pgf@picmaxy=\dimen180
-\pgf@pathminx=\dimen181
-\pgf@pathmaxx=\dimen182
-\pgf@pathminy=\dimen183
-\pgf@pathmaxy=\dimen184
-\pgf@xx=\dimen185
-\pgf@xy=\dimen186
-\pgf@yx=\dimen187
-\pgf@yy=\dimen188
-\pgf@zx=\dimen189
-\pgf@zy=\dimen190
+\pgf@picminx=\dimen185
+\pgf@picmaxx=\dimen186
+\pgf@picminy=\dimen187
+\pgf@picmaxy=\dimen188
+\pgf@pathminx=\dimen189
+\pgf@pathmaxx=\dimen190
+\pgf@pathminy=\dimen191
+\pgf@pathmaxy=\dimen192
+\pgf@xx=\dimen193
+\pgf@xy=\dimen194
+\pgf@yx=\dimen195
+\pgf@yy=\dimen196
+\pgf@zx=\dimen197
+\pgf@zy=\dimen198
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen191
-\pgf@path@lasty=\dimen192
+\pgf@path@lastx=\dimen199
+\pgf@path@lasty=\dimen256
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen193
-\pgf@shorten@start@additional=\dimen194
+\pgf@shorten@end@additional=\dimen257
+\pgf@shorten@start@additional=\dimen258
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box61
-\pgf@hbox=\box62
-\pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count286
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count293
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen195
+\pgflinewidth=\dimen259
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen196
-\pgf@pt@y=\dimen197
-\pgf@pt@temp=\dimen198
+\pgf@pt@x=\dimen260
+\pgf@pt@y=\dimen261
+\pgf@pt@temp=\dimen262
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -229,17 +241,17 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen199
+\pgfarrowsep=\dimen263
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen256
-\pgf@sys@shading@range@num=\count287
-\pgf@shadingcount=\count288
+\pgf@max=\dimen264
+\pgf@sys@shading@range@num=\count294
+\pgf@shadingcount=\count295
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box64
+\pgfexternal@startupbox=\box65
 )) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -250,13 +262,13 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count289
-\XC@countmixins=\count290
+\XC@nummixins=\count296
+\XC@countmixins=\count297
 ) (/home/louan/.miktex/texmfs/install/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 ) (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-06-05 v7.00l Hypertext links for LaTeX
+Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
  (/home/louan/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -279,64 +291,68 @@ Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (/home/louan/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (/home/louan/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+) (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+ (/home/louan/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/home/louan/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/home/louan/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count298
 )
-\@linkdim=\dimen257
-\Hy@linkcounter=\count291
-\Hy@pagecounter=\count292
+\@linkdim=\dimen265
+\Hy@linkcounter=\count299
+\Hy@pagecounter=\count300
  (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-06-05 v7.00l Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-06-05 v7.00l Hyperref: patches for babel languages
 ) (/home/louan/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/home/louan/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count293
+\Hy@SavedSpaceFactor=\count301
  (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-06-05 v7.00l Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4073.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4073.
-Package hyperref Info: Option `implicit' set `false' on input line 4073.
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4045.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4045.
+Package hyperref Info: Option `implicit' set `false' on input line 4045.
+Package hyperref Info: Hyper figures OFF on input line 4162.
+Package hyperref Info: Link nesting OFF on input line 4167.
+Package hyperref Info: Hyper index ON on input line 4170.
+Package hyperref Info: Plain pages OFF on input line 4177.
+Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count294
+Package hyperref Info: Bookmarks ON on input line 4408.
+\c@Hy@tempcnt=\count302
  (/home/louan/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen258
+LaTeX Info: Redefining \url on input line 4746.
+\XeTeXLinkMargin=\dimen266
  (/home/louan/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/home/louan/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count295
-\Field@Width=\dimen259
-\Fld@charsize=\dimen260
-Package hyperref Info: Hyper figures OFF on input line 6076.
-Package hyperref Info: Link nesting OFF on input line 6081.
-Package hyperref Info: Hyper index ON on input line 6084.
-Package hyperref Info: backreferencing OFF on input line 6091.
-Package hyperref Info: Link coloring OFF on input line 6096.
-Package hyperref Info: Link coloring with OCG OFF on input line 6101.
-Package hyperref Info: PDF/A mode OFF on input line 6106.
-LaTeX Info: Redefining \ref on input line 6146.
-LaTeX Info: Redefining \pageref on input line 6150.
-\Hy@abspage=\count296
+\Fld@menulength=\count303
+\Field@Width=\dimen267
+\Fld@charsize=\dimen268
+Package hyperref Info: Hyper figures OFF on input line 6024.
+Package hyperref Info: Link nesting OFF on input line 6029.
+Package hyperref Info: Hyper index ON on input line 6032.
+Package hyperref Info: backreferencing OFF on input line 6039.
+Package hyperref Info: Link coloring OFF on input line 6044.
+Package hyperref Info: Link coloring with OCG OFF on input line 6049.
+Package hyperref Info: PDF/A mode OFF on input line 6054.
+\Hy@abspage=\count304
 
 
 Package hyperref Message: Stopped early.
@@ -344,19 +360,19 @@ Package hyperref Message: Stopped early.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-06-05 v7.00l Hyperref driver for pdfTeX
+File: hpdftex.def 2022-06-20 v7.00s Hyperref driver for pdfTeX
  (/home/louan/.miktex/texmfs/install/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
  (/home/louan/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/home/louan/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaserequires.sty (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasecompatibility.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasefont.sty (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
@@ -370,129 +386,139 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (/home/louan/.miktex/texmfs/install/tex/latex/sansmathaccent/sansmathaccent.sty
 Package: sansmathaccent 2020/01/31
  (/home/louan/.miktex/texmfs/install/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+Package: scrlfile 2022/07/04 v3.37 KOMA-Script package (file load hooks)
  (/home/louan/.miktex/texmfs/install/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2022/07/04 v3.37 KOMA-Script package (using LaTeX hooks)
  (/home/louan/.miktex/texmfs/install/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+Package: scrlogo 2022/07/04 v3.37 KOMA-Script package (logo)
 ))))) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetranslator.sty (/home/louan/.miktex/texmfs/install/tex/latex/translator/translator.sty
 Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 )) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasemisc.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetwoscreens.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseoverlay.sty
-\beamer@argscount=\count299
+\beamer@argscount=\count307
 \beamer@lastskipcover=\skip50
-\beamer@trivlistdepth=\count300
+\beamer@trivlistdepth=\count308
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetitle.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasesection.sty
-\c@lecture=\count301
-\c@part=\count302
-\c@section=\count303
-\c@subsection=\count304
-\c@subsubsection=\count305
+\c@lecture=\count309
+\c@part=\count310
+\c@section=\count311
+\c@subsection=\count312
+\c@subsubsection=\count313
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframe.sty
-\beamer@framebox=\box65
-\beamer@frametitlebox=\box66
-\beamer@zoombox=\box67
-\beamer@zoomcount=\count306
-\beamer@zoomframecount=\count307
-\beamer@frametextheight=\dimen261
-\c@subsectionslide=\count308
+\beamer@framebox=\box66
+\beamer@frametitlebox=\box67
+\beamer@zoombox=\box68
+\beamer@zoomcount=\count314
+\beamer@zoomframecount=\count315
+\beamer@frametextheight=\dimen269
+\c@subsectionslide=\count316
 \beamer@frametopskip=\skip51
 \beamer@framebottomskip=\skip52
 \beamer@frametopskipautobreak=\skip53
 \beamer@framebottomskipautobreak=\skip54
 \beamer@envbody=\toks29
-\framewidth=\dimen262
-\c@framenumber=\count309
+\framewidth=\dimen270
+\c@framenumber=\count317
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframesize.sty
-\beamer@splitbox=\box68
-\beamer@autobreakcount=\count310
-\beamer@autobreaklastheight=\dimen263
+\beamer@splitbox=\box69
+\beamer@autobreakcount=\count318
+\beamer@autobreaklastheight=\dimen271
 \beamer@frametitletoks=\toks30
 \beamer@framesubtitletoks=\toks31
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseframecomponents.sty
-\beamer@footins=\box69
+\beamer@footins=\box70
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasecolor.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasenotes.sty
-\beamer@frameboxcopy=\box70
+\beamer@frameboxcopy=\box71
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetoc.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetemplates.sty
 \beamer@sbttoks=\toks32
  (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseauxtemplates.sty (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaseboxes.sty
-\bmb@box=\box71
-\bmb@colorbox=\box72
-\bmb@boxwidth=\dimen264
-\bmb@boxheight=\dimen265
-\bmb@prevheight=\dimen266
-\bmb@temp=\dimen267
-\bmb@dima=\dimen268
-\bmb@dimb=\dimen269
-\bmb@prevheight=\dimen270
+\bmb@box=\box72
+\bmb@colorbox=\box73
+\bmb@boxwidth=\dimen272
+\bmb@boxheight=\dimen273
+\bmb@prevheight=\dimen274
+\bmb@temp=\dimen275
+\bmb@dima=\dimen276
+\bmb@dimb=\dimen277
+\bmb@prevheight=\dimen278
 )
-\beamer@blockheadheight=\dimen271
+\beamer@blockheadheight=\dimen279
 )) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbaselocalstructure.sty (/home/louan/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks33
 )
 \beamer@bibiconwidth=\skip55
-\c@figure=\count311
-\c@table=\count312
+\c@figure=\count319
+\c@table=\count320
 \abovecaptionskip=\skip56
 \belowcaptionskip=\skip57
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasenavigation.sty
-\beamer@section@min@dim=\dimen272
+\beamer@section@min@dim=\dimen280
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasetheorems.sty (/home/louan/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2021/04/20 v2.17j AMS math features
+Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (/home/louan/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+Package: amstext 2021/08/26 v2.01 AMS text
  (/home/louan/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
-\ex@=\dimen273
+\ex@=\dimen281
 )) (/home/louan/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen274
+\pmbraise@=\dimen282
 ) (/home/louan/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count313
+\inf@bad=\count321
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count314
-\leftroot@=\count315
+\uproot@=\count322
+\leftroot@=\count323
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count316
-\DOTSCASE@=\count317
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count324
+\DOTSCASE@=\count325
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box73
-\strutbox@=\box74
-\big@size=\dimen275
+\Mathstrutbox@=\box74
+\strutbox@=\box75
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen283
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count318
-\c@MaxMatrixCols=\count319
+\macc@depth=\count326
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count327
 \dotsspace@=\muskip17
-\c@parentequation=\count320
-\dspbrk@lvl=\count321
+\c@parentequation=\count328
+\dspbrk@lvl=\count329
 \tag@help=\toks35
-\row@=\count322
-\column@=\count323
-\maxfields@=\count324
+\row@=\count330
+\column@=\count331
+\maxfields@=\count332
 \andhelp@=\toks36
-\eqnshift@=\dimen276
-\alignsep@=\dimen277
-\tagshift@=\dimen278
-\tagwidth@=\dimen279
-\totwidth@=\dimen280
-\lineht@=\dimen281
+\eqnshift@=\dimen284
+\alignsep@=\dimen285
+\tagshift@=\dimen286
+\tagwidth@=\dimen287
+\totwidth@=\dimen288
+\lineht@=\dimen289
 \@envbody=\toks37
 \multlinegap=\skip59
 \multlinetaggap=\skip60
 \mathdisplay@stack=\toks38
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
 ) (/home/louan/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks39
@@ -505,81 +531,80 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headsep=\skip63
 \dth@everypar=\toks44
 )
-\c@theorem=\count325
+\c@theorem=\count333
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerbasethemes.sty)) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerthemedefault.sty (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerfontthemedefault.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamercolorthemedefault.sty) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerinnerthemedefault.sty
-\beamer@dima=\dimen282
-\beamer@dimb=\dimen283
+\beamer@dima=\dimen290
+\beamer@dimb=\dimen291
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerouterthemedefault.sty))) (/home/louan/.miktex/texmfs/install/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
 Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
  (/home/louan/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
- (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex))
 \pgfopts@list@add@a@toks=\toks45
 \pgfopts@list@add@b@toks=\toks46
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamertheme-metropolis/beamerinnerthememetropolis.sty
 Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
  (/home/louan/.miktex/texmfs/install/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count326
-\calc@Bcount=\count327
-\calc@Adimen=\dimen284
-\calc@Bdimen=\dimen285
+\calc@Acount=\count334
+\calc@Bcount=\count335
+\calc@Adimen=\dimen292
+\calc@Bdimen=\dimen293
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count328
+\calc@Ccount=\count336
 \calc@Cskip=\skip66
 ) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty (/home/louan/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box75
+\pgfnodeparttextbox=\box76
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen286
-\pgf@nodesepend=\dimen287
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
 ) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
-)) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty (/home/louan/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen288
-\pgffor@skip=\dimen289
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
 \pgffor@stack=\toks47
 \pgffor@toks=\toks48
 )) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count329
-\pgfplotmarksize=\dimen290
+\pgf@plot@mark@count=\count337
+\pgfplotmarksize=\dimen298
 )
-\tikz@lastx=\dimen291
-\tikz@lasty=\dimen292
-\tikz@lastxsaved=\dimen293
-\tikz@lastysaved=\dimen294
-\tikz@lastmovetox=\dimen295
-\tikz@lastmovetoy=\dimen296
-\tikzleveldistance=\dimen297
-\tikzsiblingdistance=\dimen298
-\tikz@figbox=\box76
-\tikz@figbox@bg=\box77
-\tikz@tempbox=\box78
-\tikz@tempbox@bg=\box79
-\tikztreelevel=\count330
-\tikznumberofchildren=\count331
-\tikznumberofcurrentchild=\count332
-\tikz@fig@count=\count333
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count338
+\tikznumberofchildren=\count339
+\tikznumberofcurrentchild=\count340
+\tikz@fig@count=\count341
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count334
-\pgfmatrixcurrentcolumn=\count335
-\pgf@matrix@numberofcolumns=\count336
+\pgfmatrixcurrentrow=\count342
+\pgfmatrixcurrentcolumn=\count343
+\pgf@matrix@numberofcolumns=\count344
 )
-\tikz@expandcount=\count337
+\tikz@expandcount=\count345
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
@@ -608,32 +633,32 @@ Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLa
 
 )) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/beamerfontthemeserif.sty) (/home/louan/.miktex/texmfs/install/tex/latex/appendixnumberbeamer/appendixnumberbeamer.sty) (/home/louan/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen299
-\lightrulewidth=\dimen300
-\cmidrulewidth=\dimen301
-\belowrulesep=\dimen302
-\belowbottomsep=\dimen303
-\aboverulesep=\dimen304
-\abovetopsep=\dimen305
-\cmidrulesep=\dimen306
-\cmidrulekern=\dimen307
-\defaultaddspace=\dimen308
-\@cmidla=\count338
-\@cmidlb=\count339
-\@aboverulesep=\dimen309
-\@belowrulesep=\dimen310
-\@thisruleclass=\count340
-\@lastruleclass=\count341
-\@thisrulewidth=\dimen311
+\heavyrulewidth=\dimen307
+\lightrulewidth=\dimen308
+\cmidrulewidth=\dimen309
+\belowrulesep=\dimen310
+\belowbottomsep=\dimen311
+\aboverulesep=\dimen312
+\abovetopsep=\dimen313
+\cmidrulesep=\dimen314
+\cmidrulekern=\dimen315
+\defaultaddspace=\dimen316
+\@cmidla=\count346
+\@cmidlb=\count347
+\@aboverulesep=\dimen317
+\@belowrulesep=\dimen318
+\@thisruleclass=\count348
+\@lastruleclass=\count349
+\@thisrulewidth=\dimen319
 ) (/home/louan/.miktex/texmfs/install/tex/latex/ccicons/ccicons.sty
 Package: ccicons 2017/10/30 v1.6 LaTeX support for Creative Commons icons
  (/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/home/louan/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex (/home/louan/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks49
 \XKV@tempa@toks=\toks50
 )
-\XKV@depth=\count342
+\XKV@depth=\count350
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (/home/louan/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
@@ -641,35 +666,35 @@ Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 \t@pgfplots@toka=\toks51
 \t@pgfplots@tokb=\toks52
 \t@pgfplots@tokc=\toks53
-\pgfplots@tmpa=\dimen312
-\c@pgfplots@coordindex=\count343
-\c@pgfplots@scanlineindex=\count344
+\pgfplots@tmpa=\dimen320
+\c@pgfplots@coordindex=\count351
+\c@pgfplots@scanlineindex=\count352
  (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count345
+\c@pgfplotsarray@tmp=\count353
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count346
+\c@pgfplotstable@counta=\count354
 \t@pgfplotstable@a=\toks54
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count347
+\c@pgfplotslibrarysurf@no=\count355
  (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen313
-\pgfdecoratedremainingdistance=\dimen314
-\pgfdecoratedinputsegmentcompleteddistance=\dimen315
-\pgfdecoratedinputsegmentremainingdistance=\dimen316
-\pgf@decorate@distancetomove=\dimen317
-\pgf@decorate@repeatstate=\count348
-\pgfdecorationsegmentamplitude=\dimen318
-\pgfdecorationsegmentlength=\dimen319
+\pgfdecoratedcompleteddistance=\dimen321
+\pgfdecoratedremainingdistance=\dimen322
+\pgfdecoratedinputsegmentcompleteddistance=\dimen323
+\pgfdecoratedinputsegmentremainingdistance=\dimen324
+\pgf@decorate@distancetomove=\dimen325
+\pgf@decorate@repeatstate=\count356
+\pgfdecorationsegmentamplitude=\dimen326
+\pgfdecorationsegmentlength=\dimen327
 )
-\tikz@lib@dec@box=\box80
+\tikz@lib@dec@box=\box81
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/louan/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count349
-\pgfplots@xmin@reg=\dimen320
-\pgfplots@xmax@reg=\dimen321
-\pgfplots@ymin@reg=\dimen322
-\pgfplots@ymax@reg=\dimen323
-\pgfplots@zmin@reg=\dimen324
-\pgfplots@zmax@reg=\dimen325
+\pgfplots@numplots=\count357
+\pgfplots@xmin@reg=\dimen328
+\pgfplots@xmax@reg=\dimen329
+\pgfplots@ymin@reg=\dimen330
+\pgfplots@ymax@reg=\dimen331
+\pgfplots@zmin@reg=\dimen332
+\pgfplots@zmax@reg=\dimen333
 ) (/home/louan/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
@@ -677,17 +702,17 @@ File: pgflibraryplotmarks.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/home/louan/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.dateplot.code.tex (/home/louan/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfcalendar.sty (/home/louan/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfcalendar.code.tex
 File: pgfcalendar.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/home/louan/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
-\pgfcalendarcurrentjulian=\count350
-\pgf@cal@easter@Y=\count351
-\pgf@cal@easter@G=\count352
-\pgf@cal@easter@C=\count353
-\pgf@cal@easter@X=\count354
-\pgf@cal@easter@Z=\count355
-\pgf@cal@easter@D=\count356
-\pgf@cal@easter@E=\count357
-\pgf@cal@easter@N=\count358
-\pgf@cal@easter@M=\count359
-\pgf@cal@easter@julianday=\count360
+\pgfcalendarcurrentjulian=\count358
+\pgf@cal@easter@Y=\count359
+\pgf@cal@easter@G=\count360
+\pgf@cal@easter@C=\count361
+\pgf@cal@easter@X=\count362
+\pgf@cal@easter@Z=\count363
+\pgf@cal@easter@D=\count364
+\pgf@cal@easter@E=\count365
+\pgf@cal@easter@N=\count366
+\pgf@cal@easter@M=\count367
+\pgf@cal@easter@julianday=\count368
 ))) (/home/louan/.miktex/texmfs/install/tex/latex/beamertheme-metropolis/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON technical note
 ) (/home/louan/.miktex/texmfs/install/tex/latex/bbm/bbm.sty
@@ -697,82 +722,105 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 (Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
 ) (/home/louan/.miktex/texmfs/install/tex/latex/tools/array.sty
-Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
-\col@sep=\dimen326
-\ar@mcellbox=\box81
-\extrarowheight=\dimen327
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen334
+\ar@mcellbox=\box82
+\extrarowheight=\dimen335
 \NC@list=\toks55
 \extratabsurround=\skip76
 \backup@length=\skip77
-\ar@cellbox=\box82
+\ar@cellbox=\box83
 ) (/home/louan/.miktex/texmfs/install/tex/latex/beamer/multimedia.sty
 Package: multimedia 2012/05/02 ver 0.02
-\mm@movie=\count361
+ (/home/louan/.miktex/texmfs/install/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+\mm@movie=\count369
 ) (/home/louan/.miktex/texmfs/install/tex/latex/media9/media9.sty (/home/louan/.miktex/texmfs/install/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/home/louan/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-06-01 L3 programming layer (loader) 
+Package: expl3 2022-07-04 L3 programming layer (loader) 
  (/home/louan/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count362
-\l__pdf_internal_box=\box83
+File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count370
+\l__pdf_internal_box=\box84
 ))
-Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
 )
-Package: media9 2021/03/01 v1.15 acrobat-9/X compatible media
-\g_mix_pkgresizeflag_int=\count363
+Package: media9 2022/03/18 v1.24 acrobat-9/X compatible media
+\g_mix_pkgresizeflag_int=\count371
  (/home/louan/.miktex/texmfs/install/tex/latex/media9/pdfbase.sty
-Package: pdfbase 2021/03/01 v0.46 driver independent access to low-level PDF features
-\g_pbs_page_int=\count364
-\g_pbs_oc_int=\count365
+Package: pdfbase 2022/03/18 v0.54 driver independent access to low-level PDF features
+\g_pbs_page_int=\count372
+\g_pbs_oc_int=\count373
 ) (/home/louan/.miktex/texmfs/install/tex/latex/ocgx2/ocgbase.sty
-Package: ocgbase 2021/06/03 v0.19 support package for ocgx2.sty
-\g_ocgbase_nd_int=\count366
+Package: ocgbase 2022/04/01 v0.21 support package for ocgx2.sty
+\g_ocgbase_nd_int=\count374
 )
-\l_mix_poster_box=\box84
-\g_mix_wd_dim=\dimen328
-\g_mix_ht_dim=\dimen329
-\g_mix_dp_dim=\dimen330
-\g_mix_rmcnt_int=\count367
-\l_mix_viewcnt_int=\count368
-\g@mix@page@int=\count369
-\g_mix_resizeflag_int=\count370
-\l_mix_lineno_int=\count371
-\l_mix_pbtn_box=\box85
-\mix@btn@dim=\dimen331
-\g_mix_mbtncnt_int=\count372
+\l_mix_poster_box=\box85
+\g_mix_wd_dim=\dimen336
+\g_mix_ht_dim=\dimen337
+\g_mix_dp_dim=\dimen338
+\g_mix_rmcnt_int=\count375
+\l_mix_viewcnt_int=\count376
+\g@mix@page@int=\count377
+\g_mix_resizeflag_int=\count378
+\l_mix_lineno_int=\count379
+\l_mix_pbtn_box=\box86
+\g_mix_mbtncnt_int=\count380
+\mix@btn@dim=\dimen339
 ) (/home/louan/.miktex/texmfs/install/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/home/louan/.miktex/texmfs/install/tex/latex/emoji/emoji.sty
+Package: emoji 2021/07/17 v0.2.2 Emoji support in (Lua)LaTeX
+
+
+/home/louan/.miktex/texmfs/install/tex/latex/emoji/emoji.sty:24: Critical Package emoji Error: The 'emoji' package requires LuaTeX.
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.24 ...critical:nn { emoji } { require-luatex } }
+                                                  
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+Reading the current file 'emoji' will stop.
+
+
 ) (/home/louan/.miktex/texmfs/install/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ) (Packages/custom_macros.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 44.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 43.
+(hyperref)                removing `math shift' on input line 44.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -810,16 +858,16 @@ LaTeX Font Info:    ... okay on input line 43.
 
 (/home/louan/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count373
-\scratchdimen=\dimen332
-\scratchbox=\box86
-\nofMPsegments=\count374
-\nofMParguments=\count375
+\scratchcounter=\count381
+\scratchdimen=\dimen340
+\scratchbox=\box87
+\nofMPsegments=\count382
+\nofMParguments=\count383
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count376
-\MPscratchDim=\dimen333
-\MPnumerator=\count377
-\makeMPintoPDFobject=\count378
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen341
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
 \everyMPtoPDFconversion=\toks57
 ) (/home/louan/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -827,20 +875,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/home/louan/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 43.
- (/home/louan/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (/home/louan/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/home/louan/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-)
-\c@section@level=\count379
-)
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
- (main.out) (main.out)
+Package hyperref Info: Link coloring OFF on input line 44.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -859,196 +894,198 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
-(main.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
- (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+No file main.nav.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+(/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (12.59242pt too high) detected at line 45
+Overfull \vbox (12.59242pt too high) detected at line 46
  []
 
 [1
 
-{/home/louan/.miktex/texmfs/data/pdftex/config/pdftex.map}] (main.toc) [2
+{/home/louan/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+No file main.toc.
+[2
 
 ] [3
 
 ] [4
 
 ]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 111.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 112.
  (/home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 111.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 112.
 
 [5
 
 ]
-<Pictures/SO3sphere.png, id=102, 712.6625pt x 711.65875pt>
+<Pictures/SO3sphere.png, id=64, 712.6625pt x 711.65875pt>
 File: Pictures/SO3sphere.png Graphic file (type png)
 <use Pictures/SO3sphere.png>
-Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 147.
+Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 148.
 (pdftex.def)             Requested size: 114.02832pt x 113.86772pt.
  [6
 
  <./Pictures/SO3sphere.png>]
-<Pictures/beltaxis.png, id=112, 847.165pt x 452.69125pt>
+<Pictures/beltaxis.png, id=74, 847.165pt x 452.69125pt>
 File: Pictures/beltaxis.png Graphic file (type png)
 <use Pictures/beltaxis.png>
-Package pdftex.def Info: Pictures/beltaxis.png  used on input line 165.
+Package pdftex.def Info: Pictures/beltaxis.png  used on input line 166.
 (pdftex.def)             Requested size: 101.65541pt x 54.3206pt.
  [7
 
  <./Pictures/beltaxis.png>]
-<Pictures/flatbelt.png, id=121, 686.565pt x 196.735pt>
+<Pictures/flatbelt.png, id=83, 686.565pt x 196.735pt>
 File: Pictures/flatbelt.png Graphic file (type png)
 <use Pictures/flatbelt.png>
-Package pdftex.def Info: Pictures/flatbelt.png  used on input line 175.
+Package pdftex.def Info: Pictures/flatbelt.png  used on input line 176.
 (pdftex.def)             Requested size: 82.38423pt x 23.60718pt.
-<Pictures/xaxisbelt.png, id=122, 576.1525pt x 207.77625pt>
+<Pictures/xaxisbelt.png, id=84, 576.1525pt x 207.77625pt>
 File: Pictures/xaxisbelt.png Graphic file (type png)
 <use Pictures/xaxisbelt.png>
-Package pdftex.def Info: Pictures/xaxisbelt.png  used on input line 175.
+Package pdftex.def Info: Pictures/xaxisbelt.png  used on input line 176.
 (pdftex.def)             Requested size: 69.13531pt x 24.93207pt.
-<Pictures/yaxisbelt.png, id=123, 389.455pt x 193.72375pt>
+<Pictures/yaxisbelt.png, id=85, 389.455pt x 193.72375pt>
 File: Pictures/yaxisbelt.png Graphic file (type png)
 <use Pictures/yaxisbelt.png>
-Package pdftex.def Info: Pictures/yaxisbelt.png  used on input line 175.
+Package pdftex.def Info: Pictures/yaxisbelt.png  used on input line 176.
 (pdftex.def)             Requested size: 58.41573pt x 29.0573pt.
-<Pictures/zaxisbelt.png, id=124, 274.02374pt x 306.14375pt>
+<Pictures/zaxisbelt.png, id=86, 274.02374pt x 306.14375pt>
 File: Pictures/zaxisbelt.png Graphic file (type png)
 <use Pictures/zaxisbelt.png>
-Package pdftex.def Info: Pictures/zaxisbelt.png  used on input line 175.
+Package pdftex.def Info: Pictures/zaxisbelt.png  used on input line 176.
 (pdftex.def)             Requested size: 41.10178pt x 45.91957pt.
-<Pictures/4pisphere4.png, id=125, 641.39626pt x 646.415pt>
+<Pictures/4pisphere4.png, id=87, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere4.png Graphic file (type png)
 <use Pictures/4pisphere4.png>
-Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 175.
+Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 176.
 (pdftex.def)             Requested size: 64.14337pt x 64.64528pt.
-<Pictures/xaxissphere.png, id=126, 689.57625pt x 653.44125pt>
+<Pictures/xaxissphere.png, id=88, 689.57625pt x 653.44125pt>
 File: Pictures/xaxissphere.png Graphic file (type png)
 <use Pictures/xaxissphere.png>
-Package pdftex.def Info: Pictures/xaxissphere.png  used on input line 175.
+Package pdftex.def Info: Pictures/xaxissphere.png  used on input line 176.
 (pdftex.def)             Requested size: 68.96165pt x 65.34795pt.
-<Pictures/yaxissphere.png, id=127, 685.56125pt x 655.44875pt>
+<Pictures/yaxissphere.png, id=89, 685.56125pt x 655.44875pt>
 File: Pictures/yaxissphere.png Graphic file (type png)
 <use Pictures/yaxissphere.png>
-Package pdftex.def Info: Pictures/yaxissphere.png  used on input line 175.
+Package pdftex.def Info: Pictures/yaxissphere.png  used on input line 176.
 (pdftex.def)             Requested size: 68.56013pt x 65.5487pt.
-<Pictures/zaxissphere.png, id=128, 657.45625pt x 646.415pt>
+<Pictures/zaxissphere.png, id=90, 657.45625pt x 646.415pt>
 File: Pictures/zaxissphere.png Graphic file (type png)
 <use Pictures/zaxissphere.png>
-Package pdftex.def Info: Pictures/zaxissphere.png  used on input line 175.
+Package pdftex.def Info: Pictures/zaxissphere.png  used on input line 176.
 (pdftex.def)             Requested size: 65.74947pt x 64.64528pt.
 
-Overfull \hbox (7.71013pt too wide) in paragraph at lines 175--175
+Overfull \hbox (7.71013pt too wide) in paragraph at lines 176--176
 [][]  
  []
 
 [8
 
  <./Pictures/flatbelt.png> <./Pictures/xaxisbelt.png> <./Pictures/yaxisbelt.png> <./Pictures/zaxisbelt.png> <./Pictures/4pisphere4.png> <./Pictures/xaxissphere.png> <./Pictures/yaxissphere.png> <./Pictures/zaxissphere.png>]
-<Pictures/randomrotbelt.png, id=143, 402.50375pt x 297.11pt>
+<Pictures/randomrotbelt.png, id=105, 402.50375pt x 297.11pt>
 File: Pictures/randomrotbelt.png Graphic file (type png)
 <use Pictures/randomrotbelt.png>
-Package pdftex.def Info: Pictures/randomrotbelt.png  used on input line 186.
+Package pdftex.def Info: Pictures/randomrotbelt.png  used on input line 187.
 (pdftex.def)             Requested size: 60.37296pt x 44.56458pt.
-<Pictures/contractiblepathbelt.png, id=144, 584.1825pt x 225.84375pt>
+<Pictures/contractiblepathbelt.png, id=106, 584.1825pt x 225.84375pt>
 File: Pictures/contractiblepathbelt.png Graphic file (type png)
 <use Pictures/contractiblepathbelt.png>
-Package pdftex.def Info: Pictures/contractiblepathbelt.png  used on input line 186.
+Package pdftex.def Info: Pictures/contractiblepathbelt.png  used on input line 187.
 (pdftex.def)             Requested size: 58.42166pt x 22.5857pt.
-<Pictures/noncontractiblepathbelt.png, id=145, 406.51875pt x 406.51875pt>
+<Pictures/noncontractiblepathbelt.png, id=107, 406.51875pt x 406.51875pt>
 File: Pictures/noncontractiblepathbelt.png Graphic file (type png)
 <use Pictures/noncontractiblepathbelt.png>
-Package pdftex.def Info: Pictures/noncontractiblepathbelt.png  used on input line 186.
+Package pdftex.def Info: Pictures/noncontractiblepathbelt.png  used on input line 187.
 (pdftex.def)             Requested size: 40.65425pt x 40.65425pt.
-<Pictures/randomrotsphere.png, id=146, 657.45625pt x 646.415pt>
+<Pictures/randomrotsphere.png, id=108, 657.45625pt x 646.415pt>
 File: Pictures/randomrotsphere.png Graphic file (type png)
 <use Pictures/randomrotsphere.png>
-Package pdftex.def Info: Pictures/randomrotsphere.png  used on input line 186.
+Package pdftex.def Info: Pictures/randomrotsphere.png  used on input line 187.
 (pdftex.def)             Requested size: 65.74947pt x 64.64528pt.
-<Pictures/contractiblepathsphere.png, id=147, 637.38126pt x 652.4375pt>
+<Pictures/contractiblepathsphere.png, id=109, 637.38126pt x 652.4375pt>
 File: Pictures/contractiblepathsphere.png Graphic file (type png)
 <use Pictures/contractiblepathsphere.png>
-Package pdftex.def Info: Pictures/contractiblepathsphere.png  used on input line 186.
+Package pdftex.def Info: Pictures/contractiblepathsphere.png  used on input line 187.
 (pdftex.def)             Requested size: 50.99153pt x 52.19606pt.
-<Pictures/noncontractiblepathsphere.png, id=148, 652.4375pt x 639.38875pt>
+<Pictures/noncontractiblepathsphere.png, id=110, 652.4375pt x 639.38875pt>
 File: Pictures/noncontractiblepathsphere.png Graphic file (type png)
 <use Pictures/noncontractiblepathsphere.png>
-Package pdftex.def Info: Pictures/noncontractiblepathsphere.png  used on input line 186.
+Package pdftex.def Info: Pictures/noncontractiblepathsphere.png  used on input line 187.
 (pdftex.def)             Requested size: 52.19606pt x 51.15213pt.
  [9
 
  <./Pictures/randomrotbelt.png> <./Pictures/contractiblepathbelt.png> <./Pictures/noncontractiblepathbelt.png> <./Pictures/randomrotsphere.png> <./Pictures/contractiblepathsphere.png> <./Pictures/noncontractiblepathsphere.png>] [10
 
 ]
-<Pictures/4pibelt.png, id=167, 641.39626pt x 250.9375pt>
+<Pictures/4pibelt.png, id=129, 641.39626pt x 250.9375pt>
 File: Pictures/4pibelt.png Graphic file (type png)
 <use Pictures/4pibelt.png>
-Package pdftex.def Info: Pictures/4pibelt.png  used on input line 225.
+Package pdftex.def Info: Pictures/4pibelt.png  used on input line 226.
 (pdftex.def)             Requested size: 64.14337pt x 25.09521pt.
 
-Overfull \hbox (7.23787pt too wide) in paragraph at lines 225--225
+Overfull \hbox (7.23787pt too wide) in paragraph at lines 226--226
 []|[]| 
  []
 
 
-Overfull \hbox (2.73186pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.73186pt too wide) in paragraph at lines 226--226
 []|$\OMS/cmsy/m/n/9  []!$| 
  []
 
-<Pictures/4pisphere1.png, id=168, 641.39626pt x 646.415pt>
+<Pictures/4pisphere1.png, id=130, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere1.png Graphic file (type png)
 <use Pictures/4pisphere1.png>
-Package pdftex.def Info: Pictures/4pisphere1.png  used on input line 225.
+Package pdftex.def Info: Pictures/4pisphere1.png  used on input line 226.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \hbox (0.67632pt too wide) in paragraph at lines 225--225
+Overfull \hbox (0.67632pt too wide) in paragraph at lines 226--226
 []|$[][]\OMS/cmsy/m/n/9 !$| 
  []
 
-<Pictures/4pisphere2.png, id=169, 641.39626pt x 646.415pt>
+<Pictures/4pisphere2.png, id=131, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere2.png Graphic file (type png)
 <use Pictures/4pisphere2.png>
-Package pdftex.def Info: Pictures/4pisphere2.png  used on input line 225.
+Package pdftex.def Info: Pictures/4pisphere2.png  used on input line 226.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 File: Pictures/flatbelt.png Graphic file (type png)
 <use Pictures/flatbelt.png>
-Package pdftex.def Info: Pictures/flatbelt.png  used on input line 225.
+Package pdftex.def Info: Pictures/flatbelt.png  used on input line 226.
 (pdftex.def)             Requested size: 68.66052pt x 19.67464pt.
 
-Overfull \hbox (11.75502pt too wide) in paragraph at lines 225--225
+Overfull \hbox (11.75502pt too wide) in paragraph at lines 226--226
 []|[]| 
  []
 
 
-Overfull \hbox (2.73186pt too wide) in paragraph at lines 225--225
+Overfull \hbox (2.73186pt too wide) in paragraph at lines 226--226
 []|$\OMS/cmsy/m/n/9  []!$| 
  []
 
 File: Pictures/4pisphere4.png Graphic file (type png)
 <use Pictures/4pisphere4.png>
-Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 225.
+Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 226.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \hbox (0.67632pt too wide) in paragraph at lines 225--225
+Overfull \hbox (0.67632pt too wide) in paragraph at lines 226--226
 []|$\OMS/cmsy/m/n/9  [][]$| 
  []
 
-<Pictures/4pisphere3.png, id=170, 641.39626pt x 646.415pt>
+<Pictures/4pisphere3.png, id=132, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere3.png Graphic file (type png)
 <use Pictures/4pisphere3.png>
-Package pdftex.def Info: Pictures/4pisphere3.png  used on input line 225.
+Package pdftex.def Info: Pictures/4pisphere3.png  used on input line 226.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \vbox (7.8002pt too high) detected at line 225
+Overfull \vbox (7.8002pt too high) detected at line 226
  []
 
 [11
@@ -1056,19 +1093,19 @@ Overfull \vbox (7.8002pt too high) detected at line 225
  <./Pictures/4pibelt.png> <./Pictures/4pisphere1.png> <./Pictures/4pisphere2.png> <./Pictures/4pisphere3.png>] [12
 
 ]
-Overfull \vbox (20.42827pt too high) detected at line 251
+Overfull \vbox (20.42827pt too high) detected at line 252
  []
 
 [13
 
 ]
-<Pictures/torushomotopy3.png, id=195, 563.10374pt x 338.26375pt>
+<Pictures/torushomotopy3.png, id=159, 563.10374pt x 338.26375pt>
 File: Pictures/torushomotopy3.png Graphic file (type png)
 <use Pictures/torushomotopy3.png>
-Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 288.
+Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 289.
 (pdftex.def)             Requested size: 112.61874pt x 67.65154pt.
 
-Overfull \vbox (22.00632pt too high) detected at line 288
+Overfull \vbox (22.00632pt too high) detected at line 289
  []
 
 [14
@@ -1076,29 +1113,29 @@ Overfull \vbox (22.00632pt too high) detected at line 288
  <./Pictures/torushomotopy3.png>] [15
 
 ]
-<Pictures/poster1.jpg, id=210, 857.2025pt x 481.8pt>
+<Pictures/poster1.jpg, id=174, 857.2025pt x 481.8pt>
 File: Pictures/poster1.jpg Graphic file (type jpg)
 <use Pictures/poster1.jpg>
-Package pdftex.def Info: Pictures/poster1.jpg  used on input line 323.
+Package pdftex.def Info: Pictures/poster1.jpg  used on input line 324.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
  [16
 
  <./Pictures/poster1.jpg>]
-<Pictures/poster2.jpg, id=219, 857.2025pt x 481.8pt>
+<Pictures/poster2.jpg, id=183, 857.2025pt x 481.8pt>
 File: Pictures/poster2.jpg Graphic file (type jpg)
 <use Pictures/poster2.jpg>
-Package pdftex.def Info: Pictures/poster2.jpg  used on input line 330.
+Package pdftex.def Info: Pictures/poster2.jpg  used on input line 331.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
  [17
 
  <./Pictures/poster2.jpg>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 334.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 334.
+(hyperref)                removing `math shift' on input line 335.
 
 [18
 
@@ -1108,13 +1145,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [21
 
-] [22
+]
+Overfull \vbox (22.29579pt too high) detected at line 452
+ []
+
+[22
 
 ] [23
 
-] [24
+]
+<Pictures/Covering_map.png, id=238, 178.6675pt x 245.91875pt>
+File: Pictures/Covering_map.png Graphic file (type png)
+<use Pictures/Covering_map.png>
+Package pdftex.def Info: Pictures/Covering_map.png  used on input line 488.
+(pdftex.def)             Requested size: 89.33353pt x 122.95906pt.
+<Pictures/pen.png, id=239, 131.49126pt x 128.48pt>
+File: Pictures/pen.png Graphic file (type png)
+<use Pictures/pen.png>
+Package pdftex.def Info: Pictures/pen.png  used on input line 488.
+(pdftex.def)             Requested size: 7.88913pt x 7.70847pt.
 
-] [25
+Overfull \vbox (9.01306pt too high) detected at line 488
+ []
+
+[24
+
+ <./Pictures/Covering_map.png> <./Pictures/pen.png>] [25
 
 ] [26
 
@@ -1122,22 +1178,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [28
 
+] [29
+
+] [30
+
+] [31
+
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 508.
+(hyperref)                removing `\translate ' on input line 559.
 
-[29
+[32
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 556.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 607.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [30
+) [33
 
-] (main.bbl) [31
+]
+No file main.bbl.
+[34
 
- </home/louan/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
+]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1147,23 +1211,33 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
- (main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 32246902A0DE74234E69D78E856432B1;946.
- )
-(\end occurred when \ifx on line 20 was incomplete) 
+
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 34).
+               Rerun to correct this.
+
+(main.aux)
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  5C3994D2AF4C6BE6AAAA1C0829365CAA;1143.
+ ) 
 Here is how much of TeX's memory you used:
- 36570 strings out of 478865
- 865639 string characters out of 2853437
- 1251232 words of memory out of 3000000
- 53630 multiletter control sequences out of 15000+600000
- 418916 words of font info for 88 fonts, out of 8000000 for 9000
+ 37742 strings out of 478362
+ 914786 string characters out of 2842112
+ 1260905 words of memory out of 3000000
+ 55306 multiletter control sequences out of 15000+600000
+ 484386 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,124p,1895b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (31 pages, 2153160 bytes).
+ 128i,15n,122p,1963b,894s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (34 pages, 2171906 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
