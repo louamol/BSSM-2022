@@ -19,7 +19,6 @@
 \usepackage{media9}
 
 \usepackage{xspace}
-\usepackage{emoji}
 
 \usepackage{import}
 \import{}{Packages/custom_macros.tex}
@@ -32,6 +31,7 @@
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \renewcommand{\emph}{\alert}
+\newcommand{\pencil}{\includegraphics[scale=0.07]{Pictures/pen.png}}
 
 \title{Group theory, Topology and Spin-$1/2$ Particles}
 \subtitle{From Dirac's belt to fermions}
@@ -426,7 +426,7 @@
     Like $\SO(3)$ it is a Lie group so it can be viewed
 \end{frame}
 
-\begin{frame}{$\SU(2)$ and $\S0(3)$}
+\begin{frame}{$\SU(2)$ and $\SO(3)$}
     What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
     \begin{equation}
         U=
@@ -455,63 +455,230 @@
 
 \begin{frame}{Covering spaces}
 
+    \begin{block}{Covering space}
+        For a topological space $X$, a \textit{covering space} is a topological space $E$ with a \textit{projection map} $p=E\to X$ such that
+        \begin{itemize}
+            \item $p$ is continuous
+            \item there exists a discrete set $D$ and $U$ and open neighborhood of $x\in X$ such that
+            \begin{equation*}
+                p^{-1}(U)=\bigsqcup_{d\in D}V_d
+            \end{equation*}
+            and $p|_{V_d}=V_d\to U$ is a homeomorphism. $V_d$ are called the \textit{sheets}.
+        \end{itemize}
+    \end{block}
     
     \begin{columns}[T,onlytextwidth]
         \column{0.65\textwidth}
         
-        \begin{block}{Covering space}
-            For a topological space $X$, a \textit{covering space} is a topological space $E$ with a \textit{projection map} $\pi=E\to X$ such that
+            \textbf{Examples:}
             \begin{itemize}
-                \item $\pi$ is continuous
-                \item there exists a discrete set $D$ and $U$ and open neighborhood of $x\in X$ such that
-                \begin{equation*}
-                    \pi^{-1}(U)=\bigsqcup_{d\in D}V_d
-                \end{equation*}
-                and $\pi|_{V_d}=V_d\to U$ is a homeomorphism. $V_d$ are called the \textit{sheets}.
+                \item $\R$ can cover $S^1$ with $p(t)=(\cos(2\pi t),\sin(2\pi t))$, $G(E)=\Z$
+                \item $S^1$ can cover $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$, $G(E)=\Z_n$ \pencil
+                \item other $S^n$ ? $S^1$ is a special case
             \end{itemize}
-        \end{block}
   
         \column{0.35\textwidth}
   
             \begin{figure}
                 \centering
-                \includegraphics[scale=0.5]{Pictures/Covering_map.png}
+                \includegraphics[scale=0.35]{Pictures/Covering_map.png}
             \end{figure}
   
     \end{columns}
-    \textbf{Examples:}
+    
+
+\end{frame}
+
+\begin{frame}{Properties of the covering space}
+    
+    Important remarks:
+    \begin{enumerate}
+        \item \textbf{Some covering spaces are ``equivalent''.}
+            \begin{minipage}{10cm}
+                \begin{block}{Isomorphisms}
+                    Two covering space $E_1$ and $E_2$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:E_1\to E_2$ such that $p_2\circ h=p_1$.
+                \end{block}
+            \end{minipage}
+        \item \textbf{The lifting of point can, by definition, be ambiguous.}
+            \begin{minipage}{10cm}
+                \begin{block}{Deck transformations}
+                    A \textit{Deck transformation} is a homeomorphism $d:E\to E$ such that $p\circ d=p$. With composition, they form a group $G(E)$.
+                \end{block}
+            \end{minipage}
+        \item \textbf{There can exists many covering spaces for the same base space.} In some cases there exists a unique, maximal covering space:
+            
+    \end{enumerate}
+    \textbf{Back to our examples:}
     \begin{itemize}
-        \item $\R$ can cover $S^1$ with $\pi(t)=(\cos(2\pi t),\sin(2\pi t))$
-        \item $S^1$ can cover $S^1$ in several ways, with $\pi(z)=z^n$, $n\in\N$ ($1$ turn in covering space is $n$ turns in $S^1$) \includegraphics[scale=0.06]{Pictures/pen.png}
+        \item $\R$ can cover $S^1$: $G(E)=\Z$
+        \item $S^1$ can cover $S^1$ with $n$ sheets: $G(E)=\Z_n$ \pencil
+        \item other $S^n$ ? $S^1$ is a special case
     \end{itemize}
 
 \end{frame}
 
-\begin{frame}{Properties of the coverin space}
-    Important remarks:
+\begin{frame}{Covering spaces and paths}
+    % observation, drawings
+    %lifting property
+\end{frame}
+
+\begin{frame}{Covering spaces and paths}
+    % rest of lifting property
+    %fundamental group
+    % the covering is exactly what solves the homotopical ambiguity, i.e. the space that contains the same infirmation+the the topological information of nonequivalent paths!
+\end{frame}
+
+\begin{frame}{Back to $\SU(2)$}
+    
+    % in our case: SU(2) universal covering space of SO(3), give projection ad picture, this is how the 2 spheres are related to SO(3, they are sheets
+    
+
+    
+\end{frame}
+
+\begin{frame}{From $\SU(2)$ to $\SO(3)$}
+    \textbf{How to find the $\SO(3)$ matrix corresponding to an $\SU(2)$ matrix ?}\\[0.2cm]
+    % give and prove the projection
+    We introduce the \textit{Pauli matrices}
+    \begin{equation}
+        \sigma_1 =
+        \begin{bmatrix}
+            0 & 1\\
+            1 & 0
+        \end{bmatrix},\qquad
+        \sigma_2 =
+        \begin{bmatrix}
+            0 & -i\\
+            i & 0
+        \end{bmatrix},\qquad
+        \sigma_3 =
+        \begin{bmatrix}
+            1 & 0\\
+            0 & -1
+        \end{bmatrix}.
+    \end{equation}
+    Then, for $\overrightarrow{r}=(x,y,z)\in\SO(3)$, the matrix
+    \begin{equation*}
+        \overrightarrow{r}\cdot \overrightarrow{\sigma}=r^i\sigma_i=
+        \begin{bmatrix}
+            z & x-iy\\
+            x+iy & -z
+        \end{bmatrix}
+    \end{equation*}
+    is \emph{traceless} and \emph{self-adjoint}, i.e. $\overrightarrow{r}\cdot \overrightarrow{\sigma}\in\mathfrak{su}(2)$. More precisely, $\sigma_i$ are the generators of $\mathfrak{su}(2)$. Moreover $\det(\overrightarrow{r}\cdot \overrightarrow{\sigma})=-(x^2+y^2+z^2)$.\\[0.2cm]
+    We can then shown that, the new matrix $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger$, with $U\in\SU(2)$ is 
+    \begin{itemize}
+        \item still \emph{traceless} and \emph{self-adjoint} \\
+            $\Rightarrow$ $\exists \overrightarrow{r}_U\in\SO(3)$ such that $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger=\overrightarrow{r}_U\cdot \overrightarrow{\sigma}$
+        \item has \emph{same determinant}, i.e $\abs{\overrightarrow{r}}=\abs{\overrightarrow{r}_U}$\\
+            $\Rightarrow$ $\exists R_U\in\SO(3)$ such that $\overrightarrow{r}_U=R\overrightarrow{r}$
+    \end{itemize}
+    In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
+    
+\end{frame}
+
+\begin{frame}{Last comments on $SU(2)$ and $\SO(3)$}
+    \textbf{\underline{Group relation:}}\\[0.2cm]
+    There is recurring theme: two things $\SU(2)$ correspond to one in $\SO(3)$. This comes from the fact that $\SU(2)$ is a \emph{double}-cover of $\SO(3)$, which can can see in practice with
+    \begin{equation*}
+        p(U)=p(-U).
+    \end{equation*}
+    Intuitively, we should be able to recover $\SO(3)$ from $\SU(2)$ if $U\sim-U$.\\[0.2cm]
+    And, indeed,
+    \begin{equation*}
+        \SO(3)\cong\SU(2)/\Z_2,
+    \end{equation*}
+    where the quotient means exactly that we identity $U$ with $-U$.\\[0.2cm]
+
+    \textbf{\underline{Other formulation:}}\\[0.2cm]
+
+    We saw that $\SU(2)\cong S^2$ and $\SO(3)\cong B^2(\pi)/\sim$ but $B^2(\pi)/\sim\cong \R\P^3$ so, in more convenient language:
+    $S^3$ is a double cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$.
+
+\end{frame}
+
+\begin{frame}{Back to $\SU(2)$}
+    
+    % give and prove the projection
+    
+\end{frame}
+
+\begin{frame}{Back to $\SU(2)$}
+    What is the lift of the $2\pi$-twist ? The path going from $I$ to $-I$ \pencil\\[0.2cm]
+    \textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
+    \begin{flushright}
+    \begin{minipage}{10.5cm}
+        Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, which does not change during the contraction, therefore it is non-contractible. And so is hte non-lifted path.
+    \end{minipage}
+    \end{flushright}
+    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-1$, to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Make sens, since we already ``showed'' its contractibility.
+\end{frame}
+
+\begin{frame}{Summary on $\SU(2)$ and $\SO(3)$}
     \begin{enumerate}
+        \item $\SU(2)$ is the universal covering space of $\SO(3)$, it has two sheets
+        \item we constructed an explicit projection map
         \item 
     \end{enumerate}
 \end{frame}
 
-\begin{frame}
-    Proof that $2\pi$-twist is non-contractible in $\SO(3)$
-\end{frame}
+
 
 \section{Spinors}
 
 % take a step back on the first part
 % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
 % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
-% how to distinguish the topoogically inequivalent rotations ? Universal cover of the group, double cover, spin groups
-% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achiving a rotation, i.e. it is lways a DOUBLE cover, it is unique, maximal, etc
+% how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
+% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achiving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
 % def of spinor
 % other definition of spinor: Clifford algebras, def the algebra
 % link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
 % representation theory of the CLifford algebra, i.e. spinors in all dimensions
 % come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
 
-\section{Short detour: spinors in Physics}
+\begin{frame}{Summary on spinors}
+    \begin{enumerate}
+        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension)
+        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
+        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two inequivalent ways as the endpoint of a path.
+        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
+    \end{enumerate}
+\end{frame}
+
+\section{Spinors in Physics}
+
+\subsection{Quantum mechanics}
+
+\begin{frame}{Back to the spin-$1/2$ in quantum mechanics}
+    The group which acts on spin vectors is $\SU(2)$.\\[0.2cm]
+    \textbf{Question:} how do rotations act on spin vectors ? The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
+    This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
+    We saw that the $2\pi$-twist is not closed $\Rightarrow$ walking around such a particle would not give back the particle in the same states, it would inverts the spin state.\\[0.2cm]
+    \textbf{But}, very odd property ... could such exotic particles exist ? Or is it an error of interpretation ?\\[0.2cm]
+    \emph{Yes}, they do exist. Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! E.g. electrons.
+\end{frame}
+
+\begin{frame}{Remarks}
+    \textbf{\underline{Technical details:}}
+    \begin{itemize}
+        \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
+        \item we cannot detect the effect if there only one particle
+        \item we do not actually use electrons but neutrons (see neutron interferometry).
+    \end{itemize}
+    \textbf{\underline{Spin in nature:}}
+    \begin{itemize}
+        \item in nature, only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc) $1$ (photons, gluinos, etc) and $2$ (graviton)
+        \item spins higher than $2$ are very problematic, and not well-understood yet. Current topic of research (UMons !)
+        \item spin-$1/3$ particles ? No, impossible, because $\pi_1(SO(3))=\Z_{\textcolor{red}{2}}$. Example of mathematical constraint on physical models.
+    \end{itemize}
+\end{frame}
+
+\subsection{Behind quantum mechanics}
+
+\begin{frame}
+    
+\end{frame}
 
 % instead of SO(3), SO(1,3), which somewhat resembles SO(4)
 % why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
@@ -521,12 +688,17 @@
 
 \begin{frame}
     \begin{enumerate}
-        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension)
-        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
-        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two inequivalent ways as the endpoint of a path.
-        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
+        \item Dirac's belt trick can be understood by studying the fundamental group of $\SO(3)$.
+        \item The universal cover of $\SO(3)$ is $\SU(2)$, in which the homotopy ambiguity is solved. Spin vectors transform under $\SU(2)$ and covering space technology then allows us to better understand the nature of the spin in quantum mechanics.
+        \item Spinors can be defined in any dimension and for any spin. Leading to a generalization of usual vectors that take into account the topological difference between some rotations that, a priori, could look equivalent.
+        \item Spinors are fundamental in Physics and in particular all modern theories of fundamental interactions. Spinors model most of elementary particles. In particular, exactly like Dirac's belt, electrons rotate through the lift in $\SU(2)$ thus taking into account the homotopy class of the rotation, how cool !
     \end{enumerate}
+    \vspace{0.5cm}
+    \begin{center}
+        {\huge\textit{Thank you}}
+    \end{center}
 \end{frame}
+
 
 \begin{frame}{Blocks}
     Three different block environments are pre-defined and may be styled with an

@@ -2,6 +2,8 @@
 \beamer@sectionintoc {2}{Homotopy theory}{12}{0}{2}
 \beamer@sectionintoc {3}{Quantum spin and $\text {SU}(2)$}{18}{0}{3}
 \beamer@sectionintoc {4}{Covering spaces}{23}{0}{4}
-\beamer@sectionintoc {5}{Spinors}{27}{0}{5}
-\beamer@sectionintoc {6}{Short detour: spinors in Physics}{28}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{29}{0}{7}
+\beamer@sectionintoc {5}{Spinors}{34}{0}{5}
+\beamer@sectionintoc {6}{Spinors in Physics}{36}{0}{6}
+\beamer@subsectionintoc {6}{1}{Quantum mechanics}{37}{0}{6}
+\beamer@subsectionintoc {6}{2}{Behind quantum mechanics}{39}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{40}{0}{7}
