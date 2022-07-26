@@ -1,4 +1,4 @@
-\documentclass[9pt]{beamer}
+\documentclass[8pt]{beamer}
 
 \usetheme[progressbar=frametitle,block=fill,background=light]{metropolis}
 \usefonttheme{serif}
@@ -314,99 +314,9 @@
 
 \end{frame}
 
-{
-\setbeamercolor{background canvas}{bg=black!100}
-\begin{frame}{Animation 1}
-    \begin{center}
-        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster1.jpg}}{Videos/video1.wmv}
-    \end{center}
-    {\small\textcolor{white}{An object attached to belts or strings can spin continuously without becoming tangled. Notice that after the cube completes a 360° rotation, the spiral is reversed from its initial configuration. The belts return to their original configuration after spinning a full 720°.}}
-\end{frame}
-
-\begin{frame}{Animation 2}
-    \begin{center}
-        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2.jpg}}{Videos/video2.wmv}
-    \end{center}
-    {\small\textcolor{white}{A more extreme example demonstrating that this works with any number of strings. In the limit, a piece of solid continuous space can rotate in place like this without tearing or intersecting itself.}}
-\end{frame}
-}
-% https://bloerg.net/posts/beamer-movies-and-linux/
-
 \section{Quantum spin and $\SU(2)$}
 
-\begin{frame}{What is the spin ?}
 
-    Skipping most of the physics background:
-    \begin{block}{Spin in quantum mechanics}
-        \begin{enumerate}
-            \item the \emph{spin}  is an inherent property of any ``particle'':
-            \begin{itemize}
-                \item number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
-                \item does not change, like the mass, charge, etc
-                \item classifies particles
-            \end{itemize}
-            \item a particle of spin $s$ is, at a given moment, in a certain state described by the \emph{spin vector}:
-            \begin{itemize}
-                \item unit vector of $v\in\C^{2s+1}$\textcolor{blue}{, in our case $\begin{bmatrix}\alpha\\ \beta\end{bmatrix}\in\C^2$}
-                \item can evolve over time
-            \end{itemize}
-            \item what we can measure yet another quantity, called \emph{observed spin}:
-            \begin{itemize}
-              \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$\\
-              \textcolor{blue}{In our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
-              \item given a direction, e.g. $i=x,y,z$
-              \item outcome is random, we can only compute de probabilities of the different outcomes
-            \end{itemize}
-        \end{enumerate}
-    \end{block}
-\end{frame}
-
-\begin{frame}{What is the spin ?}
-    \textbf{How do measures happen ?}\\[0.2cm]
-    Let us introduce
-    {\tiny
-    \begin{align*}
-        v_{x,\uparrow}=
-        \begin{bmatrix}
-            1/\sqrt{2} \\ 1/\sqrt{2}
-        \end{bmatrix},
-        v_{x,\downarrow }=
-        \begin{bmatrix}
-            1/\sqrt{2} \\ -1/\sqrt{2}
-        \end{bmatrix},
-        v_{y,\uparrow}=
-        \begin{bmatrix}
-            1/\sqrt{2} \\ i/\sqrt{2}
-        \end{bmatrix},
-        v_{y,\downarrow}=
-        \begin{bmatrix}
-            1/\sqrt{2} \\ -i/\sqrt{2}
-        \end{bmatrix},
-        v_{z,\uparrow}=
-        \begin{bmatrix}
-            1 \\ 0
-        \end{bmatrix},
-        v_{z,\downarrow}=
-        \begin{bmatrix}
-            0 \\ 1
-        \end{bmatrix}.
-    \end{align*}}
-    The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by the projection
-    \begin{equation}
-        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle_{\C^2}}^2
-    \end{equation}
-    where $v$ is the spin vector of the particle.\\[0.2cm]
-    \textbf{Example}: in the direction $z$,
-    \begin{equation}
-      P(z,\uparrow)= \abs{\alpha}^2,\qquad P(z,\downarrow)= \abs{\beta}^2.
-    \end{equation}
-    Consequently:
-    \begin{itemize}
-        \item we must have $\langle v,v\rangle_{\C^2}=\abs{\alpha}^2+\abs{\beta}^2=1$
-        \item to ``measure'' the spin state, we must repeat the experience many times
-        \item there are states that are always spin $\uparrow$ or always spin $\downarrow$
-    \end{itemize}
-\end{frame}
 
 \begin{frame}{Rotating a spin vector}
     \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
@@ -537,8 +447,8 @@
 \end{frame}
 
 \begin{frame}{From $\SU(2)$ to $\SO(3)$}
-    \textbf{How to find the $\SO(3)$ matrix corresponding to an $\SU(2)$ matrix ?}\\[0.2cm]
-    % give and prove the projection
+    \textbf{What is the projection map ?}\\[0.2cm]
+    
     We introduce the \textit{Pauli matrices}
     \begin{equation}
         \sigma_1 =
@@ -568,9 +478,9 @@
     is \emph{traceless} and \emph{self-adjoint}, i.e. $\overrightarrow{r}\cdot \overrightarrow{\sigma}\in\mathfrak{su}(2)$. More precisely, $\sigma_i$ are the generators of $\mathfrak{su}(2)$. Moreover $\det(\overrightarrow{r}\cdot \overrightarrow{\sigma})=-(x^2+y^2+z^2)$.\\[0.2cm]
     We can then shown that, the new matrix $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger$, with $U\in\SU(2)$ is 
     \begin{itemize}
-        \item still \emph{traceless} and \emph{self-adjoint} \\
+        \item still traceless and self-adjoint \\
             $\Rightarrow$ $\exists \overrightarrow{r}_U\in\SO(3)$ such that $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger=\overrightarrow{r}_U\cdot \overrightarrow{\sigma}$
-        \item has \emph{same determinant}, i.e $\abs{\overrightarrow{r}}=\abs{\overrightarrow{r}_U}$\\
+        \item has same determinant, i.e $\abs{\overrightarrow{r}}=\abs{\overrightarrow{r}_U}$\\
             $\Rightarrow$ $\exists R_U\in\SO(3)$ such that $\overrightarrow{r}_U=R\overrightarrow{r}$
     \end{itemize}
     In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
@@ -630,27 +540,102 @@
 % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
 % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
 % how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
-% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achiving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
+% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achieving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
 % def of spinor
 % other definition of spinor: Clifford algebras, def the algebra
 % link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
 % representation theory of the CLifford algebra, i.e. spinors in all dimensions
 % come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
 
+% there are essentially two frameworks for viewing the notion of a spinor.
+
 \begin{frame}{Summary on spinors}
     \begin{enumerate}
-        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension)
+        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.)
         \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
-        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two inequivalent ways as the endpoint of a path.
+        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
         \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
     \end{enumerate}
 \end{frame}
 
 \section{Spinors in Physics}
 
-\subsection{Quantum mechanics}
+\begin{frame}{What is the spin ?}
 
-\begin{frame}{Back to the spin-$1/2$ in quantum mechanics}
+    Skipping most of the physics background:
+    \begin{block}{Spin in quantum mechanics}
+        \begin{enumerate}
+            \item the \textit{spin}  is an inherent property of any ``particle'':
+            \begin{itemize}
+                \item number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
+                \item does not change, like the mass, charge, etc
+                \item classifies particles
+            \end{itemize}
+            \item a particle of spin $s$ is, at a given moment, in a certain state described by the \textit{spin vector}:
+            \begin{itemize}
+                \item unit vector of $v\in\C^{2s+1}$\textcolor{blue}{, in our case $\begin{bmatrix}\alpha\\ \beta\end{bmatrix}\in\C^2$}
+                \item can evolve over time
+            \end{itemize}
+            \item what we can measure yet another quantity, called \textit{observed spin}:
+            \begin{itemize}
+              \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$\\
+              \textcolor{blue}{In our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
+              \item given a direction, e.g. $i=x,y,z$
+              \item outcome is random, we can only compute de probabilities of the different outcomes
+            \end{itemize}
+        \end{enumerate}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{What is the spin ?}
+    \textbf{How do measures happen ?}\\[0.2cm]
+    Let us introduce
+    {\small
+    \begin{align*}
+        v_{x,\uparrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ 1/\sqrt{2}
+        \end{bmatrix},
+        v_{x,\downarrow }=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ -1/\sqrt{2}
+        \end{bmatrix},
+        v_{y,\uparrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ i/\sqrt{2}
+        \end{bmatrix},
+        v_{y,\downarrow}=
+        \begin{bmatrix}
+            1/\sqrt{2} \\ -i/\sqrt{2}
+        \end{bmatrix},
+        v_{z,\uparrow}=
+        \begin{bmatrix}
+            1 \\ 0
+        \end{bmatrix},
+        v_{z,\downarrow}=
+        \begin{bmatrix}
+            0 \\ 1
+        \end{bmatrix}.
+    \end{align*}}
+    The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by the projection
+    \begin{equation}
+        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle_{\C^2}}^2
+    \end{equation}
+    where $v$ is the spin vector of the particle.\\[0.2cm]
+    \textbf{Example}: in the direction $z$,
+    \begin{equation}
+      P(z,\uparrow)= \abs{\alpha}^2,\qquad P(z,\downarrow)= \abs{\beta}^2.
+    \end{equation}
+    Consequently:
+    \begin{itemize}
+        \item we must have $\langle v,v\rangle_{\C^2}=\abs{\alpha}^2+\abs{\beta}^2=1$
+        \item to ``measure'' the spin state, we must repeat the experience many times
+        \item there are states that are always spin $\uparrow$ or always spin $\downarrow$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Rotating a spin vector}
     The group which acts on spin vectors is $\SU(2)$.\\[0.2cm]
     \textbf{Question:} how do rotations act on spin vectors ? The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
@@ -660,6 +645,7 @@
 \end{frame}
 
 \begin{frame}{Remarks}
+
     \textbf{\underline{Technical details:}}
     \begin{itemize}
         \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
@@ -668,21 +654,60 @@
     \end{itemize}
     \textbf{\underline{Spin in nature:}}
     \begin{itemize}
-        \item in nature, only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc) $1$ (photons, gluinos, etc) and $2$ (graviton)
+        \item in nature, only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc), $1$ (photons, gluons, etc) and $2$ (graviton)
         \item spins higher than $2$ are very problematic, and not well-understood yet. Current topic of research (UMons !)
         \item spin-$1/3$ particles ? No, impossible, because $\pi_1(SO(3))=\Z_{\textcolor{red}{2}}$. Example of mathematical constraint on physical models.
     \end{itemize}
-\end{frame}
+    \textbf{\underline{Behind quantum mechanics:}} modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
 
-\subsection{Behind quantum mechanics}
-
-\begin{frame}
-    
 \end{frame}
 
 % instead of SO(3), SO(1,3), which somewhat resembles SO(4)
 % why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
-% veri very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
+% very very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
+
+\section{Fun facts}
+
+{
+\setbeamercolor{background canvas}{bg=black!100}
+\begin{frame}{Anti-twister mechanisms}
+    \begin{center}
+        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2belts.jpg}}{Videos/2belts.wmv}
+    \end{center}
+    {\small\textcolor{white}{Expanding the Dirac's belt trick setup, one can attach two belts to an object and rotate it by 360° without getting tangled. So it can spin continuously without becoming tangled}}
+\end{frame}
+
+\begin{frame}{Anti-twister mechanisms}
+    \begin{center}
+        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster1.jpg}}{Videos/video1.wmv}
+    \end{center}
+    {\small\textcolor{white}{Increasing the number of belts does not change the behavior; the cube completes a 360° rotation, the spiral is reversed from its initial configuration. The belts return to their original configuration after spinning a full 720°.}}
+\end{frame}
+
+\begin{frame}{Anti-twister mechanisms}
+    \begin{center}
+        \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2.jpg}}{Videos/video2.wmv}
+    \end{center}
+    {\small\textcolor{white}{A more extreme example demonstrating that this works with any number of strings. In the limit, a piece of solid continuous space can rotate in place like this without tearing or intersecting itself.}}
+\end{frame}
+}
+% https://bloerg.net/posts/beamer-movies-and-linux/
+
+\begin{frame}{Fun facts}
+    \begin{itemize}
+        \item anti-twister machnism is used in engineering to supply electric power to rotating devices
+        \item cup on the hand trick (balinese candle dance or Philippine wine dance)
+        \item tangloids
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Pictures/Tangloids.jpeg}
+    \end{figure}
+\end{frame}
+
+% tangloids
+% videos on 
+% anti-twister mechanism: The anti-twister or antitwister mechanism is a method of connecting a flexible link between two objects, one of which is rotating with respect to the other, in a way that prevents the link from becoming twisted. The link could be an electrical cable or a flexible conduit. This mechanism is intended as an alternative to the usual method of supplying electric power to a rotating device. What makes the device possible is the peculiar connectivity of the space of 3D rotations, as discovered[3] by P. A. M. Dirac and illustrated in his Plate trick (also known as the string trick or belt trick).[4] Its covering Spin(3) group can be represented by unit quaternions, also known as versors.
 
 \section{Conclusion}
 
