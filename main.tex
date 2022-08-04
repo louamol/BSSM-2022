@@ -1,4 +1,4 @@
-\documentclass[8pt]{beamer}
+\documentclass[9pt]{beamer}
 
 \usetheme[progressbar=frametitle,block=fill,background=light]{metropolis}
 \usefonttheme{serif}
@@ -17,6 +17,8 @@
 \usepackage{array}
 \usepackage{multimedia}
 \usepackage{media9}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \usepackage{xspace}
 
@@ -61,28 +63,33 @@
         \item a belt (not necessarily Dirac's)
         \item a heavy book
     \end{itemize}
-    Rules:
-    \begin{enumerate}
-        \item you can only move the end of the belt
-        \item you cannot twist or rotate it
-    \end{enumerate}
-    \textbf{Goal:} untwist a $2\pi$-twist.\\[0.5cm]
-    $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$. \\[0.5cm]
 
-    Therefore, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
+    \textbf{Goal:} deform the belt to untwist a $2\pi$-twist.\\[0.2cm]
+
+    Note: deforming the belt is equivalent to moving its ends and keep the same orientation.\\[0.2cm]
+    
+    $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
+
+    However, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
 
 \end{frame}
 
+%\begin{frame}{Anti-twister mechanisms}
+%    \begin{center}
+%        \movie[width=4cm,height=2.5cm,showcontrols,loop]{\includegraphics[scale=0.15]{Pictures/poster3.jpg}}{Videos/BeltTrick.wmv}
+%    \end{center}
+%\end{frame}
+
 \begin{frame}{Space of rotations: $\SO(3)$ as a group}
       
-    Rotations in $3$-dimensional space: matrices that acts on $\R^3$ s.t. 
+    What is a rotation in $\R^3$ ? It is a real $3\times3$ matrix $R$ that must
     \begin{enumerate}
-        \item preserve the \emph{scalar product}: $O^TO=\mathbbm{1}$ ($\Leftrightarrow$ $O$ is orthogonal)
-        \item preserve the \emph{orientation}: $\det O=1$
+        \item preserve the \emph{scalar product}: $R^TR=\mathbbm{1}$ ($\Leftrightarrow$ $R$ is orthogonal)
+        \item preserve the \emph{orientation}: $\det R=1$
     \end{enumerate}
 
     \begin{block}{Special othogonal group}
-        $\SO(3)$ is the set of $3\times 3$ real matrices such that $O^TO=\mathbbm{1}$ and $\det O=1$.
+        $\SO(3)$ is the set of $3\times 3$ real matrices such that $R^TR=\mathbbm{1}$ and $\det R=1$.
     \end{block}
     Three ``fundamental'' rotations:
     \begin{equation*}
@@ -106,19 +113,20 @@
           0 & 0 & 1
       \end{bmatrix}}
     \end{equation*}
+    any rotation can be obtained by composing those three rotation.\\[0.2cm]
 
     $\Rightarrow$ It forms a \emph{group}.
     
 \end{frame}
 
-\begin{frame}{Space of rotations: $\SO(3)$ as a topological space}
+\begin{frame}{Space of rotations: $\SO(3)$ as a manifold}
+
     Fundamental data that describes a rotation:
     \begin{itemize}
         \item an \emph{axis} of rotation, i.e. a  unit vector $\overrightarrow{n}$ \hspace{1.07cm}\textcolor{blue}{$\to$ 2 parameters}
         \item an \emph{angle} of rotation $\theta\in[-\pi,\pi]$ (with $-\pi\sim\pi$) \textcolor{blue}{$\to$ 1 parameter}
     \end{itemize}
     The space of rotations can then alternately be defined as a \textbf{$\boldsymbol{3}$-sphere of radius $\boldsymbol{\pi}$ and its antipodal points identified}:
-    
 
     \begin{columns}[T,onlytextwidth]
         \column{0.5\textwidth}
@@ -132,7 +140,8 @@
                 \text{direction} &\leftrightarrow \text{axis}\\
                 \text{norm} &\leftrightarrow \text{angle}
             \end{align*}
-            $\Rightarrow$ It forms a \emph{topological space}.
+            $\Rightarrow$ It is also a \emph{manifold} , most \\
+            \hspace{0.3cm} famously known as $\R\P^3$.
   
         \column{0.5\textwidth}
   
@@ -143,7 +152,8 @@
   
     \end{columns}
 
-    (group $+$ topological space $=$ Lie group)
+    We have $\dim(\SO(3))=3$.\\[0.2cm]
+    (Note that group $+$ manifold $=$ Lie group.)
     
 \end{frame}
 
@@ -165,7 +175,7 @@
 
 \end{frame}
 
-\begin{frame}{Dictionary}
+\begin{frame}{Examples}
     \makebox[315pt][r]{
     \begin{tabular}{cccc}
         \textbf{\underline{trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
@@ -175,7 +185,7 @@
     \end{tabular}}
 \end{frame}
 
-\begin{frame}{Dictionary}
+\begin{frame}{Examples}
     \begin{center}
     \begin{tabular}{ccc}
         \textbf{\underline{random rotation}} & \textbf{\underline{closed}} & \textbf{\underline{open path}}\\
@@ -187,24 +197,24 @@
 \end{frame}
 
 \begin{frame}{Dictionary}
+    We see that:
     \begin{center}
     \begin{tabular}{|ccc|}
         \hline
         \textbf{\underline{Belt}} & & \textbf{\underline{Path}} \\[0.2cm]
         specific configuration & $\longleftrightarrow$ & specific path \\[0.2cm]
         moving the ends & $\longleftrightarrow$ & continuous deformation  \\[0.2cm]
-        ends have same orientation & $\longleftrightarrow$ & closed path (loop) \\[0.2cm]
+        ends have same orientation & $\longleftrightarrow$ & loop \\[0.2cm]
         \emph{can be flattened} & $\longleftrightarrow$ & \emph{contractible} \\ \hline
     \end{tabular}
     \end{center}
-    \textbf{Back to Dirac's belt trick:}
+    \textbf{Back to Dirac's belt trick:} the rules were
     \begin{enumerate}
-        \item ends of the belt have same orientation \textcolor{blue}{$\to$ we consider loops} \\
-        \hspace{5.8cm} {\tiny \textcolor{blue}{(passing through the origin)}}
+        \item ends of the belt must keep the same orientation \textcolor{blue}{$\to$ we consider loops} \\
         \item moving the ends of the belt \textcolor{blue}{$\to$ continuous deformation} \\
-        \item belt in original (flat) position \textcolor{blue}{$\to$ trivial path}
+        \item belt in original (flat) position \textcolor{blue}{$\to$ trivial constant path}
     \end{enumerate}
-    The question then becomes: \textbf{which loops are contractible ?}
+    The question ``can the belt be flattened ?'' then becomes  ``\textbf{which loops are contractible ?}``
 \end{frame}
 
 \begin{frame}{Problem solved ?}
@@ -228,17 +238,17 @@
 \section{Homotopy theory}
 
 \begin{frame}{Homotopoy theory primer}
-    \textbf{Starting observation:} depending on the topological space, all loops might not be contractible. Moreover, some loops are ``fundamentally different'' from each other.\\
-    Examples: $\R^3$, $S^2$, $\mathbb{T}^2$, etc.
+    \textbf{Starting observation:} depending on the topological space, all loops might not be contractible. Moreover, some loops are ``fundamentally different'' from each other, e.g. in $\R^3$, $S^2$, $\mathbb{T}^2$, etc.
 
     \begin{block}{Paths and homotopies}
         For a topological space $X$:
         \begin{itemize}
-            \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$, \textit{loop} if closed
+            \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$,
+            \item \textit{Loop} : closed path, i.e. embedded circle,
             \item $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} if one can be deformed into the other: there exists
-            $H:[0,1]\times [0,1]\to X$ such that
+            $F:[0,1]\times [0,1]\to X$ such that
             \begin{equation*}
-                H(0,t)=\gamma_1(t)\qquad \text{and}\qquad H(1,t)=\gamma_2(t).
+                F(0,t)=\gamma_1(t)\qquad \text{and}\qquad F(1,t)=\gamma_2(t).
             \end{equation*}
             This is an equivalence relation ($\sim$).
         \end{itemize}
@@ -246,12 +256,13 @@
     
     For each $x_0\in X$, we define
     \begin{equation*}
-        \pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim,
+        \boxed{\pi_1(X,x_0) = \{\text{all loops based at }x_0\}/\sim,}
     \end{equation*}
-    it is the set of ``fundamentally different'' loops passing through $x_0$. $[\gamma]$ is called the \textit{homotopy class} of $\gamma$.
+    $\to$ set of ``fundamentally different'' loops passing through $x_0$.
 \end{frame}
 
 \begin{frame}{Fundamental group}
+    The elements of $\pi_1(X,x_0)$ are $[\gamma]$, called the \textit{homotopy class} of $\gamma$.\\[0.2cm]
     Group structure on $\pi_1(X,x_0)$:
     \begin{itemize}
         \item \textbf{Product} of paths: $\gamma_1\cdot\gamma_2=$ ``$\gamma_1$ then $\gamma_2$''
@@ -259,24 +270,41 @@
         \item \textbf{Neutral} path: $e=$ ``constant path at the identity''
         \item For homotopy classes: $[\gamma_1]\cdot[\gamma_2]=[\gamma_1\cdot\gamma_2]$ and $[\gamma]^{-1}=[\gamma^{-1}]$
     \end{itemize}
-    Important fact: up to isomorphism, $\pi_1(X,x_0)$ does not depend on $x_0$ \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
+    Important fact: if $X$ is path-connected, $\pi_1(X,x_0)$ does not depend on $x_0$, up to isomorphism. \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
     Contractible loops are $\sim$ to a point, i.e. they are the element of $[e]$.\\[0.2cm]
 
-    How to compute $\pi_1(X)$ ? Can be difficult, not discussed here.\\[0.2cm]
+    \begin{block}{Proposition (product of spaces)}
+        If $X$ and $Y$ are path-connected, $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$.
+    \end{block}
+    \begin{block}{Proposition (maps between spaces)}
+        If $\vp:X\to Y$ is a continuous map, is induces a homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ though $\vp_*([\gamma])=[\vp\circ\gamma]$.
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Fundamental group}
+
+    Which space have the same fundamental groups ? Evidently, homeomorphic ones, but we can be less restrictive:
+    \begin{block}{Proposition}
+        If $\vp:X\to Y$ are is a homotopy equivalence, then the induced homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ is an isomorphism for all $x_0\in X$.
+    \end{block}
+
+    How to compute $\pi_1(X)$ ? Can be difficult, there a different methods (e.g. Van Kampen theorem, Hopf fibrations, Hurewicz theorems, etc), not discussed here. A lot of homotopy groups are still unknown !\\[0.2cm]
 
     \begin{columns}[T,onlytextwidth]
-        \column{0.35\textwidth}
+        \column{0.55\textwidth}
         
-            \textbf{Examples:}
+            \textbf{Examples:}\pencil
+            {\small
             \begin{itemize}
-                \item $\pi_1(\R^3)=\{e\}$
-                \item $\pi_1(S^2) = \{e\}$
-                \item $\pi_1(\mathbb{T}^2)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
+                \item $\pi_1(\R^3)=0$
+                \item $\pi_1(S^2) = 0$
+                \item $\pi_1(\mathbb{T}^2)=\pi_1(S^1)\times\pi_1(S^1)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
                 \item $\pi_1(\R^2\backslash\{p\})=\Z$
-            \end{itemize}
+            \end{itemize}}
   
-        \column{0.65\textwidth}
+        \column{0.45\textwidth}
   
             \begin{figure}
                 \centering
@@ -284,19 +312,56 @@
             \end{figure}
   
     \end{columns}
-    Remark: $\pi_1(\R^3\backslash\{p\})=\{e\}$, higher homotopy groups for higher-dimensional holes ?
+
+    Remark: $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ?
+\end{frame}
+
+\begin{frame}{Fundamental group of the circle}
+
+    Using the covering space technology, we can show that
+    \begin{equation*}
+        \boxed{\pi_1(S^1)=\Z,}
+    \end{equation*}
+    which intuitively make sense. This results alone implies many famous theorems of topology:
+    \begin{block}{Theorem (fundamental theorem of algebra)}
+        Every non-constant polynomial with coefficients in $\C$ has a root in $\C$.
+    \end{block}
+    \begin{block}{Theorem (Brouwer fixed point)}
+        Every continuous map $h:D^2\to D^2$ has a fixed point.
+    \end{block}
+    And, using the same techniques:
+    \begin{block}{Theorem (Borusk-Ulam)}
+        For every continuous map $f=S^2\to \R^2$ there exist a pair of antipodal points $x$ and $-x$ in $S^2$ such that $f(x)=f(-x)$.
+    \end{block}
+
+    One can generalize and show that $\pi_n(S^n)=\Z$. These theorems are then generalized accordingly.
+    
+\end{frame}
+
+\begin{frame}{Homotopy groups of spheres}
+
+    Good example of the complexity of homotpy groups:\\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in a higher-dimensional one is always trivial \\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in itself always works in the same way,\\ \hspace{0.5cm} regardless of the dimension \\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in lower-dimensional one is much more \\ \hspace{0.5cm} complicated: periodic for a bit, then completely chaotic
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.2]{Pictures/homotpoygroupsphere.png}
+    \end{figure}
+
 
 \end{frame}
 
 \begin{frame}{Back to $\SO(3)$}
     \textbf{Question we had:} are all loops in $\SO(3)$ contractible ?\\
     In homotopy language: is $\pi_1(\SO(3))$ trivial ?\\[0.2cm]
-    \textbf{Answer:} \emph{NO}, one can compute that
+    \textbf{Answer:} \emph{NO}, one can show that
     \begin{equation*}
         \boxed{\pi_1(\SO(3))=\Z_2}
     \end{equation*}
     $\Rightarrow$ There only two ``fundamentally different'' loops in $\SO(3)$ !\\
-    $\Rightarrow$ all non-contractible loops are deformations of the $2\pi$-twist !
+    $\Rightarrow$ there is only one kind of non-contractible loop !
 
     \begin{center}
         \begin{tabular}{|l|}
@@ -304,61 +369,15 @@
             The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
         \end{tabular}
     \end{center}
+    Indeed, there only two different initial configurations (i.e. two possible loops in $\SO(3)$):
+    \begin{itemize}
+        \item $4\pi k$-twists which are all equivalent
+        \item $4\pi k+2\pi$-twists which are all equivalent
+    \end{itemize}
+    with $k\in\Z$.\\[0.2cm]
 
-    We can now say, with more confidence, that we understood Dirac's belt trick.\\[0.3cm]
+    We have a better understanding Dirac's belt trick. \textbf{But still no proof !} Homotopy theory allowed us to understand the ways of embedding loops in some spaces, we now need a tool to lift this ambiguity: \emph{covering space} !
 
-    Are there other manifestation of homotopy in our practical world ?\\[0.3cm]
-
-    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\
-    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
-
-\end{frame}
-
-\section{Quantum spin and $\SU(2)$}
-
-
-
-\begin{frame}{Rotating a spin vector}
-    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
-    \begin{equation*}
-        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
-    \end{equation*}
-    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
-    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
-    \begin{equation*}
-        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
-    \end{equation*}
-    so, similarly,
-    \begin{block}{Special unitary group}
-        $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
-    \end{block}
-    and $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
-    Like $\SO(3)$ it is a Lie group so it can be viewed
-\end{frame}
-
-\begin{frame}{$\SU(2)$ and $\SO(3)$}
-    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
-    \begin{equation}
-        U=
-        \begin{bmatrix}
-            X+iY & Z+iW \\
-            -Z+iY & X-iY
-        \end{bmatrix}
-    \end{equation}
-    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
-    so $\SU(2)$ can be viewed as a group and a manifold, it is a Lie group\\[0.2cm]
-    $\SU(2)$ and $\SO(3)$:
-    \begin{enumerate}
-        \item both Lie groups of dimension three
-        \item both are connected
-        \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
-    \end{enumerate}
-    How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
-    Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
-    Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
-    \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
-    In other words: how are the two notions of rotations related ?\\[0.2cm]
-    $\Rightarrow$ covering spaces !
 \end{frame}
 
 \section{Covering spaces}
@@ -438,6 +457,37 @@
     % the covering is exactly what solves the homotopical ambiguity, i.e. the space that contains the same infirmation+the the topological information of nonequivalent paths!
 \end{frame}
 
+\begin{frame}{Covering space of $\SO(3)$ ?}
+    
+\end{frame}
+
+\begin{frame}{$\SU(2)$ and $\SO(3)$}
+    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
+    \begin{equation}
+        U=
+        \begin{bmatrix}
+            X+iY & Z+iW \\
+            -Z+iY & X-iY
+        \end{bmatrix}
+    \end{equation}
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
+    so $\SU(2)$ can be viewed as a group and a manifold, it is a Lie group\\[0.2cm]
+    $\SU(2)$ and $\SO(3)$:
+    \begin{enumerate}
+        \item both Lie groups of dimension three
+        \item both are connected
+        \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
+    \end{enumerate}
+    How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
+    Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
+    Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
+    \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
+    In other words: how are the two notions of rotations related ?\\[0.2cm]
+    $\Rightarrow$ covering spaces !
+\end{frame}
+
+
+
 \begin{frame}{Back to $\SU(2)$}
     
     % in our case: SU(2) universal covering space of SO(3), give projection ad picture, this is how the 2 spheres are related to SO(3, they are sheets
@@ -447,6 +497,8 @@
 \end{frame}
 
 \begin{frame}{From $\SU(2)$ to $\SO(3)$}
+    (maybe put the appendix if no time)
+
     \textbf{What is the projection map ?}\\[0.2cm]
     
     We introduce the \textit{Pauli matrices}
@@ -487,7 +539,7 @@
     
 \end{frame}
 
-\begin{frame}{Last comments on $SU(2)$ and $\SO(3)$}
+\begin{frame}{Last comments on $\SU(2)$ and $\SO(3)$}
     \textbf{\underline{Group relation:}}\\[0.2cm]
     There is recurring theme: two things $\SU(2)$ correspond to one in $\SO(3)$. This comes from the fact that $\SU(2)$ is a \emph{double}-cover of $\SO(3)$, which can can see in practice with
     \begin{equation*}
@@ -502,18 +554,40 @@
 
     \textbf{\underline{Other formulation:}}\\[0.2cm]
 
-    We saw that $\SU(2)\cong S^2$ and $\SO(3)\cong B^2(\pi)/\sim$ but $B^2(\pi)/\sim\cong \R\P^3$ so, in more convenient language:
-    $S^3$ is a double cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$.
+    $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$.
 
 \end{frame}
 
-\begin{frame}{Back to $\SU(2)$}
+\begin{frame}{Summary on $\SU(2)$ and $\SO(3)$}
+    \begin{enumerate}
+        \item $\SU(2)$ is the universal covering space of $\SO(3)$, it has two sheets
+        \item we constructed an explicit projection map
+        \item we, finally, completely understand Dirac's belt trick
+        \item ...
+    \end{enumerate}
+    
+\end{frame}
+
+\begin{frame}{Lifting from $\SO(3)$ to $\SU(2)$}
     
     % give and prove the projection
+
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.1]{Pictures/lifting_point.png}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.1]{Pictures/lifting_path.png}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.1]{Pictures/lifting_su2.png}
+    \end{figure}
     
 \end{frame}
 
-\begin{frame}{Back to $\SU(2)$}
+\begin{frame}{Finally, in the end, at last, understanding Dirac's belt trick}
     What is the lift of the $2\pi$-twist ? The path going from $I$ to $-I$ \pencil\\[0.2cm]
     \textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
     \begin{flushright}
@@ -521,44 +595,34 @@
         Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, which does not change during the contraction, therefore it is non-contractible. And so is hte non-lifted path.
     \end{minipage}
     \end{flushright}
-    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-1$, to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Make sens, since we already ``showed'' its contractibility.
-\end{frame}
+    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-1$, to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Make sens, since we already ``showed'' its contractibility.\\[0.2cm]
 
-\begin{frame}{Summary on $\SU(2)$ and $\SO(3)$}
-    \begin{enumerate}
-        \item $\SU(2)$ is the universal covering space of $\SO(3)$, it has two sheets
-        \item we constructed an explicit projection map
-        \item 
-    \end{enumerate}
+    Are there other manifestation of homotopy in our practical world ?\\[0.3cm]
+
+    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\
+    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 \end{frame}
 
 
+\section{Quantum spin}
 
-\section{Spinors}
-
-% take a step back on the first part
-% we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
-% motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
-% how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
-% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achieving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
-% def of spinor
-% other definition of spinor: Clifford algebras, def the algebra
-% link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
-% representation theory of the CLifford algebra, i.e. spinors in all dimensions
-% come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
-
-% there are essentially two frameworks for viewing the notion of a spinor.
-
-\begin{frame}{Summary on spinors}
-    \begin{enumerate}
-        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.)
-        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
-        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
-        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
-    \end{enumerate}
+\begin{frame}{Rotating a spin vector}
+    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
+    \begin{equation*}
+        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
+    \end{equation*}
+    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
+    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
+    \begin{equation*}
+        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
+    \end{equation*}
+    so, similarly,
+    \begin{block}{Special unitary group}
+        $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
+    \end{block}
+    and $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
+    Like $\SO(3)$ it is a Lie group so it can be viewed
 \end{frame}
-
-\section{Spinors in Physics}
 
 \begin{frame}{What is the spin ?}
 
@@ -662,11 +726,8 @@
 
 \end{frame}
 
-% instead of SO(3), SO(1,3), which somewhat resembles SO(4)
-% why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
-% very very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
 
-\section{Fun facts}
+\section{More belts}
 
 {
 \setbeamercolor{background canvas}{bg=black!100}
@@ -674,16 +735,20 @@
     \begin{center}
         \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2belts.jpg}}{Videos/2belts.wmv}
     \end{center}
-    {\small\textcolor{white}{Expanding the Dirac's belt trick setup, one can attach two belts to an object and rotate it by 360° without getting tangled. So it can spin continuously without becoming tangled}}
-\end{frame}
+    {\small\textcolor{white}{Expanding the Dirac's belt trick setup, one can attach two belts to an object and rotate it by 720° without it getting tangled. Combining the two movements,the object can spin continuously without becoming tangled.}}
+\end{frame}}
 
+{
+\setbeamercolor{background canvas}{bg=black!100}
 \begin{frame}{Anti-twister mechanisms}
     \begin{center}
         \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster1.jpg}}{Videos/video1.wmv}
     \end{center}
-    {\small\textcolor{white}{Increasing the number of belts does not change the behavior; the cube completes a 360° rotation, the spiral is reversed from its initial configuration. The belts return to their original configuration after spinning a full 720°.}}
-\end{frame}
+    {\small\textcolor{white}{Increasing the number of belts does not change this behavior. Notice that after the cube completed a 360° rotation, the spiral is reversed from its initial configuration. It only returns to its original configuration after spinning a full 720°.}}
+\end{frame}}
 
+{
+\setbeamercolor{background canvas}{bg=black!100}
 \begin{frame}{Anti-twister mechanisms}
     \begin{center}
         \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2.jpg}}{Videos/video2.wmv}
@@ -693,16 +758,67 @@
 }
 % https://bloerg.net/posts/beamer-movies-and-linux/
 
+
+\section{Spinors}
+
+\subsection{In general}
+
+% take a step back on the first part
+% we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
+% motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
+% how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
+% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achieving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
+% def of spinor
+% other definition of spinor: Clifford algebras, def the algebra
+% link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
+% representation theory of the CLifford algebra, i.e. spinors in all dimensions
+% come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
+
+% there are essentially two frameworks for viewing the notion of a spinor.
+
+\begin{frame}{Summary on spinors}
+    \begin{enumerate}
+        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.)
+        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
+        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
+        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
+    \end{enumerate}
+\end{frame}
+
+\subsection{Spinors in Physics}
+
+
+
+% instead of SO(3), SO(1,3), which somewhat resembles SO(4)
+% why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
+% very very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
+
+
+\section{Fun facts}
+
 \begin{frame}{Fun facts}
     \begin{itemize}
-        \item anti-twister machnism is used in engineering to supply electric power to rotating devices
+        \item anti-twister mechanism is used in engineering to supply electric power to rotating devices
         \item cup on the hand trick (balinese candle dance or Philippine wine dance)
-        \item tangloids
+        \item tangloids is mathematical gamed base on the same principles
+        \item link with quaternions
     \end{itemize}
+
     \begin{figure}
         \centering
-        \includegraphics[scale=0.3]{Pictures/Tangloids.jpeg}
-    \end{figure}
+        \begin{subfigure}[b]{0.5\textwidth}
+            \centering
+            \includegraphics[scale=0.2]{Pictures/Tangloids.jpeg}
+            \caption{Tangloids.}
+        \end{subfigure}\begin{subfigure}[b]{0.5\textwidth}
+            \centering
+            \includegraphics[scale=0.2]{Pictures/balinesedance.jpg}
+            \caption{Balinese candle dance.}
+        \end{subfigure}
+   \end{figure}
+
+   
+
 \end{frame}
 
 % tangloids

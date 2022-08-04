@@ -1,8 +1,10 @@
 \beamer@sectionintoc {1}{Dirac's belt trick and the rotation group}{3}{0}{1}
 \beamer@sectionintoc {2}{Homotopy theory}{12}{0}{2}
-\beamer@sectionintoc {3}{Quantum spin and $\text {SU}(2)$}{16}{0}{3}
-\beamer@sectionintoc {4}{Covering spaces}{19}{0}{4}
-\beamer@sectionintoc {5}{Spinors}{30}{0}{5}
-\beamer@sectionintoc {6}{Spinors in Physics}{32}{0}{6}
-\beamer@sectionintoc {7}{Fun facts}{37}{0}{7}
-\beamer@sectionintoc {8}{Conclusion}{42}{0}{8}
+\beamer@sectionintoc {3}{Covering spaces}{19}{0}{3}
+\beamer@sectionintoc {4}{Quantum spin}{32}{0}{4}
+\beamer@sectionintoc {5}{More belts}{38}{0}{5}
+\beamer@sectionintoc {6}{Spinors}{42}{0}{6}
+\beamer@subsectionintoc {6}{1}{In general}{43}{0}{6}
+\beamer@subsectionintoc {6}{2}{Spinors in Physics}{44}{0}{6}
+\beamer@sectionintoc {7}{Fun facts}{44}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{46}{0}{8}
