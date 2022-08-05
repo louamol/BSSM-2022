@@ -34,6 +34,8 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \renewcommand{\emph}{\alert}
 \newcommand{\pencil}{\includegraphics[scale=0.07]{Pictures/pen.png}}
+\renewcommand{\Re}{\text{Re}}
+\renewcommand{\Im}{\text{Im}}
 
 \title{Group theory, Topology and Spin-$1/2$ Particles}
 \subtitle{From Dirac's belt to fermions}
@@ -383,82 +385,113 @@
 \section{Covering spaces}
 
 \begin{frame}{Covering spaces}
-
-    \begin{block}{Covering space}
-        For a topological space $X$, a \textit{covering space} is a topological space $E$ with a \textit{projection map} $p=E\to X$ such that
-        \begin{itemize}
-            \item $p$ is continuous
-            \item there exists a discrete set $D$ and $U$ and open neighborhood of $x\in X$ such that
-            \begin{equation*}
-                p^{-1}(U)=\bigsqcup_{d\in D}V_d
-            \end{equation*}
-            and $p|_{V_d}=V_d\to U$ is a homeomorphism. $V_d$ are called the \textit{sheets}.
-        \end{itemize}
-    \end{block}
     
     \begin{columns}[T,onlytextwidth]
-        \column{0.65\textwidth}
+        \column{0.75\textwidth}
         
-            \textbf{Examples:}
-            \begin{itemize}
-                \item $\R$ can cover $S^1$ with $p(t)=(\cos(2\pi t),\sin(2\pi t))$, $G(E)=\Z$
-                \item $S^1$ can cover $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$, $G(E)=\Z_n$ \pencil
-                \item other $S^n$ ? $S^1$ is a special case
-            \end{itemize}
+            \begin{block}{Covering space}
+                For a topological space $X$, a \textit{covering space} is a topological space $\tilde{X}$ with a \textit{projection map} $p=\tilde{X}\to X$ such that there exists an open cover $\{\U_\alpha\}$ for which $p^{-1}(U_\alpha)$ is a disjoint union of open sets in $\tilde{X}$, each of which is mapped by $p$ homeomorphically on $U_\alpha$. \\
+                If $X$ is connected, $|p^{-1}(x)|$ is constant and called the number of \textit{sheets}.
+            \end{block}
   
-        \column{0.35\textwidth}
+        \column{0.25\textwidth}
   
             \begin{figure}
                 \centering
-                \includegraphics[scale=0.35]{Pictures/Covering_map.png}
+                \includegraphics[scale=0.4]{Pictures/Covering_map.png}
             \end{figure}
   
     \end{columns}
+
+    \textbf{Example:} covering the circle. Many possibilities:\pencil
+        \begin{itemize}
+            \item $\R$ covers $S^1$ with $p(t)=(\cos(2\pi t),\sin(2\pi t))$,
+            \item $\R$ covers $S^1$ with $p(t)=(\cos(5 t),\sin(5 t))$,
+            \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$,
+            \item $S^1\sqcup S^1$ covers $S^1$ with $p(k,t)=t$, $k=0,1$.
+        \end{itemize}
     
 
 \end{frame}
 
-\begin{frame}{Properties of the covering space}
-    
-    Important remarks:
+\begin{frame}{Important notions}
+
+    We observe that
     \begin{enumerate}
-        \item \textbf{Some covering spaces are ``equivalent''.}
+        \item \textbf{Some covering spaces are ``equivalent'':}
             \begin{minipage}{10cm}
                 \begin{block}{Isomorphisms}
-                    Two covering space $E_1$ and $E_2$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:E_1\to E_2$ such that $p_2\circ h=p_1$.
+                    Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
                 \end{block}
             \end{minipage}
         \item \textbf{The lifting of point can, by definition, be ambiguous.}
             \begin{minipage}{10cm}
                 \begin{block}{Deck transformations}
-                    A \textit{Deck transformation} is a homeomorphism $d:E\to E$ such that $p\circ d=p$. With composition, they form a group $G(E)$.
+                    A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
                 \end{block}
             \end{minipage}
-        \item \textbf{There can exists many covering spaces for the same base space.} In some cases there exists a unique, maximal covering space:
+            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}
+        \item \textbf{Some covering spaces are ``included`` in others:} we restrict ourselves to connected covering spaces.
             
+        \item \textbf{There can exists many covering spaces for the same base space.} If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, then it is a covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS). \textcolor{blue}{$\R$ is the UCS of $S^1$.}
     \end{enumerate}
-    \textbf{Back to our examples:}
-    \begin{itemize}
-        \item $\R$ can cover $S^1$: $G(E)=\Z$
-        \item $S^1$ can cover $S^1$ with $n$ sheets: $G(E)=\Z_n$ \pencil
-        \item other $S^n$ ? $S^1$ is a special case
-    \end{itemize}
 
 \end{frame}
 
 \begin{frame}{Covering spaces and paths}
-    % observation, drawings
-    %lifting property
-\end{frame}
+    \begin{columns}[T,onlytextwidth]
+        \column{0.7\textwidth}
+        
+            \begin{block}{Lifting property of paths}
+                For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
+            \end{block}
+            
+            We see that:\\
+            \quad $\triangleright$ loop are not necessarily lifted to loops\\
+            \quad $\triangleright$ the lift of a constant path is still constant\\
+            Most importantly : the lifts of homotopy-equivalent paths are homotopically equivalent.
 
-\begin{frame}{Covering spaces and paths}
-    % rest of lifting property
-    %fundamental group
-    % the covering is exactly what solves the homotopical ambiguity, i.e. the space that contains the same infirmation+the the topological information of nonequivalent paths!
+
+  
+        \column{0.3\textwidth}
+  
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.1]{Pictures/lifting_point.png}
+        \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.1]{Pictures/lifting_path.png}
+        \end{figure}
+  
+    \end{columns}
+
+    The covering is exactly what solves the homotopy ambiguity, i.e. the space that contains the same infirmation plu the the topological information of non-equivalent paths!
+
+    \emph{Conclusion:} the fundamental group and the covering space are two pictures of the same thing: algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
 \end{frame}
 
 \begin{frame}{Covering space of $\SO(3)$ ?}
-    
+    \begin{block}{Special unitary group}
+        $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
+    \end{block}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.1]{Pictures/lifting_su2.png}
+    \end{figure}
+    The projection is
+    \begin{equation*}
+        p\left(\begin{bmatrix}
+            x & y \\
+            -\bar{y} & \bar{x}
+        \end{bmatrix}\right)=
+        \begin{bmatrix}
+            \Re(x^2-y^2) & \Im(x^2+y^2) & -2\Re(xy) \\
+            -\Im(x^2-y^2) & \Re(x^2+y^2) & 2\Im(xy) \\
+            2\Re(x\bar{y}) & 2\Im(x\bar{y}) & \abs{x}^2-\abs{y}^2
+        \end{bmatrix}
+    \end{equation*}
+    with $\abs{x}^2+\abs{y}^2=1$.
 \end{frame}
 
 \begin{frame}{$\SU(2)$ and $\SO(3)$}
@@ -482,62 +515,9 @@
     Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
     Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
     \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
-    In other words: how are the two notions of rotations related ?\\[0.2cm]
-    $\Rightarrow$ covering spaces !
+    In other words: how are the two notions of rotations related ? They are the sheets! \\[0.2cm]
 \end{frame}
 
-
-
-\begin{frame}{Back to $\SU(2)$}
-    
-    % in our case: SU(2) universal covering space of SO(3), give projection ad picture, this is how the 2 spheres are related to SO(3, they are sheets
-    
-
-    
-\end{frame}
-
-\begin{frame}{From $\SU(2)$ to $\SO(3)$}
-    (maybe put the appendix if no time)
-
-    \textbf{What is the projection map ?}\\[0.2cm]
-    
-    We introduce the \textit{Pauli matrices}
-    \begin{equation}
-        \sigma_1 =
-        \begin{bmatrix}
-            0 & 1\\
-            1 & 0
-        \end{bmatrix},\qquad
-        \sigma_2 =
-        \begin{bmatrix}
-            0 & -i\\
-            i & 0
-        \end{bmatrix},\qquad
-        \sigma_3 =
-        \begin{bmatrix}
-            1 & 0\\
-            0 & -1
-        \end{bmatrix}.
-    \end{equation}
-    Then, for $\overrightarrow{r}=(x,y,z)\in\SO(3)$, the matrix
-    \begin{equation*}
-        \overrightarrow{r}\cdot \overrightarrow{\sigma}=r^i\sigma_i=
-        \begin{bmatrix}
-            z & x-iy\\
-            x+iy & -z
-        \end{bmatrix}
-    \end{equation*}
-    is \emph{traceless} and \emph{self-adjoint}, i.e. $\overrightarrow{r}\cdot \overrightarrow{\sigma}\in\mathfrak{su}(2)$. More precisely, $\sigma_i$ are the generators of $\mathfrak{su}(2)$. Moreover $\det(\overrightarrow{r}\cdot \overrightarrow{\sigma})=-(x^2+y^2+z^2)$.\\[0.2cm]
-    We can then shown that, the new matrix $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger$, with $U\in\SU(2)$ is 
-    \begin{itemize}
-        \item still traceless and self-adjoint \\
-            $\Rightarrow$ $\exists \overrightarrow{r}_U\in\SO(3)$ such that $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger=\overrightarrow{r}_U\cdot \overrightarrow{\sigma}$
-        \item has same determinant, i.e $\abs{\overrightarrow{r}}=\abs{\overrightarrow{r}_U}$\\
-            $\Rightarrow$ $\exists R_U\in\SO(3)$ such that $\overrightarrow{r}_U=R\overrightarrow{r}$
-    \end{itemize}
-    In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
-    
-\end{frame}
 
 \begin{frame}{Last comments on $\SU(2)$ and $\SO(3)$}
     \textbf{\underline{Group relation:}}\\[0.2cm]
@@ -554,52 +534,33 @@
 
     \textbf{\underline{Other formulation:}}\\[0.2cm]
 
-    $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$.
+    $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$. This formulation makes a lot of sense since $\R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}$, or $\R\P^3=S^2/\Z_2$, so exactly get the previous group relation.
 
 \end{frame}
 
 \begin{frame}{Summary on $\SU(2)$ and $\SO(3)$}
     \begin{enumerate}
         \item $\SU(2)$ is the universal covering space of $\SO(3)$, it has two sheets
-        \item we constructed an explicit projection map
+        \item we can construct an explicit projection map
         \item we, finally, completely understand Dirac's belt trick
         \item ...
     \end{enumerate}
     
 \end{frame}
 
-\begin{frame}{Lifting from $\SO(3)$ to $\SU(2)$}
-    
-    % give and prove the projection
-
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.1]{Pictures/lifting_point.png}
-    \end{figure}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.1]{Pictures/lifting_path.png}
-    \end{figure}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.1]{Pictures/lifting_su2.png}
-    \end{figure}
-    
-\end{frame}
-
-\begin{frame}{Finally, in the end, at last, understanding Dirac's belt trick}
+\begin{frame}{Bringing it all together}
     What is the lift of the $2\pi$-twist ? The path going from $I$ to $-I$ \pencil\\[0.2cm]
     \textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
     \begin{flushright}
     \begin{minipage}{10.5cm}
-        Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, which does not change during the contraction, therefore it is non-contractible. And so is hte non-lifted path.
+        Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, therefore it is not contractible, and so is the non-lifted path.
     \end{minipage}
     \end{flushright}
-    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-1$, to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Make sens, since we already ``showed'' its contractibility.\\[0.2cm]
+    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-I$ then to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Makes sense, since we already ``showed'' its contractibility.\\[0.2cm]
 
-    Are there other manifestation of homotopy in our practical world ?\\[0.3cm]
+    Are there other manifestation of homotopy in our practical world ?\\[0.2cm]
 
-    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\
+    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\[0.2cm]
     Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 \end{frame}
 
@@ -616,12 +577,8 @@
     \begin{equation*}
         \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
     \end{equation*}
-    so, similarly,
-    \begin{block}{Special unitary group}
-        $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
-    \end{block}
-    and $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
-    Like $\SO(3)$ it is a Lie group so it can be viewed
+    so $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
+    Like $\SO(3)$ it is a Lie group so it can be viewed...
 \end{frame}
 
 \begin{frame}{What is the spin ?}
@@ -699,7 +656,23 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Rotating a spin vector}
+\begin{frame}{Generalization to other spins}
+    % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
+    % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
+    % how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
+    % properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achieving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
+    % def of spinor
+    % other definition of spinor: Clifford algebras, def the algebra
+    % link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
+    % representation theory of the CLifford algebra, i.e. spinors in all dimensions
+    % come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
+
+    % there are essentially two frameworks for viewing the notion of a spinor.
+
+    % ccl the integer spin particles are vector repr (called bosons), they don't care about the homotopy class, the half integer spins are proper spinors, they caeer about the homotopy class, they are sensible to an additional Z_2 (called fermions).
+\end{frame}
+
+\begin{frame}{The bizarre nature of fermions}
     The group which acts on spin vectors is $\SU(2)$.\\[0.2cm]
     \textbf{Question:} how do rotations act on spin vectors ? The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
@@ -726,6 +699,23 @@
 
 \end{frame}
 
+\begin{frame}{Summary on spinors}
+    \begin{enumerate}
+        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.) 
+        \item Nothing forces us to consider only objects that do not make this difference (vectors). We should consider the most general case, this is what spinors are.
+        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
+        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
+        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
+        \item A spinor is characterized by its \emph{spin}. Depending on the dimension of the space, the dimensions of the spin representations vary but all spins are always possible.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Spinors in relativistic Physics}
+
+    The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the indefinite rotation groups $\SO(p,q)$ than the usual rotation groups $\SO(n)$, because of special relativity. The whole theory can be generalized accordingly. 
+
+    
+\end{frame}
 
 \section{More belts}
 
@@ -758,40 +748,6 @@
 }
 % https://bloerg.net/posts/beamer-movies-and-linux/
 
-
-\section{Spinors}
-
-\subsection{In general}
-
-% take a step back on the first part
-% we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
-% motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
-% how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
-% properties of the spin groups; in any dimension, actully always TWO topologically inequivalent ways of achieving a rotation, i.e. it is always a DOUBLE cover, it is unique, maximal, etc
-% def of spinor
-% other definition of spinor: Clifford algebras, def the algebra
-% link with the other definition: Both the spin group and its Lie algebra are embedded inside the Clifford algebra in a natural way, and in applications the Clifford algebra is often the easiest to work with.
-% representation theory of the CLifford algebra, i.e. spinors in all dimensions
-% come back the three dimensions, our example of SU(2) etc, with representations theory of SO(3) and SU(3), integer spin and half-interger spins
-
-% there are essentially two frameworks for viewing the notion of a spinor.
-
-\begin{frame}{Summary on spinors}
-    \begin{enumerate}
-        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.)
-        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
-        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
-        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
-    \end{enumerate}
-\end{frame}
-
-\subsection{Spinors in Physics}
-
-
-
-% instead of SO(3), SO(1,3), which somewhat resembles SO(4)
-% why do we need spinors ? For indistinguishable particles, only two possibilities: fermions and boson
-% very very important theorem relates this and what we discussed: Spin-statistic thm: boson have integer spin and fermions half-integer spin
 
 
 \section{Fun facts}
@@ -920,6 +876,48 @@
 \end{frame}
 
 }
+
+\begin{frame}{From $\SU(2)$ to $\SO(3)$}
+    (maybe put the appendix if no time)
+
+    \textbf{What is the projection map ?}\\[0.2cm]
+    
+    We introduce the \textit{Pauli matrices}
+    \begin{equation}
+        \sigma_1 =
+        \begin{bmatrix}
+            0 & 1\\
+            1 & 0
+        \end{bmatrix},\qquad
+        \sigma_2 =
+        \begin{bmatrix}
+            0 & -i\\
+            i & 0
+        \end{bmatrix},\qquad
+        \sigma_3 =
+        \begin{bmatrix}
+            1 & 0\\
+            0 & -1
+        \end{bmatrix}.
+    \end{equation}
+    Then, for $\overrightarrow{r}=(x,y,z)\in\R^3$, the matrix
+    \begin{equation*}
+        \overrightarrow{r}\cdot \overrightarrow{\sigma}=r^i\sigma_i=
+        \begin{bmatrix}
+            z & x-iy\\
+            x+iy & -z
+        \end{bmatrix}
+    \end{equation*}
+    is \emph{traceless} and \emph{self-adjoint}, i.e. $\overrightarrow{r}\cdot \overrightarrow{\sigma}\in\mathfrak{su}(2)$. More precisely, $\sigma_i$ are the generators of $\mathfrak{su}(2)$. Moreover $\det(\overrightarrow{r}\cdot \overrightarrow{\sigma})=-(x^2+y^2+z^2)$.\\[0.2cm]
+    We can then shown that, the new matrix $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger$, with $U\in\SU(2)$ is 
+    \begin{itemize}
+        \item still traceless and self-adjoint \\
+            $\Rightarrow$ $\exists \overrightarrow{r}_U\in\SO(3)$ such that $U(\overrightarrow{r}\cdot \overrightarrow{\sigma})U^\dagger=\overrightarrow{r}_U\cdot \overrightarrow{\sigma}$
+        \item has same determinant, i.e $\abs{\overrightarrow{r}}=\abs{\overrightarrow{r}_U}$\\
+            $\Rightarrow$ $\exists R_U\in\SO(3)$ such that $\overrightarrow{r}_U=R\overrightarrow{r}$
+    \end{itemize}
+    In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
+\end{frame}
 
 \begin{frame}[allowframebreaks]{References}
 
