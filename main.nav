@@ -82,51 +82,55 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\slideentry {4}{0}{9}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\beamer@sectionpages {28}{36}}
-\headcommand {\beamer@subsectionpages {28}{36}}
-\headcommand {\sectionentry {5}{More belts}{37}{More belts}{0}}
-\headcommand {\slideentry {5}{0}{1}{37/37}{}{0}}
+\headcommand {\slideentry {4}{0}{10}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {5}{0}{2}{38/38}{}{0}}
+\headcommand {\slideentry {4}{0}{11}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {5}{0}{3}{39/39}{}{0}}
+\headcommand {\beamer@sectionpages {28}{38}}
+\headcommand {\beamer@subsectionpages {28}{38}}
+\headcommand {\sectionentry {5}{More belts}{39}{More belts}{0}}
+\headcommand {\slideentry {5}{0}{1}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {5}{0}{4}{40/40}{}{0}}
+\headcommand {\slideentry {5}{0}{2}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@sectionpages {37}{40}}
-\headcommand {\beamer@subsectionpages {37}{40}}
-\headcommand {\sectionentry {6}{Fun facts}{41}{Fun facts}{0}}
-\headcommand {\slideentry {6}{0}{1}{41/41}{}{0}}
+\headcommand {\slideentry {5}{0}{3}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {6}{0}{2}{42/42}{}{0}}
+\headcommand {\slideentry {5}{0}{4}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\beamer@sectionpages {41}{42}}
-\headcommand {\beamer@subsectionpages {41}{42}}
-\headcommand {\sectionentry {7}{Conclusion}{43}{Conclusion}{0}}
-\headcommand {\slideentry {7}{0}{1}{43/43}{}{0}}
+\headcommand {\beamer@sectionpages {39}{42}}
+\headcommand {\beamer@subsectionpages {39}{42}}
+\headcommand {\sectionentry {6}{Fun facts}{43}{Fun facts}{0}}
+\headcommand {\slideentry {6}{0}{1}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {7}{0}{2}{44/44}{}{0}}
+\headcommand {\slideentry {6}{0}{2}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {7}{0}{3}{45/45}{}{0}}
+\headcommand {\beamer@sectionpages {43}{44}}
+\headcommand {\beamer@subsectionpages {43}{44}}
+\headcommand {\sectionentry {7}{Conclusion}{45}{Conclusion}{0}}
+\headcommand {\slideentry {7}{0}{1}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\gdef \insertmainframenumber {37}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{45}}
-\headcommand {\beamer@sectionpages {43}{45}}
-\headcommand {\beamer@subsectionpages {43}{45}}
-\headcommand {\beamer@appendixpages {46}}
-\headcommand {\slideentry {7}{0}{4}{46/46}{}{1}}
+\headcommand {\slideentry {7}{0}{2}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {7}{0}{5}{47/47}{}{1}}
+\headcommand {\slideentry {7}{0}{3}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {7}{0}{6}{48/48}{}{1}}
+\headcommand {\gdef \insertmainframenumber {39}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{47}}
+\headcommand {\beamer@sectionpages {45}{47}}
+\headcommand {\beamer@subsectionpages {45}{47}}
+\headcommand {\beamer@appendixpages {48}}
+\headcommand {\slideentry {7}{0}{4}{48/48}{}{1}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {7}{0}{7}{49/49}{}{1}}
+\headcommand {\slideentry {7}{0}{5}{49/49}{}{1}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@partpages {46}{49}}
-\headcommand {\beamer@subsectionpages {46}{49}}
-\headcommand {\beamer@sectionpages {46}{49}}
-\headcommand {\beamer@documentpages {49}}
+\headcommand {\slideentry {7}{0}{6}{50/50}{}{1}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {7}{0}{7}{51/51}{}{1}}
+\headcommand {\beamer@framepages {51}{51}}
+\headcommand {\beamer@partpages {48}{51}}
+\headcommand {\beamer@subsectionpages {48}{51}}
+\headcommand {\beamer@sectionpages {48}{51}}
+\headcommand {\beamer@documentpages {51}}
 \headcommand {\gdef \inserttotalframenumber {4}}
-\headcommand {\gdef \inserttotalframenumber {37}}
+\headcommand {\gdef \inserttotalframenumber {39}}
 \headcommand {\gdef \appendixtotalframenumber {4}}

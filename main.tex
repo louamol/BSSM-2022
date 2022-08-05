@@ -676,26 +676,65 @@
     The group which acts on spin vectors is $\SU(2)$.\\[0.2cm]
     \textbf{Question:} how do rotations act on spin vectors ? The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
-    We saw that the $2\pi$-twist is not closed $\Rightarrow$ walking around such a particle would not give back the particle in the same states, it would inverts the spin state.\\[0.2cm]
+    The $2\pi$-twist is not closed $\Rightarrow$ walking around such a particle would not give back the particle in the same states, it would inverts the spin state.\\[0.2cm]
     \textbf{But}, very odd property ... could such exotic particles exist ? Or is it an error of interpretation ?\\[0.2cm]
-    \emph{Yes}, they do exist. Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! E.g. electrons.
+    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been experimentally 
+\end{frame}
+
+\begin{frame}{Elementary particles}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.22]{Pictures/SM.png}
+        \caption{Standard Model of particle physics.}
+    \end{figure}
 \end{frame}
 
 \begin{frame}{Remarks}
 
-    \textbf{\underline{Technical details:}}
-    \begin{itemize}
-        \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
-        \item we cannot detect the effect if there only one particle
-        \item we do not actually use electrons but neutrons (see neutron interferometry).
-    \end{itemize}
-    \textbf{\underline{Spin in nature:}}
+    \begin{columns}[T,onlytextwidth]
+        \column{0.5\textwidth}
+          
+        \textbf{\underline{Technical details:}}
+        \begin{itemize}
+            \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
+            \item we cannot detect the effect if there only one particle
+            \item we do not actually use electrons but neutrons (see neutron interferometry).
+        \end{itemize}
+        \textbf{\underline{Spin in nature:}}
+    
+        \column{0.5\textwidth}
+    
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.12]{Pictures/SM.png}
+                \caption{Standard Model of particle physics.}
+            \end{figure}
+    
+    \end{columns}
+
+    
     \begin{itemize}
         \item in nature, only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc), $1$ (photons, gluons, etc) and $2$ (graviton)
         \item spins higher than $2$ are very problematic, and not well-understood yet. Current topic of research (UMons !)
         \item spin-$1/3$ particles ? No, impossible, because $\pi_1(SO(3))=\Z_{\textcolor{red}{2}}$. Example of mathematical constraint on physical models.
     \end{itemize}
-    \textbf{\underline{Behind quantum mechanics:}} modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
+     modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
+
+\end{frame}
+
+\begin{frame}{Remarks}
+    \textbf{\underline{Behind quantum mechanics:}} \\[0.2cm]
+
+    The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the indefinite rotation groups rather than the usual rotation groups, because of special relativity. The whole theory can be generalized accordingly.
+
+    \begin{figure}
+        \centering
+        \begin{tabular}{c|cc}
+            & \textbf{Non-relativistic} & \textbf{Relativistic} \\ \hline
+            rotation group & $\SO(3)$ & $\SO(1,3)$ \\
+            UCS & $\Spin(3)=\SU(2)$ & $\Spin(1,3)=\SL(2,\C)$
+        \end{tabular}
+    \end{figure}
 
 \end{frame}
 
@@ -712,7 +751,7 @@
 
 \begin{frame}{Spinors in relativistic Physics}
 
-    The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the indefinite rotation groups $\SO(p,q)$ than the usual rotation groups $\SO(n)$, because of special relativity. The whole theory can be generalized accordingly. 
+    
 
     
 \end{frame}

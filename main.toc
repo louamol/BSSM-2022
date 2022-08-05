@@ -2,6 +2,6 @@
 \beamer@sectionintoc {2}{Homotopy theory}{12}{0}{2}
 \beamer@sectionintoc {3}{Covering spaces}{19}{0}{3}
 \beamer@sectionintoc {4}{Quantum spin}{28}{0}{4}
-\beamer@sectionintoc {5}{More belts}{37}{0}{5}
-\beamer@sectionintoc {6}{Fun facts}{41}{0}{6}
-\beamer@sectionintoc {7}{Conclusion}{43}{0}{7}
+\beamer@sectionintoc {5}{More belts}{39}{0}{5}
+\beamer@sectionintoc {6}{Fun facts}{43}{0}{6}
+\beamer@sectionintoc {7}{Conclusion}{45}{0}{7}
