@@ -398,15 +398,15 @@
   
             \begin{figure}
                 \centering
-                \includegraphics[scale=0.4]{Pictures/Covering_map.png}
+                \includegraphics[scale=0.5]{Pictures/Covering_map.png}
             \end{figure}
   
     \end{columns}
 
     \textbf{Example:} covering the circle. Many possibilities:\pencil
         \begin{itemize}
-            \item $\R$ covers $S^1$ with $p(t)=(\cos(2\pi t),\sin(2\pi t))$,
-            \item $\R$ covers $S^1$ with $p(t)=(\cos(5 t),\sin(5 t))$,
+            \item $\R$ covers $S^1$ with $p_1(t)=(\cos(2\pi t),\sin(2\pi t))$,
+            \item $\R$ covers $S^1$ with $p_2(t)=(\cos(5 t),\sin(5 t))$,
             \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$,
             \item $S^1\sqcup S^1$ covers $S^1$ with $p(k,t)=t$, $k=0,1$.
         \end{itemize}
@@ -414,9 +414,8 @@
 
 \end{frame}
 
-\begin{frame}{Important notions}
+\begin{frame}{Important observations}
 
-    We observe that
     \begin{enumerate}
         \item \textbf{Some covering spaces are ``equivalent'':}
             \begin{minipage}{10cm}
@@ -424,6 +423,7 @@
                     Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
                 \end{block}
             \end{minipage}
+            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}
         \item \textbf{The lifting of point can, by definition, be ambiguous.}
             \begin{minipage}{10cm}
                 \begin{block}{Deck transformations}
@@ -439,21 +439,27 @@
 \end{frame}
 
 \begin{frame}{Covering spaces and paths}
+
     \begin{columns}[T,onlytextwidth]
-        \column{0.7\textwidth}
+        \column{0.8\textwidth}
         
             \begin{block}{Lifting property of paths}
                 For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
             \end{block}
             
-            We see that:\\
-            \quad $\triangleright$ loop are not necessarily lifted to loops\\
-            \quad $\triangleright$ the lift of a constant path is still constant\\
-            Most importantly : the lifts of homotopy-equivalent paths are homotopically equivalent.
+            Consequences:
+            \begin{enumerate}
+                \item The lift of a constant path is still constant.
+                \item Loop are not necessarily lifted to loops.
+            \end{enumerate}
 
+            Clearly, the projection of a homotopy is a homotopy for the projected paths. What about they other way around ?
 
-  
-        \column{0.3\textwidth}
+            \begin{block}{Lifting property of homotopies}
+                Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
+            \end{block}
+            
+        \column{0.2\textwidth}
   
         \begin{figure}
             \centering
@@ -466,19 +472,74 @@
   
     \end{columns}
 
-    The covering is exactly what solves the homotopy ambiguity, i.e. the space that contains the same infirmation plu the the topological information of non-equivalent paths!
-
-    \emph{Conclusion:} the fundamental group and the covering space are two pictures of the same thing: algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+    
+    
 \end{frame}
 
-\begin{frame}{Covering space of $\SO(3)$ ?}
+\begin{frame}{Lifting property of paths}
+
+    
+
+    The lifts of homotopy-equivalent paths are homotopically equivalent!\\
+
+    If $\tilde{X}$ is the UCS of $X$, we actually have
+    \begin{equation*}
+        \boxed{\pi_1(X)=G(\tilde{X}).}
+    \end{equation*}
+    $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+
+    \textbf{\underline{Conclusion:}} $\pi_1(X)$ and $\tilde{X}$ are two pictures of the same thing. $\tilde{X}$ is the space that contains the same information plus the topological information of non-equivalent paths, i.e. it ``solves'' the homotopy ambiguity.
+\end{frame}
+
+\begin{frame}{Covering space of $\SO(3)$}
+
+    One can show that
+    \begin{equation*}
+        \boxed{\text{The universal covering space of $\SO(3)$ is $\SU(2)$}.}
+    \end{equation*}
+
     \begin{block}{Special unitary group}
         $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
     \end{block}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.1]{Pictures/lifting_su2.png}
-    \end{figure}
+    
+    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
+    \begin{equation}
+        U=
+        \begin{bmatrix}
+            X+iY & Z+iW \\
+            -Z+iY & X-iY
+        \end{bmatrix}
+    \end{equation}
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$
+    $\Rightarrow$ $\SU(2)$ can be viewed as a group and a manifold, i.e. it is a Lie group.\\[0.2cm]
+    \underline{$\SU(2)$ and $\SO(3)$}:
+    \begin{enumerate}
+        \item both Lie groups of dimension three
+        \item both are connected
+        \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{$\SU(2)$ and $\SO(3)$}
+
+    \begin{columns}[T,onlytextwidth]
+        \column{0.65\textwidth}
+        
+        How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
+        Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
+        Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
+        \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
+        In other words: how are the two notions of rotations related ? They are the sheets!
+            
+        \column{0.35\textwidth}
+  
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.1]{Pictures/lifting_su2.png}
+            \end{figure}
+  
+    \end{columns}
+
     The projection is
     \begin{equation*}
         p\left(\begin{bmatrix}
@@ -492,76 +553,66 @@
         \end{bmatrix}
     \end{equation*}
     with $\abs{x}^2+\abs{y}^2=1$.
-\end{frame}
-
-\begin{frame}{$\SU(2)$ and $\SO(3)$}
-    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
-    \begin{equation}
-        U=
-        \begin{bmatrix}
-            X+iY & Z+iW \\
-            -Z+iY & X-iY
-        \end{bmatrix}
-    \end{equation}
-    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
-    so $\SU(2)$ can be viewed as a group and a manifold, it is a Lie group\\[0.2cm]
-    $\SU(2)$ and $\SO(3)$:
-    \begin{enumerate}
-        \item both Lie groups of dimension three
-        \item both are connected
-        \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
-    \end{enumerate}
-    How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
-    Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
-    Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
-    \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
-    In other words: how are the two notions of rotations related ? They are the sheets! \\[0.2cm]
+    
+    
+    
 \end{frame}
 
 
-\begin{frame}{Last comments on $\SU(2)$ and $\SO(3)$}
+\begin{frame}{Relation between $\SU(2)$ and $\SO(3)$}
     \textbf{\underline{Group relation:}}\\[0.2cm]
-    There is recurring theme: two things $\SU(2)$ correspond to one in $\SO(3)$. This comes from the fact that $\SU(2)$ is a \emph{double}-cover of $\SO(3)$, which can can see in practice with
+    The fact that $\SU(2)$ is a \emph{double}-cover of $\SO(3)$ can can see in practice with
     \begin{equation*}
         p(U)=p(-U).
     \end{equation*}
-    Intuitively, we should be able to recover $\SO(3)$ from $\SU(2)$ if $U\sim-U$.\\[0.2cm]
-    And, indeed,
+    Intuitively, we should be able to recover $\SO(3)$ from $\SU(2)$ if $U\sim-U$. And, indeed,
     \begin{equation*}
-        \SO(3)\cong\SU(2)/\Z_2,
+        \boxed{\SO(3)\cong\SU(2)/\Z_2,}
     \end{equation*}
     where the quotient means exactly that we identity $U$ with $-U$.\\[0.2cm]
 
     \textbf{\underline{Other formulation:}}\\[0.2cm]
 
-    $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$. This formulation makes a lot of sense since $\R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}$, or $\R\P^3=S^2/\Z_2$, so exactly get the previous group relation.
+    We saw that $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$. This makes sense since 
+    \begin{equation*}
+        \R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}=S^3/\Z_2=\SO(3)/\Z_2,
+    \end{equation*}
+    we get the previous group relation.
 
-\end{frame}
-
-\begin{frame}{Summary on $\SU(2)$ and $\SO(3)$}
-    \begin{enumerate}
-        \item $\SU(2)$ is the universal covering space of $\SO(3)$, it has two sheets
-        \item we can construct an explicit projection map
-        \item we, finally, completely understand Dirac's belt trick
-        \item ...
-    \end{enumerate}
-    
 \end{frame}
 
 \begin{frame}{Bringing it all together}
-    What is the lift of the $2\pi$-twist ? The path going from $I$ to $-I$ \pencil\\[0.2cm]
+
+    What are the lifts of the $2\pi$-twist and the $4\pi$-twist ?\pencil
+    \begin{align*}
+        \text{$2\pi$-twist} &\to \text{path from $I$ to $-I$}\\
+        \text{$4\pi$-twist} &\to \text{path from $I$ to $-I$ to $I$ again}\\
+    \end{align*}
     \textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
     \begin{flushright}
     \begin{minipage}{10.5cm}
         Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, therefore it is not contractible, and so is the non-lifted path.
     \end{minipage}
     \end{flushright}
-    On the other hand, the $4\pi$-twist lifts to a path going from $I$ to $-I$ then to $I$ again (\pencil). So its a loop and the argument does not hold anymore. Makes sense, since we already ``showed'' its contractibility.\\[0.2cm]
+    \textbf{\underline{Proof that $4\pi$-twist is contractible in $\SO(3)$:}}
+    \begin{flushright}
+    \begin{minipage}{10.5cm}
+        The lift of the $4\pi$-twist is a loop. Since $\pi_1(\SU(2))=\pi_1(S^3)=0$, this loop is necessarily contractible. Projecting each step of its contraction provides us with a contraction of the $4\pi$-twist path in $\SO(3)$.
+    \end{minipage}
+    \end{flushright}
 
-    Are there other manifestation of homotopy in our practical world ?\\[0.2cm]
+\end{frame}
 
-    Yes: the \emph{spin} ! (you don't need a belt, but you need an electron)\\[0.2cm]
-    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
+\begin{frame}{Summary of the analysis of Dirac's belt trick}
+
+    \begin{itemize}
+        \item 
+    \end{itemize}
+    
+    \textbf{Are there other manifestations of homotopy in our practical world ?}\\[0.2cm]
+
+    Yes: the \emph{spin} ! (You don't need a belt, but you need an electron.) Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
+
 \end{frame}
 
 
