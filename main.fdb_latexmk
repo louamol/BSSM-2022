@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1659979140 "main.aux" "main.bbl" "main" 1659979431
+["bibtex main"] 1660069906 "main.aux" "main.bbl" "main" 1660070071
   "/home/louan/.miktex/texmfs/install/bibtex/bst/bibtex/abbrv.bst" 1623060340 20329 b5fed53e10044d0f8112183785c759b1 ""
   "bibliography.bib" 1657878492 331 8384d74d56b7b808d1a6852d7b9326dc ""
-  "main.aux" 1659979430 10494 e5e05a99d78f01120c5f38c65b071ab1 "pdflatex"
+  "main.aux" 1660070071 9979 a3999708b50107ac674efa04ae0bb161 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1659979426 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1659979431
+["pdflatex"] 1660070067 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1660070071
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1639818892 9292 e5d64362a881832ecd3431a32218de5c ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1657189595 10472 dfeec969657b30b42bc18dac97f0af07 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk" 1657877301 6184 7ed5407a1415c32fe19a359c8edfdcbd ""
@@ -85,6 +85,7 @@
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb" 1623060326 32442 c975af247b6702f7ca0c299af3616b80 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1623060326 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb" 1623060326 36310 f5ddc6715cc60deb16d9db5ded6a9391 ""
+  "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1623060326 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1623060326 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb" 1623060326 30212 b6aafa449db0097a6b9b890f66741063 ""
   "/home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb" 1623060326 36510 24bd6e95867d9b5c2691bf9144a22cda ""
@@ -341,7 +342,7 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/url/url.sty" 1623060370 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1658673922 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1658673922 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1659979425 44326 91ea2fdde0dd57fc5b5a96cae74080e3 ""
+  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1660070062 44342 1272b2a07b13a18f8385d0504e1aebb8 ""
   "Packages/custom_macros.tex" 1658245832 5423 4a539de273bc11bebde0064f2807b592 ""
   "Pictures/4pibelt.png" 1656666368 62472 cfb14efbe3f9346ac6234f2b66c8401b ""
   "Pictures/4pisphere1.png" 1656666389 127399 0f046cd85cf6779587c666b8befce210 ""
@@ -379,12 +380,12 @@
   "Videos/2belts.wmv" 1658828654 1328895 d3bc961bee3d8ee31b977d4fcd2f18b2 ""
   "Videos/video1.wmv" 1658306277 6961243 48702d32674e70ddaae0e04c9da5d193 ""
   "Videos/video2.wmv" 1658306403 19943643 115df033e8426d0a0ec27a821c4f6bf1 ""
-  "main.aux" 1659979430 10494 e5e05a99d78f01120c5f38c65b071ab1 "pdflatex"
-  "main.bbl" 1659979140 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
-  "main.nav" 1659979430 6532 bced2d6d6cb7a15723b9155eb596cc4e "pdflatex"
-  "main.out" 1659979430 975 0248dd7fda9a8a42310ee74e0906c6c2 "pdflatex"
-  "main.tex" 1659979425 44326 91ea2fdde0dd57fc5b5a96cae74080e3 ""
-  "main.toc" 1659979430 370 0d40cb3f70ac1e5e75d2fef7ff2d8d6e "pdflatex"
+  "main.aux" 1660070071 9979 a3999708b50107ac674efa04ae0bb161 "pdflatex"
+  "main.bbl" 1660069906 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
+  "main.nav" 1660070071 6161 5c51a9abf0bf3f261aeaf8f5c4c90182 "pdflatex"
+  "main.out" 1660070071 975 0248dd7fda9a8a42310ee74e0906c6c2 "pdflatex"
+  "main.tex" 1660070062 44342 1272b2a07b13a18f8385d0504e1aebb8 ""
+  "main.toc" 1660070071 370 a0ebc9cdb87f3991255855a2ace690f5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

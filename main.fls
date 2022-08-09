@@ -1982,10 +1982,6 @@ INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx8.tfm
-INPUT ./Pictures/SM.png
-INPUT ./Pictures/SM.png
-INPUT Pictures/SM.png
-INPUT ./Pictures/SM.png
 INPUT ./Videos/2belts.wmv
 INPUT Videos/2belts.wmv
 INPUT ./Pictures/poster2belts.jpg
@@ -2065,6 +2061,8 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pf
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
+INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
 INPUT /home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb

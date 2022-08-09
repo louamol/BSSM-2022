@@ -248,11 +248,11 @@
             \item \textit{Path} in $X$: continuous map $\gamma:[0,1]\to X$,
             \item \textit{Loop} : closed path, i.e. embedded circle,
             \item $\gamma_1$ and $\gamma_2$ are \textit{homotopically equivalent} if one can be deformed into the other: there exists
-            $F:[0,1]\times [0,1]\to X$ such that
+            $f_t: [0,1]\to X$ with $t\in I$ such that
             \begin{equation*}
-                F(0,t)=\gamma_1(t)\qquad \text{and}\qquad F(1,t)=\gamma_2(t).
+                f_0(s)=\gamma_1(s)\qquad \text{and}\qquad f_1(s)=\gamma_2(s).
             \end{equation*}
-            This is an equivalence relation ($\sim$).
+            and the endpoints are fixed. This is an equivalence relation ($\sim$).
         \end{itemize}
     \end{block}
     
@@ -363,18 +363,12 @@
         \boxed{\pi_1(\SO(3))=\Z_2}
     \end{equation*}
     $\Rightarrow$ There only two ``fundamentally different'' loops in $\SO(3)$ !\\
-    $\Rightarrow$ there is only one kind of non-contractible loop !
+    $\Rightarrow$ there is only one kind of non-contractible loop !\\[0.2cm]
 
-    \begin{center}
-        \begin{tabular}{|l|}
-            \hline
-            The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
-        \end{tabular}
-    \end{center}
     Indeed, there only two different initial configurations (i.e. two possible loops in $\SO(3)$):
     \begin{itemize}
         \item $4\pi k$-twists which are all equivalent
-        \item $4\pi k+2\pi$-twists which are all equivalent
+        \item $(4\pi k+2\pi)$-twists which are all equivalent
     \end{itemize}
     with $k\in\Z$.\\[0.2cm]
 
@@ -390,7 +384,7 @@
         \column{0.75\textwidth}
         
             \begin{block}{Covering space}
-                For a topological space $X$, a \textit{covering space} is a topological space $\tilde{X}$ with a \textit{projection map} $p=\tilde{X}\to X$ such that there exists an open cover $\{\U_\alpha\}$ for which $p^{-1}(U_\alpha)$ is a disjoint union of open sets in $\tilde{X}$, each of which is mapped by $p$ homeomorphically on $U_\alpha$. \\
+                For a topological space $X$, a \textit{covering space} is a topological space $\tilde{X}$ with a \textit{projection map} $p:\tilde{X}\to X$ such that there exists an open cover $\{\U_\alpha\}$ for which $p^{-1}(U_\alpha)$ is a disjoint union of open sets in $\tilde{X}$, each of which is mapped by $p$ homeomorphically on $U_\alpha$. \\
                 If $X$ is connected, $|p^{-1}(x)|$ is constant and called the number of \textit{sheets}.
             \end{block}
   
@@ -442,22 +436,24 @@
 
     \begin{columns}[T,onlytextwidth]
         \column{0.8\textwidth}
-        
-            \begin{block}{Lifting property of paths}
-                For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
-            \end{block}
-            
-            Consequences:
-            \begin{enumerate}
-                \item The lift of a constant path is still constant.
-                \item Loop are not necessarily lifted to loops.
-            \end{enumerate}
 
+            \begin{block}{Path lifting property}
+                Any path can be lifted. If we fix the lift of the starting point, the lifted path is unique.
+                %For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
+            \end{block}
+            $\Rightarrow$ The lift of a constant path is still constant.\\
+            $\Rightarrow$ Loop are not necessarily lifted to loops.\\[0.2cm]
             Clearly, the projection of a homotopy is a homotopy for the projected paths. What about they other way around ?
-
-            \begin{block}{Lifting property of homotopies}
-                Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
+            \begin{block}{Homotopy lifting property}
+                Any homotopy can be lifted. If we fix the lift of the starting path, the lifted homotopy is unique.
+                %Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
             \end{block}
+            $\Rightarrow$ The lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}\\
+            If $\tilde{X}$ is the UCS of $X$, we actually have
+            \begin{equation*}
+                \boxed{\pi_1(X)=G(\tilde{X}).}
+            \end{equation*}
+            
             
         \column{0.2\textwidth}
   
@@ -472,23 +468,8 @@
   
     \end{columns}
 
-    
-    
-\end{frame}
-
-\begin{frame}{Lifting property of paths}
-
-    
-
-    The lifts of homotopy-equivalent paths are homotopically equivalent!\\
-
-    If $\tilde{X}$ is the UCS of $X$, we actually have
-    \begin{equation*}
-        \boxed{\pi_1(X)=G(\tilde{X}).}
-    \end{equation*}
     $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
-
-    \textbf{\underline{Conclusion:}} $\pi_1(X)$ and $\tilde{X}$ are two pictures of the same thing. $\tilde{X}$ is the space that contains the same information plus the topological information of non-equivalent paths, i.e. it ``solves'' the homotopy ambiguity.
+    
 \end{frame}
 
 \begin{frame}{Covering space of $\SO(3)$}
@@ -501,7 +482,7 @@
     \begin{block}{Special unitary group}
         $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
     \end{block}
-    
+    \textbf{\underline{Properties of $\SU(2)$:}}\\
     What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
     \begin{equation}
         U=
@@ -510,9 +491,9 @@
             -Z+iY & X-iY
         \end{bmatrix}
     \end{equation}
-    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
     $\Rightarrow$ $\SU(2)$ can be viewed as a group and a manifold, i.e. it is a Lie group.\\[0.2cm]
-    \underline{$\SU(2)$ and $\SO(3)$}:
+    \textbf{\underline{$\SU(2)$ and $\SO(3)$:}}
     \begin{enumerate}
         \item both Lie groups of dimension three
         \item both are connected
@@ -526,9 +507,9 @@
         \column{0.65\textwidth}
         
         How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
-        Observation: $S^2$ is equivalent to two disks glued along their boundary\\[0.2cm]
-        Similarly: $S^3$ is equivalent to balls glued along their boundary\\[0.2cm]
-        \textbf{BUT}, are those spheres related to $\SO(3)$ ?\\
+        Observation: $S^2$ is equivalent to two disks glued along their boundary.\\[0.2cm]
+        Similarly, $S^3$ is equivalent to balls glued along their boundary.\\[0.2cm]
+        \textbf{Question:} are those balls related to $\SO(3)$ ?\\
         In other words: how are the two notions of rotations related ? They are the sheets!
             
         \column{0.35\textwidth}
@@ -559,7 +540,8 @@
 \end{frame}
 
 
-\begin{frame}{Relation between $\SU(2)$ and $\SO(3)$}
+\begin{frame}{$\SU(2)$ and $\SO(3)$}
+
     \textbf{\underline{Group relation:}}\\[0.2cm]
     The fact that $\SU(2)$ is a \emph{double}-cover of $\SO(3)$ can can see in practice with
     \begin{equation*}
@@ -606,52 +588,49 @@
 \begin{frame}{Summary of the analysis of Dirac's belt trick}
 
     \begin{itemize}
-        \item 
+        \item Belt configurations are equivalent to paths in $\SO(3)$. New question: we want to classify the contractable and non-contractable loop.
+        \item Fundamental groups and covering spaces: $\pi_1(X)$ and $\tilde{X}$ are two pictures of the same thing. $\tilde{X}$ is the space that contains the same information plus the topological information of non-equivalent paths, i.e. it ``solves'' the homotopy ambiguity.
+        \item The UCS of $\SO(3)$ is $\SU(2)$, and it is a double cover.
+        \item There only two kinds topologically-distinguishable loops: $[4\pi k\text{-twists}]$ is contractible and the $[(4\pi k+2\pi)\text{-twists}]$ is not contractible.
     \end{itemize}
+
+    \begin{center}
+        \begin{tabular}{|l|}
+            \hline
+            The belt trick is a way of physically demonstrating that the \\ fundamental group of $\SO(3)$ is $\Z_2$.\\ \hline
+        \end{tabular}
+    \end{center}
     
     \textbf{Are there other manifestations of homotopy in our practical world ?}\\[0.2cm]
 
-    Yes: the \emph{spin} ! (You don't need a belt, but you need an electron.) Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
+    Yes: the \emph{spin} ! (You don't need a belt, but you need an electron.)\\
+    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
 
 \end{frame}
 
 
 \section{Quantum spin}
 
-\begin{frame}{Rotating a spin vector}
-    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
-    \begin{equation*}
-        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
-    \end{equation*}
-    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
-    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
-    \begin{equation*}
-        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
-    \end{equation*}
-    so $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).\\[0.2cm]
-    Like $\SO(3)$ it is a Lie group so it can be viewed...
-\end{frame}
-
 \begin{frame}{What is the spin ?}
 
     Skipping most of the physics background:
     \begin{block}{Spin in quantum mechanics}
         \begin{enumerate}
-            \item the \textit{spin}  is an inherent property of any ``particle'':
+            \item The \textit{spin}  is an inherent property of any ``particle'':
             \begin{itemize}
-                \item number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
-                \item does not change, like the mass, charge, etc
+                \item it's a number $s\in\frac{1}{2}\N$\textcolor{blue}{, in our case $s=1/2$}
+                \item does not change (like the mass, charge, etc)
                 \item classifies particles
             \end{itemize}
-            \item a particle of spin $s$ is, at a given moment, in a certain state described by the \textit{spin vector}:
+            \item A particle of spin $s$ is, at a given moment, in a certain state described by the \textit{spin vector}:
             \begin{itemize}
                 \item unit vector of $v\in\C^{2s+1}$\textcolor{blue}{, in our case $\begin{bmatrix}\alpha\\ \beta\end{bmatrix}\in\C^2$}
-                \item can evolve over time
+                \item this state can evolve over time
             \end{itemize}
-            \item what we can measure yet another quantity, called \textit{observed spin}:
+            \item What we can measure yet another quantity, called \textit{observed spin}:
             \begin{itemize}
               \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$\\
-              \textcolor{blue}{In our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
+              \textcolor{blue}{in our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
               \item given a direction, e.g. $i=x,y,z$
               \item outcome is random, we can only compute de probabilities of the different outcomes
             \end{itemize}
@@ -663,7 +642,7 @@
 \begin{frame}{What is the spin ?}
     \textbf{How do measures happen ?}\\[0.2cm]
     Let us introduce
-    {\small
+    {\tiny
     \begin{align*}
         v_{x,\uparrow}=
         \begin{bmatrix}
@@ -692,9 +671,9 @@
     \end{align*}}
     The probability of measuring $s_{\text{obs.}}$ in the direction $i$ is given by the projection
     \begin{equation}
-        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,k},v \rangle_{\C^2}}^2
+        P(i,s_{\text{obs.}}) = \abs{\langle v_{i,s_{\text{obs.}}},v \rangle_{\C^2}}^2
     \end{equation}
-    where $v$ is the spin vector of the particle.\\[0.2cm]
+    where $v$ is the spin vector of the particle and $\langle v,w \rangle=v^\dagger w$ is a scalar product on $\C^2$.\\[0.2cm]
     \textbf{Example}: in the direction $z$,
     \begin{equation}
       P(z,\uparrow)= \abs{\alpha}^2,\qquad P(z,\downarrow)= \abs{\beta}^2.
@@ -707,7 +686,48 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Generalization to other spins}
+\begin{frame}{The bizarre nature of fermions}
+
+    \textbf{\underline{How to rotate a spin vector ?}}\\[0.2cm]
+    We need to leave the probabilities $\Rightarrow$ scalar product invariant:
+    \begin{equation*}
+        \boxed{\text{Spin vectors transform under the isometry group of $\C^2$, i.e. $\SU(2)$ !}}
+    \end{equation*}
+
+    \textbf{\underline{How do space rotations act on spin vectors ?}}\\[0.2cm]
+     The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
+
+     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
+
+    \textbf{\underline{Interpretation !?}}\\[0.2cm]
+
+    The $2\pi$-twist is not closed $\Rightarrow$ \emph{walking around} such a particle would not give back the particle in the same states, it would \emph{negate the spin state}. Very odd property ... Could such exotic particles exist ? Error of interpretation ?\\[0.2cm]
+    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been observed experimentally.
+
+\end{frame}
+
+\begin{frame}{The bizarre natre of fermions}
+
+    
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.13]{Pictures/SM.png}
+        \caption{Standard Model of particle physics.}
+    \end{figure}
+
+    \textbf{\underline{Practical details:}}
+    \begin{itemize}
+        \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
+        \item we cannot detect the effect if there only one particle
+        \item we do not actually use electrons but neutrons (see neutron interferometry).
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Generalizations}
+
+    \textbf{\underline{Other spins:}}\\
+    
     % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
     % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
     % how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
@@ -721,62 +741,24 @@
     % there are essentially two frameworks for viewing the notion of a spinor.
 
     % ccl the integer spin particles are vector repr (called bosons), they don't care about the homotopy class, the half integer spins are proper spinors, they caeer about the homotopy class, they are sensible to an additional Z_2 (called fermions).
+
+    \textbf{\underline{Other dimensions:}}
+
 \end{frame}
 
-\begin{frame}{The bizarre nature of fermions}
-    The group which acts on spin vectors is $\SU(2)$.\\[0.2cm]
-    \textbf{Question:} how do rotations act on spin vectors ? The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
-    This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
-    The $2\pi$-twist is not closed $\Rightarrow$ walking around such a particle would not give back the particle in the same states, it would inverts the spin state.\\[0.2cm]
-    \textbf{But}, very odd property ... could such exotic particles exist ? Or is it an error of interpretation ?\\[0.2cm]
-    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been experimentally 
-\end{frame}
+\begin{frame}{Ending remarks in spinors}
 
-\begin{frame}{Elementary particles}
-    \begin{figure}
-        \centering
-        \includegraphics[scale=0.22]{Pictures/SM.png}
-        \caption{Standard Model of particle physics.}
-    \end{figure}
-\end{frame}
-
-\begin{frame}{Remarks}
-
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-          
-        \textbf{\underline{Technical details:}}
-        \begin{itemize}
-            \item instead of walking around the particle, we rotate it using a magnetic field (Lamor procession)
-            \item we cannot detect the effect if there only one particle
-            \item we do not actually use electrons but neutrons (see neutron interferometry).
-        \end{itemize}
-        \textbf{\underline{Spin in nature:}}
-    
-        \column{0.5\textwidth}
-    
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.12]{Pictures/SM.png}
-                \caption{Standard Model of particle physics.}
-            \end{figure}
-    
-    \end{columns}
-
-    
+    \textbf{\underline{Spin in nature:}}
     \begin{itemize}
-        \item in nature, only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc), $1$ (photons, gluons, etc) and $2$ (graviton)
-        \item spins higher than $2$ are very problematic, and not well-understood yet. Current topic of research (UMons !)
+        \item only spins $0$ (Higgs boson), $1/2$ (electrons, quarks, etc), $1$ (photons, gluons, etc) and $2$ (graviton) are found in nature
+        \item spins higher than $2$ are technically very problematic, and not well-understood yet. Current topic of research (U Mons !)
         \item spin-$1/3$ particles ? No, impossible, because $\pi_1(SO(3))=\Z_{\textcolor{red}{2}}$. Example of mathematical constraint on physical models.
     \end{itemize}
-     modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
+    %modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
 
-\end{frame}
-
-\begin{frame}{Remarks}
     \textbf{\underline{Behind quantum mechanics:}} \\[0.2cm]
 
-    The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the indefinite rotation groups rather than the usual rotation groups, because of special relativity. The whole theory can be generalized accordingly.
+    The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the \emph{indefinite rotation groups} rather than the usual rotation groups, because of \emph{special relativity}. The whole theory can be generalized accordingly:
 
     \begin{figure}
         \centering
@@ -798,13 +780,6 @@
         \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
         \item A spinor is characterized by its \emph{spin}. Depending on the dimension of the space, the dimensions of the spin representations vary but all spins are always possible.
     \end{enumerate}
-\end{frame}
-
-\begin{frame}{Spinors in relativistic Physics}
-
-    
-
-    
 \end{frame}
 
 \section{More belts}
@@ -838,16 +813,15 @@
 }
 % https://bloerg.net/posts/beamer-movies-and-linux/
 
-
-
 \section{Fun facts}
 
 \begin{frame}{Fun facts}
+    
     \begin{itemize}
-        \item anti-twister mechanism is used in engineering to supply electric power to rotating devices
-        \item cup on the hand trick (balinese candle dance or Philippine wine dance)
-        \item tangloids is mathematical gamed base on the same principles
-        \item link with quaternions
+        \item Anti-twister mechanisms are used in engineering to supply electric power to rotating devices.
+        \item The cup on the hand trick (balinese candle dance or Philippine wine dance).
+        \item Tangloids is mathematical gamed base on the same principles.
+        \item Link with quaternions.
     \end{itemize}
 
     \begin{figure}
@@ -862,8 +836,6 @@
             \caption{Balinese candle dance.}
         \end{subfigure}
    \end{figure}
-
-   
 
 \end{frame}
 
@@ -884,35 +856,6 @@
     \begin{center}
         {\huge\textit{Thank you}}
     \end{center}
-\end{frame}
-
-
-\begin{frame}{Blocks}
-    Three different block environments are pre-defined and may be styled with an
-    optional background color.
-  
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-          
-            Some text.\\[2cm]
-            aaaaa
-    
-        \column{0.5\textwidth}
-    
-            \begin{block}{Default}
-              Block content.
-            \end{block}
-      
-            \begin{alertblock}{Alert}
-              Block content.
-            \end{alertblock}
-      
-            \begin{exampleblock}{Example}
-              Block content.
-            \end{exampleblock}
-    
-    \end{columns}
-
 \end{frame}
 
 \appendix
@@ -1007,6 +950,19 @@
             $\Rightarrow$ $\exists R_U\in\SO(3)$ such that $\overrightarrow{r}_U=R\overrightarrow{r}$
     \end{itemize}
     In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
+\end{frame}
+
+\begin{frame}
+    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
+    \begin{equation*}
+        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
+    \end{equation*}
+    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
+    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
+    \begin{equation*}
+        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
+    \end{equation*}
+    so $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).
 \end{frame}
 
 \begin{frame}[allowframebreaks]{References}
