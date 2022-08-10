@@ -2034,6 +2034,14 @@ INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.t
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
+INPUT ./Pictures/lifting_point.png
+INPUT ./Pictures/lifting_point.png
+INPUT Pictures/lifting_point.png
+INPUT ./Pictures/lifting_point.png
+INPUT ./Pictures/lifting_path.png
+INPUT ./Pictures/lifting_path.png
+INPUT Pictures/lifting_path.png
+INPUT ./Pictures/lifting_path.png
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl

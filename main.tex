@@ -66,21 +66,15 @@
         \item a heavy book
     \end{itemize}
 
-    \textbf{Goal:} deform the belt to untwist a $2\pi$-twist.\\[0.2cm]
+    \textbf{Goal:} deform the belt to untwist a $4\pi$-twist. Possible ? \emph{Yes !}\\[0.2cm]
 
-    Note: deforming the belt is equivalent to moving its ends and keep the same orientation.\\[0.2cm]
+    Result: the belts rotates two times faster than its ends.\\[0.2cm]
     
-    $\Rightarrow$ it tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
+    What about a $2\pi$-twist ? It tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
 
-    However, possible for a $4\pi$ twist ...\\ \hspace{7cm} Why is that ?
+    \hspace{7cm} Why is that ? How can we understand this ?
 
 \end{frame}
-
-%\begin{frame}{Anti-twister mechanisms}
-%    \begin{center}
-%        \movie[width=4cm,height=2.5cm,showcontrols,loop]{\includegraphics[scale=0.15]{Pictures/poster3.jpg}}{Videos/BeltTrick.wmv}
-%    \end{center}
-%\end{frame}
 
 \begin{frame}{Space of rotations: $\SO(3)$ as a group}
       
@@ -285,14 +279,11 @@
 
 \end{frame}
 
-\begin{frame}{Fundamental group}
+\begin{frame}{Computing the fundamental group}
 
-    Which space have the same fundamental groups ? Evidently, homeomorphic ones, but we can be less restrictive:
-    \begin{block}{Proposition}
-        If $\vp:X\to Y$ are is a homotopy equivalence, then the induced homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ is an isomorphism for all $x_0\in X$.
-    \end{block}
-
-    How to compute $\pi_1(X)$ ? Can be difficult, there a different methods (e.g. Van Kampen theorem, Hopf fibrations, Hurewicz theorems, etc), not discussed here. A lot of homotopy groups are still unknown !\\[0.2cm]
+    \textbf{How to compute $\pi_1(X)$ ?}\\[0.2cm]
+    
+    Can be difficult, there a different methods (e.g. Van Kampen theorem, Hopf fibrations, Hurewicz theorems, etc), not discussed here. A lot of homotopy groups are still unknown !\\[0.4cm]
 
     \begin{columns}[T,onlytextwidth]
         \column{0.55\textwidth}
@@ -300,8 +291,9 @@
             \textbf{Examples:}\pencil
             {\small
             \begin{itemize}
-                \item $\pi_1(\R^3)=0$
+                \item $\pi_1(\R^2)=0$
                 \item $\pi_1(S^2) = 0$
+                \item $\pi_1(S^1) = \Z$
                 \item $\pi_1(\mathbb{T}^2)=\pi_1(S^1)\times\pi_1(S^1)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
                 \item $\pi_1(\R^2\backslash\{p\})=\Z$
             \end{itemize}}
@@ -314,30 +306,12 @@
             \end{figure}
   
     \end{columns}
+    Just $\pi_1(S^1)=\Z$ implies various famous theorems: fundamental theorem of algebra, Brouwer's fixed point theorem, Borusk-Ulam theorem etc.\\[0.2cm]
 
-    Remark: $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ?
-\end{frame}
-
-\begin{frame}{Fundamental group of the circle}
-
-    Using the covering space technology, we can show that
+    Remark: $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ? Yes, higher-homotopy groups:
     \begin{equation*}
-        \boxed{\pi_1(S^1)=\Z,}
+        \pi_n(X,x_0)=\{\text{$S^n$ based at $x_0$}\}/\sim.
     \end{equation*}
-    which intuitively make sense. This results alone implies many famous theorems of topology:
-    \begin{block}{Theorem (fundamental theorem of algebra)}
-        Every non-constant polynomial with coefficients in $\C$ has a root in $\C$.
-    \end{block}
-    \begin{block}{Theorem (Brouwer fixed point)}
-        Every continuous map $h:D^2\to D^2$ has a fixed point.
-    \end{block}
-    And, using the same techniques:
-    \begin{block}{Theorem (Borusk-Ulam)}
-        For every continuous map $f=S^2\to \R^2$ there exist a pair of antipodal points $x$ and $-x$ in $S^2$ such that $f(x)=f(-x)$.
-    \end{block}
-
-    One can generalize and show that $\pi_n(S^n)=\Z$. These theorems are then generalized accordingly.
-    
 \end{frame}
 
 \begin{frame}{Homotopy groups of spheres}
@@ -405,56 +379,41 @@
             \item $S^1\sqcup S^1$ covers $S^1$ with $p(k,t)=t$, $k=0,1$.
         \end{itemize}
     
-
 \end{frame}
 
-\begin{frame}{Important observations}
+\begin{frame}{General properties}
 
     \begin{enumerate}
-        \item \textbf{Some covering spaces are ``equivalent'':}
-            \begin{minipage}{10cm}
-                \begin{block}{Isomorphisms}
-                    Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
-                \end{block}
-            \end{minipage}
-            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}
-        \item \textbf{The lifting of point can, by definition, be ambiguous.}
-            \begin{minipage}{10cm}
-                \begin{block}{Deck transformations}
-                    A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
-                \end{block}
-            \end{minipage}
-            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}
-        \item \textbf{Some covering spaces are ``included`` in others:} we restrict ourselves to connected covering spaces.
-            
-        \item \textbf{There can exists many covering spaces for the same base space.} If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, then it is a covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS). \textcolor{blue}{$\R$ is the UCS of $S^1$.}
+        \item Some covering spaces are ``equivalent'': isomorphisms between covering spaces.\\
+            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}\\[0.2cm]
+        \item The lifting of point can, by definition, be ambiguous: related by Deck transformations, which form a group $G(\tilde{X})$.\\
+            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}\\[0.2cm]
+        \item Some covering spaces are ``included`` in others: we restrict ourselves to connected covering spaces.\\[0.2cm]
+        \item There can exists many covering spaces for the same base space. Under some assumtions, there exists a unique, maximal covering space, called \textit{universal covering space} (UCS). \\
+            \textcolor{blue}{$\R$ is the UCS of $S^1$.}
     \end{enumerate}
 
 \end{frame}
 
-\begin{frame}{Covering spaces and paths}
+\begin{frame}{Lifting properties}
 
     \begin{columns}[T,onlytextwidth]
         \column{0.8\textwidth}
 
-            \begin{block}{Path lifting property}
-                Any path can be lifted. If we fix the lift of the starting point, the lifted path is unique.
-                %For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
-            \end{block}
-            $\Rightarrow$ The lift of a constant path is still constant.\\
-            $\Rightarrow$ Loop are not necessarily lifted to loops.\\[0.2cm]
-            Clearly, the projection of a homotopy is a homotopy for the projected paths. What about they other way around ?
-            \begin{block}{Homotopy lifting property}
-                Any homotopy can be lifted. If we fix the lift of the starting path, the lifted homotopy is unique.
-                %Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
-            \end{block}
-            $\Rightarrow$ The lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}\\
-            If $\tilde{X}$ is the UCS of $X$, we actually have
-            \begin{equation*}
-                \boxed{\pi_1(X)=G(\tilde{X}).}
-            \end{equation*}
-            
-            
+        \begin{itemize}
+            \item lifting points is ambiguous
+            \item lifting path is not ambiguous if the starting point is fixed
+            \item constant paths are lifted to constant paths
+            \item the projection of a homotopy is a homotopy for the projected paths
+            \item the lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}
+        \end{itemize}
+
+        If $\tilde{X}$ is the UCS of $X$, we actually have
+        \begin{equation*}
+            \boxed{\pi_1(X)=G(\tilde{X}).}
+        \end{equation*}
+        $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+
         \column{0.2\textwidth}
   
         \begin{figure}
@@ -468,8 +427,6 @@
   
     \end{columns}
 
-    $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
-    
 \end{frame}
 
 \begin{frame}{Covering space of $\SO(3)$}
@@ -557,7 +514,7 @@
 
     We saw that $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$. This makes sense since 
     \begin{equation*}
-        \R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}=S^3/\Z_2=\SO(3)/\Z_2,
+        \R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}=S^3/\Z_2=\SU(2)/\Z_2,
     \end{equation*}
     we get the previous group relation.
 
@@ -746,7 +703,7 @@
 
 \end{frame}
 
-\begin{frame}{Ending remarks in spinors}
+\begin{frame}{Ending remarks on spinors}
 
     \textbf{\underline{Spin in nature:}}
     \begin{itemize}
@@ -782,7 +739,7 @@
     \end{enumerate}
 \end{frame}
 
-\section{More belts}
+\section{More belts and fun facts}
 
 {
 \setbeamercolor{background canvas}{bg=black!100}
@@ -813,10 +770,8 @@
 }
 % https://bloerg.net/posts/beamer-movies-and-linux/
 
-\section{Fun facts}
-
 \begin{frame}{Fun facts}
-    
+
     \begin{itemize}
         \item Anti-twister mechanisms are used in engineering to supply electric power to rotating devices.
         \item The cup on the hand trick (balinese candle dance or Philippine wine dance).
@@ -965,10 +920,104 @@
     so $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).
 \end{frame}
 
+\begin{frame}{Homotopy}
+    Which space have the same fundamental groups ? Evidently, homeomorphic ones, but we can be less restrictive:
+    \begin{block}{Proposition}
+        If $\vp:X\to Y$ are is a homotopy equivalence, then the induced homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ is an isomorphism for all $x_0\in X$.
+    \end{block}
+\end{frame}
+
+\begin{frame}{Fundamental group of the circle}
+
+    Using the covering space technology, we can show that
+    \begin{equation*}
+        \boxed{\pi_1(S^1)=\Z,}
+    \end{equation*}
+    which intuitively make sense. This results alone implies many famous theorems of topology:
+    \begin{block}{Theorem (fundamental theorem of algebra)}
+        Every non-constant polynomial with coefficients in $\C$ has a root in $\C$.
+    \end{block}
+    \begin{block}{Theorem (Brouwer fixed point)}
+        Every continuous map $h:D^2\to D^2$ has a fixed point.
+    \end{block}
+    And, using the same techniques:
+    \begin{block}{Theorem (Borusk-Ulam)}
+        For every continuous map $f=S^2\to \R^2$ there exist a pair of antipodal points $x$ and $-x$ in $S^2$ such that $f(x)=f(-x)$.
+    \end{block}
+
+    One can generalize and show that $\pi_n(S^n)=\Z$. These theorems are then generalized accordingly.
+    
+\end{frame}
+
+\begin{frame}{Important observations}
+
+    \begin{enumerate}
+        \item \textbf{Some covering spaces are ``equivalent'':}
+            \begin{minipage}{10cm}
+                \begin{block}{Isomorphisms}
+                    Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
+                \end{block}
+            \end{minipage}
+            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}
+        \item \textbf{The lifting of point can, by definition, be ambiguous.}
+            \begin{minipage}{10cm}
+                \begin{block}{Deck transformations}
+                    A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
+                \end{block}
+            \end{minipage}
+            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}
+        \item \textbf{Some covering spaces are ``included`` in others:} we restrict ourselves to connected covering spaces.
+            
+        \item \textbf{There can exists many covering spaces for the same base space.} If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, then it is a covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS). \textcolor{blue}{$\R$ is the UCS of $S^1$.}
+    \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Covering spaces and paths}
+
+    \begin{columns}[T,onlytextwidth]
+        \column{0.8\textwidth}
+
+            \begin{block}{Path lifting property}
+                Any path can be lifted. If we fix the lift of the starting point, the lifted path is unique.
+                %For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
+            \end{block}
+            $\Rightarrow$ The lift of a constant path is still constant.\\
+            $\Rightarrow$ Loop are not necessarily lifted to loops.\\[0.2cm]
+            Clearly, the projection of a homotopy is a homotopy for the projected paths. What about they other way around ?
+            \begin{block}{Homotopy lifting property}
+                Any homotopy can be lifted. If we fix the lift of the starting path, the lifted homotopy is unique.
+                %Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
+            \end{block}
+            $\Rightarrow$ The lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}\\
+            If $\tilde{X}$ is the UCS of $X$, we actually have
+            \begin{equation*}
+                \boxed{\pi_1(X)=G(\tilde{X}).}
+            \end{equation*}
+            
+            
+        \column{0.2\textwidth}
+  
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.1]{Pictures/lifting_point.png}
+        \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.1]{Pictures/lifting_path.png}
+        \end{figure}
+  
+    \end{columns}
+
+    $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+    
+\end{frame}
+
+
 \begin{frame}[allowframebreaks]{References}
 
-\bibliography{bibliography}
-\bibliographystyle{abbrv}
+    \bibliography{bibliography}
+    \bibliographystyle{abbrv}
 
 \end{frame}
 
