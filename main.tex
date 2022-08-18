@@ -66,94 +66,22 @@
         \item a heavy book
     \end{itemize}
 
-    \textbf{Goal:} deform the belt to untwist a $4\pi$-twist. Possible ? \emph{Yes !}\\[0.2cm]
+    \textbf{\underline{Goal}}\\ [0.2cm]
 
-    Result: the belts rotates two times faster than its ends.\\[0.2cm]
+    Deform the belt to untwist a $4\pi$-twist. Possible ? \emph{Yes !}\\[0.2cm]
+
+    What about a $2\pi$-twist ? \emph{No !} One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
+
+    \textbf{\underline{Result:}} \\[0.2cm]
     
-    What about a $2\pi$-twist ? It tuns out to be \emph{impossible} ! One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
-
-    \hspace{7cm} Why is that ? How can we understand this ?
+    The torsion in the belt rotates two times faster than the ends of the belt.\\[0.2cm]
+    
+    Who to explain this ?\\ [0.2cm]
+    Very interesting mathematics are hiding behind this simple demonstrations.
 
 \end{frame}
 
-\begin{frame}{Space of rotations: $\SO(3)$ as a group}
-      
-    What is a rotation in $\R^3$ ? It is a real $3\times3$ matrix $R$ that must
-    \begin{enumerate}
-        \item preserve the \emph{scalar product}: $R^TR=\mathbbm{1}$ ($\Leftrightarrow$ $R$ is orthogonal)
-        \item preserve the \emph{orientation}: $\det R=1$
-    \end{enumerate}
-
-    \begin{block}{Special othogonal group}
-        $\SO(3)$ is the set of $3\times 3$ real matrices such that $R^TR=\mathbbm{1}$ and $\det R=1$.
-    \end{block}
-    Three ``fundamental'' rotations:
-    \begin{equation*}
-      {\tiny
-      x:
-      \begin{bmatrix}
-          1 & 0 & 0 \\
-          0 & \cos\theta & -\sin\theta \\
-          0 & \sin\theta & \cos\theta
-      \end{bmatrix}\qquad
-      y:
-      \begin{bmatrix}
-          \cos\theta & 0 & -\sin\theta \\
-          0 & 1 & 0 \\
-          \sin\theta & 0 & \cos\theta
-      \end{bmatrix}\qquad
-      z:
-      \begin{bmatrix}
-          \cos\theta & -\sin\theta & 0 \\
-          \sin\theta & \cos\theta & 0 \\
-          0 & 0 & 1
-      \end{bmatrix}}
-    \end{equation*}
-    any rotation can be obtained by composing those three rotation.\\[0.2cm]
-
-    $\Rightarrow$ It forms a \emph{group}.
-    
-\end{frame}
-
-\begin{frame}{Space of rotations: $\SO(3)$ as a manifold}
-
-    Fundamental data that describes a rotation:
-    \begin{itemize}
-        \item an \emph{axis} of rotation, i.e. a  unit vector $\overrightarrow{n}$ \hspace{1.07cm}\textcolor{blue}{$\to$ 2 parameters}
-        \item an \emph{angle} of rotation $\theta\in[-\pi,\pi]$ (with $-\pi\sim\pi$) \textcolor{blue}{$\to$ 1 parameter}
-    \end{itemize}
-    The space of rotations can then alternately be defined as a \textbf{$\boldsymbol{3}$-sphere of radius $\boldsymbol{\pi}$ and its antipodal points identified}:
-
-    \begin{columns}[T,onlytextwidth]
-        \column{0.5\textwidth}
-
-            \vspace{0.5cm}
-            \begin{equation*}
-              \boxed{\SO(3)\cong B^3(\pi)/\sim}
-            \end{equation*}
-            and for each point:
-            \begin{align*}
-                \text{direction} &\leftrightarrow \text{axis}\\
-                \text{norm} &\leftrightarrow \text{angle}
-            \end{align*}
-            $\Rightarrow$ It is also a \emph{manifold} , most \\
-            \hspace{0.3cm} famously known as $\R\P^3$.
-  
-        \column{0.5\textwidth}
-  
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.16]{Pictures/SO3sphere.png}
-            \end{figure}
-  
-    \end{columns}
-
-    We have $\dim(\SO(3))=3$.\\[0.2cm]
-    (Note that group $+$ manifold $=$ Lie group.)
-    
-\end{frame}
-
-\begin{frame}{Back to the belt}
+\begin{frame}{Mathematicalizing the belt}
 
     Mathematical description of the belt ?\\[0.3cm]
     \quad $\triangleright$ a belt is a strip, which is just a \emph{path} $+$ an \emph{orientation}.\\[0.2cm]
@@ -170,6 +98,50 @@
     This gives us a new language to analyze the problem !
 
 \end{frame}
+
+\begin{frame}{Space of rotations}
+      
+    \textbf{\underline{As a matrix group:}}\\[0.2cm]
+
+    A rotation is a real $3\times3$ matrix $R$ that must
+    \begin{enumerate}
+        \item preserve the \emph{scalar product}: $R^TR=\mathbbm{1}$ ($\Leftrightarrow$ $R$ is orthogonal)
+        \item preserve the \emph{orientation}: $\det R=1$
+    \end{enumerate}
+
+    \begin{block}{Special othogonal group}
+        $\SO(3)$ is the set of $3\times 3$ real matrices such that $R^TR=\mathbbm{1}$ and $\det R=1$.
+    \end{block}
+    
+
+    \textbf{\underline{As a topological space:}}\\[0.2cm]
+
+    
+
+    \begin{columns}[T,onlytextwidth]
+        \column{0.6\textwidth}
+
+            Fundamentally, a rotation is a \emph{direction} + an \emph{angle}.\\
+            $\Rightarrow$ it's a vector where the direction is the axis and the norm is the angle.\\[0.2cm]
+            The set of all such vectors is
+            \begin{equation*}
+                \boxed{\SO(3)\cong B^3(\pi)/\sim}
+            \end{equation*}
+            Most famously known as $\R\P^3$.
+  
+        \column{0.4\textwidth}
+  
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.1]{Pictures/SO3sphere.png}
+                \caption{$3$-sphere of radius $\pi$ with its antipodal points identified on the boundary.}
+            \end{figure}
+  
+    \end{columns}
+    
+\end{frame}
+
+
 
 \begin{frame}{Examples}
     \makebox[315pt][r]{
@@ -288,7 +260,7 @@
     \begin{columns}[T,onlytextwidth]
         \column{0.55\textwidth}
         
-            \textbf{Examples:}\pencil
+            \textbf{Examples:}
             {\small
             \begin{itemize}
                 \item $\pi_1(\R^2)=0$
@@ -308,7 +280,7 @@
     \end{columns}
     Just $\pi_1(S^1)=\Z$ implies various famous theorems: fundamental theorem of algebra, Brouwer's fixed point theorem, Borusk-Ulam theorem etc.\\[0.2cm]
 
-    Remark: $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ? Yes, higher-homotopy groups:
+    \textbf{Remark:} $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ? Yes, higher-homotopy groups:
     \begin{equation*}
         \pi_n(X,x_0)=\{\text{$S^n$ based at $x_0$}\}/\sim.
     \end{equation*}
@@ -317,13 +289,14 @@
 \begin{frame}{Homotopy groups of spheres}
 
     Good example of the complexity of homotpy groups:\\[0.2cm]
-    \quad $\triangleright$ embedding a sphere in a higher-dimensional one is always trivial \\[0.2cm]
-    \quad $\triangleright$ embedding a sphere in itself always works in the same way,\\ \hspace{0.5cm} regardless of the dimension \\[0.2cm]
-    \quad $\triangleright$ embedding a sphere in lower-dimensional one is much more \\ \hspace{0.5cm} complicated: periodic for a bit, then completely chaotic
+    \quad $\triangleright$ embedding a sphere in a higher-dimensional one: always trivial \\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in itself always: always $\Z$ ways \\ \hspace{0.5cm} regardless of the dimension \\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in lower-dimensional one: \\ \hspace{0.5cm}  much more complicated, periodic for a bit, then completely chaotic
 
     \begin{figure}
         \centering
         \includegraphics[scale=0.2]{Pictures/homotpoygroupsphere.png}
+        \caption{Homotopy groups of spheres.}
     \end{figure}
 
 
@@ -371,27 +344,40 @@
   
     \end{columns}
 
-    \textbf{Example:} covering the circle. Many possibilities:\pencil
+    \textbf{Example:} covering the circle. Many possibilities:
         \begin{itemize}
             \item $\R$ covers $S^1$ with $p_1(t)=(\cos(2\pi t),\sin(2\pi t))$,
             \item $\R$ covers $S^1$ with $p_2(t)=(\cos(5 t),\sin(5 t))$,
-            \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$,
-            \item $S^1\sqcup S^1$ covers $S^1$ with $p(k,t)=t$, $k=0,1$.
+            \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$.
         \end{itemize}
     
 \end{frame}
 
 \begin{frame}{General properties}
 
-    \begin{enumerate}
-        \item Some covering spaces are ``equivalent'': isomorphisms between covering spaces.\\
-            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}\\[0.2cm]
-        \item The lifting of point can, by definition, be ambiguous: related by Deck transformations, which form a group $G(\tilde{X})$.\\
-            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}\\[0.2cm]
-        \item Some covering spaces are ``included`` in others: we restrict ourselves to connected covering spaces.\\[0.2cm]
-        \item There can exists many covering spaces for the same base space. Under some assumtions, there exists a unique, maximal covering space, called \textit{universal covering space} (UCS). \\
+    \begin{itemize}
+        \item \textbf{Some covering spaces are ``equivalent'':}
+            \begin{minipage}{10cm}
+                \begin{block}{Isomorphisms}
+                    Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
+                \end{block}
+            \end{minipage}
+            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}\\[0.1cm]
+        \item \textbf{The lifting of point can, by definition, be ambiguous.}
+            \begin{minipage}{10cm}
+                \begin{block}{Deck transformations}
+                    A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
+                \end{block}
+            \end{minipage}
+            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}\\[0.1cm]
+        \item \textbf{Many covering spaces for the same base space:}
+            \begin{minipage}{10cm}
+            \begin{block}{Universal covering space}
+                If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, there exists covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS).
+            \end{block}
+            \end{minipage}
             \textcolor{blue}{$\R$ is the UCS of $S^1$.}
-    \end{enumerate}
+    \end{itemize}
 
 \end{frame}
 
@@ -400,13 +386,15 @@
     \begin{columns}[T,onlytextwidth]
         \column{0.8\textwidth}
 
-        \begin{itemize}
+        Observation:
+
+        \begin{enumerate}
             \item lifting points is ambiguous
             \item lifting path is not ambiguous if the starting point is fixed
             \item constant paths are lifted to constant paths
             \item the projection of a homotopy is a homotopy for the projected paths
             \item the lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}
-        \end{itemize}
+        \end{enumerate}
 
         If $\tilde{X}$ is the UCS of $X$, we actually have
         \begin{equation*}
@@ -448,25 +436,29 @@
             -Z+iY & X-iY
         \end{bmatrix}
     \end{equation}
-    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\
-    $\Rightarrow$ $\SU(2)$ can be viewed as a group and a manifold, i.e. it is a Lie group.\\[0.2cm]
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\[0.2cm]
     \textbf{\underline{$\SU(2)$ and $\SO(3)$:}}
     \begin{enumerate}
-        \item both Lie groups of dimension three
+        \item both of dimension three
         \item both are connected
+        \item both isometry groups
         \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{$\SU(2)$ and $\SO(3)$}
+\begin{frame}{Representating $\SU(2)$}
 
     \begin{columns}[T,onlytextwidth]
         \column{0.65\textwidth}
         
         How could we represent $\SU(2)\cong S^3$ in $3d$ ?\\[0.2cm]
+
         Observation: $S^2$ is equivalent to two disks glued along their boundary.\\[0.2cm]
+
         Similarly, $S^3$ is equivalent to balls glued along their boundary.\\[0.2cm]
+
         \textbf{Question:} are those balls related to $\SO(3)$ ?\\
+
         In other words: how are the two notions of rotations related ? They are the sheets!
             
         \column{0.35\textwidth}
@@ -478,7 +470,7 @@
   
     \end{columns}
 
-    The projection is
+    The projection map is
     \begin{equation*}
         p\left(\begin{bmatrix}
             x & y \\
@@ -520,7 +512,7 @@
 
 \begin{frame}{Bringing it all together}
 
-    What are the lifts of the $2\pi$-twist and the $4\pi$-twist ?\pencil
+    What are the lifts of the $2\pi$-twist and the $4\pi$-twist ?
     \begin{align*}
         \text{$2\pi$-twist} &\to \text{path from $I$ to $-I$}\\
         \text{$4\pi$-twist} &\to \text{path from $I$ to $-I$ to $I$ again}\\
@@ -644,7 +636,7 @@
 \begin{frame}{The bizarre nature of fermions}
 
     \textbf{\underline{How to rotate a spin vector ?}}\\[0.2cm]
-    We need to leave the probabilities $\Rightarrow$ scalar product invariant:
+    We need to leave the probabilities conserved $\Rightarrow$ scalar product invariant:
     \begin{equation*}
         \boxed{\text{Spin vectors transform under the isometry group of $\C^2$, i.e. $\SU(2)$ !}}
     \end{equation*}
@@ -680,8 +672,21 @@
 
 \begin{frame}{Generalizations}
 
-    \textbf{\underline{Other spins:}}\\
-    
+    \textbf{Other spins:} $s\in\frac{1}{2}\N$.\\[0.1cm]
+    \textbf{Other dimensions:} $\SO(3)\to\SO(n)$ and $\SU(2)\to\Spin(n)$ (UCS of $\SO(n)$)\\[0.1cm]
+    \begin{block}{Spinor}
+        A \emph{spinor} of spin $s$ in dimension $n$ is an a element of $\C^{2s+1}$ transforming under a (complex) linear representation of $\Spin(n)$.
+    \end{block}
+
+    \textbf{\underline{Summary on spinors:}}
+
+    \begin{enumerate}
+        \item There are two topologically distinguishable classes of paths through rotations that result in the same overall rotation. (True in any dimension, $\Spin(n)$ is always double-sheeted.) 
+        \item The most general object should take that difference into account: spinors.
+        \item A spinor is characterized by its \emph{spin}. Depending on the dimension of the space, the dimensions of the spin representations vary but all spins are always possible.
+        \item Other approach: Clifford algebra !
+    \end{enumerate}
+
     % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
     % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
     % how to distinguish the topologically inequivalent rotations ? Universal cover of the group, double cover, spin groups
@@ -696,7 +701,6 @@
 
     % ccl the integer spin particles are vector repr (called bosons), they don't care about the homotopy class, the half integer spins are proper spinors, they caeer about the homotopy class, they are sensible to an additional Z_2 (called fermions).
 
-    \textbf{\underline{Other dimensions:}}
 
 \end{frame}
 
@@ -723,17 +727,6 @@
         \end{tabular}
     \end{figure}
 
-\end{frame}
-
-\begin{frame}{Summary on spinors}
-    \begin{enumerate}
-        \item There are two topologically distinguishable classes (homotopy classes) of paths through rotations that result in the same overall rotation, as illustrated by the Dirac's belt trick. (True in any dimension.) 
-        \item Nothing forces us to consider only objects that do not make this difference (vectors). We should consider the most general case, this is what spinors are.
-        \item Spinors change in different ways depending not just on the overall final rotation, but the details of how that rotation was achieved (by a continuous path in the rotation group).
-        \item The spin group is the group of all rotations keeping track of the class. It doubly covers the rotation group, since each rotation can be obtained in two in-equivalent ways as the endpoint of a path.
-        \item The space of spinors by definition is equipped with a (complex) linear representation of the spin group.
-        \item A spinor is characterized by its \emph{spin}. Depending on the dimension of the space, the dimensions of the spin representations vary but all spins are always possible.
-    \end{enumerate}
 \end{frame}
 
 \section{More belts and fun facts}
@@ -797,77 +790,28 @@
 
 \section{Conclusion}
 
-\begin{frame}
+\begin{frame}{Conclusion}
+
     \begin{enumerate}
         \item Dirac's belt trick can be understood by studying the fundamental group of $\SO(3)$.
         \item The universal cover of $\SO(3)$ is $\SU(2)$, in which the homotopy ambiguity is solved. Spin vectors transform under $\SU(2)$ and covering space technology then allows us to better understand the nature of the spin in quantum mechanics.
         \item Spinors can be defined in any dimension and for any spin. Leading to a generalization of usual vectors that take into account the topological difference between some rotations that, a priori, could look equivalent.
-        \item Spinors are fundamental in Physics and in particular all modern theories of fundamental interactions. Spinors model most of elementary particles. In particular, exactly like Dirac's belt, electrons rotate through the lift in $\SU(2)$ thus taking into account the homotopy class of the rotation, how cool !
+        \item Spinors are fundamental in modern theories of fundamental interactions. Spinors model most of elementary particles. In particular, exactly like Dirac's belt, electrons rotate through the lift in $\SU(2)$ thus taking into account the homotopy class of the rotation, how cool ?!
     \end{enumerate}
     \vspace{0.5cm}
     \begin{center}
-        {\huge\textit{Thank you}}
+        {\huge\textit{Thank you !}}
     \end{center}
+
 \end{frame}
 
 \appendix
 
-{
-\setbeamercolor{background canvas}{bg=green!10}
-
-\begin{frame}{Introduction to the spin}
-    
-    \begin{block}{Spin in quantum mechanics}
-        The \emph{spin} of an ``particle'' is a number $s\in\frac{1}{2}\N$.\\
-        The \emph{spin state} of a particle of spin $s$ is a unit vector in $\C^{2s+1}$.
-    \end{block}
-    The spin is a \emph{property}, it cannot change (e.g. mass, charge)\\
-    The spin state is a \emph{characteristic}, it evolves
-
-    How to interpret it ? 
-    \begin{enumerate}
-        \item \textbf{directions:} we choose the direction in which we want to measure it
-        \item \textbf{probabilistic theory:} the outcome of the measure, we can only compute the probabilities of the different outcomes
-        \item \textbf{discrete quantity:} in the chosen direction, the spin will either appear to up or down ($\uparrow$ or $\downarrow$)
-    \end{enumerate}
-    The probability of measuring the spin $k=\uparrow,\downarrow$ in the direction $i=x,y,z$ is given by
-    \begin{equation}
-        P(i,k) = \abs{\langle v_{i,k},v \rangle}^2
-    \end{equation}
-    where $v$ is the spin state of the particle, for some given vectors $v_{i,k}$.
-
-\end{frame}
-
-\begin{frame}{Spin in quantum mechanics}
-    The Lie algebra $\mathfrak{su}(2)$ is generated by the \emph{Pauli matrices}
-    \begin{equation}
-        \sigma_x =
-        \begin{bmatrix}
-            0 & 1\\
-            1 & 0
-        \end{bmatrix},\qquad
-        \sigma_y =
-        \begin{bmatrix}
-            0 & -i\\
-            i & 0
-        \end{bmatrix},\qquad
-        \sigma_z =
-        \begin{bmatrix}
-            1 & 0\\
-            0 & -1
-        \end{bmatrix}.
-    \end{equation}
-    
-\end{frame}
-
-}
-
-\begin{frame}{From $\SU(2)$ to $\SO(3)$}
-    (maybe put the appendix if no time)
+\begin{frame}{Construction of the projeciton map}
 
     \textbf{What is the projection map ?}\\[0.2cm]
     
-    We introduce the \textit{Pauli matrices}
+    We introduce the \textit{Pauli matrices}(generators of $\mathfrak{su}(2)$):
     \begin{equation}
         \sigma_1 =
         \begin{bmatrix}
@@ -904,40 +848,18 @@
     In then end, for each $U\in\SU(2)$, we have $p(U)\equiv R_U\in\SO(3)$. This maps can be shown to be locally a \emph{homeomorphism}.
 \end{frame}
 
-\begin{frame}
-    \textbf{\underline{For vectors:}} recall that the scalar product on $\R^3$ is $\langle v_1,v_2\rangle_{\R^3}=(v_1)^Tv_2$ and
-    \begin{equation*}
-        \langle Rv_1,Rv_2\rangle_{\R^3} = \langle v_1,v_2\rangle_{\R^3}\qquad \Leftrightarrow\qquad R^T R = \mathbbm{1}
-    \end{equation*}
-    so $\SO(3)$ is the isometry group of $\R^3$ (+ orientation preserving).\\[0.2cm]
-    \textbf{\underline{For spin vectors:}} the scalar product on $\C^2$ is $\langle v_1,v_2\rangle_{\C^2}=(v_1)^\dagger v_2$ and
-    \begin{equation*}
-        \langle Uv_1,Uv_2\rangle_{\C^2} = \langle v_1,v_2\rangle_{\C^2}\qquad \Leftrightarrow\qquad U^\dagger U = \mathbbm{1}
-    \end{equation*}
-    so $\SU(2)$ is the isometry group of $\C^2$ (+ orientation preserving).
-\end{frame}
+\begin{frame}{More on homotpy}
 
-\begin{frame}{Homotopy}
     Which space have the same fundamental groups ? Evidently, homeomorphic ones, but we can be less restrictive:
     \begin{block}{Proposition}
         If $\vp:X\to Y$ are is a homotopy equivalence, then the induced homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ is an isomorphism for all $x_0\in X$.
     \end{block}
-\end{frame}
-
-\begin{frame}{Fundamental group of the circle}
-
-    Using the covering space technology, we can show that
-    \begin{equation*}
-        \boxed{\pi_1(S^1)=\Z,}
-    \end{equation*}
-    which intuitively make sense. This results alone implies many famous theorems of topology:
     \begin{block}{Theorem (fundamental theorem of algebra)}
         Every non-constant polynomial with coefficients in $\C$ has a root in $\C$.
     \end{block}
     \begin{block}{Theorem (Brouwer fixed point)}
         Every continuous map $h:D^2\to D^2$ has a fixed point.
     \end{block}
-    And, using the same techniques:
     \begin{block}{Theorem (Borusk-Ulam)}
         For every continuous map $f=S^2\to \R^2$ there exist a pair of antipodal points $x$ and $-x$ in $S^2$ such that $f(x)=f(-x)$.
     \end{block}
@@ -946,72 +868,36 @@
     
 \end{frame}
 
-\begin{frame}{Important observations}
-
-    \begin{enumerate}
-        \item \textbf{Some covering spaces are ``equivalent'':}
-            \begin{minipage}{10cm}
-                \begin{block}{Isomorphisms}
-                    Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
-                \end{block}
-            \end{minipage}
-            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}
-        \item \textbf{The lifting of point can, by definition, be ambiguous.}
-            \begin{minipage}{10cm}
-                \begin{block}{Deck transformations}
-                    A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
-                \end{block}
-            \end{minipage}
-            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}
-        \item \textbf{Some covering spaces are ``included`` in others:} we restrict ourselves to connected covering spaces.
-            
-        \item \textbf{There can exists many covering spaces for the same base space.} If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, then it is a covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS). \textcolor{blue}{$\R$ is the UCS of $S^1$.}
-    \end{enumerate}
-
-\end{frame}
-
 \begin{frame}{Covering spaces and paths}
 
-    \begin{columns}[T,onlytextwidth]
-        \column{0.8\textwidth}
-
-            \begin{block}{Path lifting property}
-                Any path can be lifted. If we fix the lift of the starting point, the lifted path is unique.
-                %For each path $\gamma:I\to X$ starting at $x_0$, if we fix $\tilde{x}_0\in p^{-1}(x_0)$, there is unique lifted path $\tilde{\gamma}:I\to \tilde{X}$ starting at $\tilde{x}_0$.
-            \end{block}
-            $\Rightarrow$ The lift of a constant path is still constant.\\
-            $\Rightarrow$ Loop are not necessarily lifted to loops.\\[0.2cm]
-            Clearly, the projection of a homotopy is a homotopy for the projected paths. What about they other way around ?
-            \begin{block}{Homotopy lifting property}
-                Any homotopy can be lifted. If we fix the lift of the starting path, the lifted homotopy is unique.
-                %Every homotopy $f_t$ of a path $f_0$ lifts to a homotopy $\tilde{f}_t$ of each lift $\tilde{f}_0$ of $f_0$, which fixes the endpoints.
-            \end{block}
-            $\Rightarrow$ The lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}\\
-            If $\tilde{X}$ is the UCS of $X$, we actually have
-            \begin{equation*}
-                \boxed{\pi_1(X)=G(\tilde{X}).}
-            \end{equation*}
-            
-            
-        \column{0.2\textwidth}
-  
-        \begin{figure}
-            \centering
-            \includegraphics[scale=0.1]{Pictures/lifting_point.png}
-        \end{figure}
-        \begin{figure}
-            \centering
-            \includegraphics[scale=0.1]{Pictures/lifting_path.png}
-        \end{figure}
-  
-    \end{columns}
-
-    $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+    Three ``fundamental'' rotations:
+    \begin{equation*}
+      {\tiny
+      x:
+      \begin{bmatrix}
+          1 & 0 & 0 \\
+          0 & \cos\theta & -\sin\theta \\
+          0 & \sin\theta & \cos\theta
+      \end{bmatrix}\qquad
+      y:
+      \begin{bmatrix}
+          \cos\theta & 0 & -\sin\theta \\
+          0 & 1 & 0 \\
+          \sin\theta & 0 & \cos\theta
+      \end{bmatrix}\qquad
+      z:
+      \begin{bmatrix}
+          \cos\theta & -\sin\theta & 0 \\
+          \sin\theta & \cos\theta & 0 \\
+          0 & 0 & 1
+      \end{bmatrix}}
+    \end{equation*}
+    any rotation can be obtained by composing those three rotation.
     
 \end{frame}
 
 
-\begin{frame}[allowframebreaks]{References}
+\begin{frame}{References}
 
     \bibliography{bibliography}
     \bibliographystyle{abbrv}
