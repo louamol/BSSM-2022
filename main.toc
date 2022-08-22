@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Dirac's belt trick and the rotation group}{3}{0}{1}
-\beamer@sectionintoc {2}{Homotopy theory}{11}{0}{2}
-\beamer@sectionintoc {3}{Covering spaces}{17}{0}{3}
-\beamer@sectionintoc {4}{Quantum spin}{26}{0}{4}
-\beamer@sectionintoc {5}{More belts and fun facts}{33}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{38}{0}{6}
+\beamer@sectionintoc {2}{Homotopy theory}{13}{0}{2}
+\beamer@sectionintoc {3}{Covering spaces}{24}{0}{3}
+\beamer@sectionintoc {4}{Quantum spin}{43}{0}{4}
+\beamer@sectionintoc {5}{More belts, more fun}{54}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{59}{0}{6}

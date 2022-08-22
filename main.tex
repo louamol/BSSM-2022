@@ -66,18 +66,18 @@
         \item a heavy book
     \end{itemize}
 
-    \textbf{\underline{Goal}}\\ [0.2cm]
+    \textbf{\underline{Goal:}}\\ [0.2cm]
 
-    Deform the belt to untwist a $4\pi$-twist. Possible ? \emph{Yes !}\\[0.2cm]
+    Deform the belt to untwist a $4\pi$-twist. Possible ? \visible<2->{\emph{Yes !}}\\[0.2cm]
 
-    What about a $2\pi$-twist ? \emph{No !} One turn negates the twist: $2\pi\to-2\pi$.\\[0.2cm]
+    What about a $2\pi$-twist ? \visible<2->{\emph{No !} One turn negates the twist: $2\pi\to-2\pi$.}\\[0.2cm]
 
-    \textbf{\underline{Result:}} \\[0.2cm]
+    \visible<2->{\textbf{\underline{Result:}} \\[0.2cm]
     
     The torsion in the belt rotates two times faster than the ends of the belt.\\[0.2cm]
     
-    Who to explain this ?\\ [0.2cm]
-    Very interesting mathematics are hiding behind this simple demonstrations.
+    How to explain this ?\\ [0.2cm]
+    Very interesting mathematics are hiding behind this simple demonstrations.}
 
 \end{frame}
 
@@ -85,8 +85,8 @@
 
     Mathematical description of the belt ?\\[0.3cm]
     \quad $\triangleright$ a belt is a strip, which is just a \emph{path} $+$ an \emph{orientation}.\\[0.2cm]
-    \quad $\triangleright$ given axis on the middle line along the belt, each set of axis \\ \hspace{0.5cm} is related by a rotation \\[0.2cm]
-    \quad $\triangleright$ a belt configuration is equivalent to a continuous set of axis and \\ \hspace{0.5cm} therefore to a continuous set of translations, i.e. a \emph{path in $\SO(3)$}
+    \quad $\triangleright$ at each point along the middle the belt, we put a set of axis aligned \\ \hspace{0.5cm} with the belt. Each set of axis is a rotation of the initial set. \\[0.2cm]
+    \quad $\triangleright$ this defines a continuous set of rotations or, more precisely, a \emph{path in \\ \hspace{0.5cm} $\SO(3)$}
     \begin{figure}
         \centering
         \includegraphics[scale=0.12]{Pictures/beltaxis.png}
@@ -95,7 +95,7 @@
     \begin{equation*}
         \boxed{\text{belt configuration} \Leftrightarrow \text{path in $\SO(3)$}}
     \end{equation*}
-    This gives us a new language to analyze the problem !
+    It provides us a new language to analyze the problem !
 
 \end{frame}
 
@@ -103,10 +103,10 @@
       
     \textbf{\underline{As a matrix group:}}\\[0.2cm]
 
-    A rotation is a real $3\times3$ matrix $R$ that must
+    A rotation is a real $3\times3$ matrix $R$ such that it
     \begin{enumerate}
-        \item preserve the \emph{scalar product}: $R^TR=\mathbbm{1}$ ($\Leftrightarrow$ $R$ is orthogonal)
-        \item preserve the \emph{orientation}: $\det R=1$
+        \item preserves the \emph{scalar product}: $R^TR=\mathbbm{1}$ ($\Leftrightarrow$ $R$ is orthogonal)
+        \item preserves the \emph{orientation}: $\det R=1$
     \end{enumerate}
 
     \begin{block}{Special othogonal group}
@@ -114,15 +114,14 @@
     \end{block}
     
 
-    \textbf{\underline{As a topological space:}}\\[0.2cm]
-
-    
-
+    \visible<2->{
     \begin{columns}[T,onlytextwidth]
         \column{0.6\textwidth}
 
+            \textbf{\underline{As a topological space:}}\\[0.2cm]
+
             Fundamentally, a rotation is a \emph{direction} + an \emph{angle}.\\
-            $\Rightarrow$ it's a vector where the direction is the axis and the norm is the angle.\\[0.2cm]
+            $\Rightarrow$ it's a vector where the direction is the axis \\ \hspace{0.34cm} and the norm is the angle.\\[0.2cm]
             The set of all such vectors is
             \begin{equation*}
                 \boxed{\SO(3)\cong B^3(\pi)/\sim}
@@ -137,7 +136,7 @@
                 \caption{$3$-sphere of radius $\pi$ with its antipodal points identified on the boundary.}
             \end{figure}
   
-    \end{columns}
+    \end{columns}}
     
 \end{frame}
 
@@ -146,7 +145,7 @@
 \begin{frame}{Examples}
     \makebox[315pt][r]{
     \begin{tabular}{cccc}
-        \textbf{\underline{trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
+        \textbf{\underline{Trivial rotation}} & \textbf{\underline{$2\pi$ \textcolor{red}{$x$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{green}{$y$}-rotation}} & \textbf{\underline{$2\pi$ \textcolor{blue}{$z$}-rotation}}\\
         \includegraphics[scale=0.12]{Pictures/flatbelt.png} & \includegraphics[scale=0.12]{Pictures/xaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/yaxisbelt.png} & \includegraphics[scale=0.15]{Pictures/zaxisbelt.png} \\
         $\updownarrow$ & $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
         \includegraphics[scale=0.1]{Pictures/4pisphere4.png} & \includegraphics[scale=0.1]{Pictures/xaxissphere.png} & \includegraphics[scale=0.1]{Pictures/yaxissphere.png} & \includegraphics[scale=0.1]{Pictures/zaxissphere.png}
@@ -156,7 +155,7 @@
 \begin{frame}{Examples}
     \begin{center}
     \begin{tabular}{ccc}
-        \textbf{\underline{random rotation}} & \textbf{\underline{closed}} & \textbf{\underline{open path}}\\
+        \textbf{\underline{Random path}} & \textbf{\underline{Closed path}} & \textbf{\underline{Open path}}\\
         \includegraphics[scale=0.15]{Pictures/randomrotbelt.png} & \includegraphics[scale=0.1]{Pictures/contractiblepathbelt.png} & \includegraphics[scale=0.1]{Pictures/noncontractiblepathbelt.png} \\
         $\updownarrow$ & $\updownarrow$ & $\updownarrow$ \\
         \includegraphics[scale=0.1]{Pictures/randomrotsphere.png} & \includegraphics[scale=0.08]{Pictures/contractiblepathsphere.png} & \includegraphics[scale=0.08]{Pictures/noncontractiblepathsphere.png}
@@ -182,13 +181,13 @@
         \item moving the ends of the belt \textcolor{blue}{$\to$ continuous deformation} \\
         \item belt in original (flat) position \textcolor{blue}{$\to$ trivial constant path}
     \end{enumerate}
-    The question ``can the belt be flattened ?'' then becomes  ``\textbf{which loops are contractible ?}``
+    The question ``can the belt be flattened ?'' then  ``\textbf{which loops are contractible ?}''
 \end{frame}
 
 \begin{frame}{Problem solved ?}
     \begin{itemize}
         \item \textbf{\underline{$4\pi$-twist:}}
-    We saw in the beginning the the $4\pi$-twist can be flattened, how can we see this in terms of paths ?
+    we saw in the beginning the the $4\pi$-twist can be flattened, how can we see this in terms of paths ?
     \begin{center}
         \begin{tabular}{m{2cm} m{0.5cm} m{2cm} m{0.5cm} m{2cm}}
             \includegraphics[scale=0.1]{Pictures/4pibelt.png} & $\longleftrightarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere1.png} & $\longrightarrow$ & \includegraphics[scale=0.08]{Pictures/4pisphere2.png} \\
@@ -240,14 +239,14 @@
     \end{itemize}
     Important fact: if $X$ is path-connected, $\pi_1(X,x_0)$ does not depend on $x_0$, up to isomorphism. \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
-    Contractible loops are $\sim$ to a point, i.e. they are the element of $[e]$.\\[0.2cm]
+    \visible<2->{Contractible loops are $\sim$ to a point, i.e. they are the element of $[e]$.\\[0.2cm]
 
     \begin{block}{Proposition (product of spaces)}
         If $X$ and $Y$ are path-connected, $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$.
     \end{block}
     \begin{block}{Proposition (maps between spaces)}
         If $\vp:X\to Y$ is a continuous map, is induces a homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ though $\vp_*([\gamma])=[\vp\circ\gamma]$.
-    \end{block}
+    \end{block}}
 
 \end{frame}
 
@@ -255,20 +254,20 @@
 
     \textbf{How to compute $\pi_1(X)$ ?}\\[0.2cm]
     
-    Can be difficult, there a different methods (e.g. Van Kampen theorem, Hopf fibrations, Hurewicz theorems, etc), not discussed here. A lot of homotopy groups are still unknown !\\[0.4cm]
+    Can be difficult, there are different methods (e.g. Van Kampen theorem, Hopf fibrations, Hurewicz theorems, etc), not discussed here. A lot of homotopy groups are still unknown !\\[0.4cm]
 
     \begin{columns}[T,onlytextwidth]
         \column{0.55\textwidth}
         
             \textbf{Examples:}
             {\small
-            \begin{itemize}
+            \begin{enumerate}
                 \item $\pi_1(\R^2)=0$
                 \item $\pi_1(S^2) = 0$
                 \item $\pi_1(S^1) = \Z$
                 \item $\pi_1(\mathbb{T}^2)=\pi_1(S^1)\times\pi_1(S^1)=\textcolor{green}{\Z}\times\textcolor{red}{\Z}$
                 \item $\pi_1(\R^2\backslash\{p\})=\Z$
-            \end{itemize}}
+            \end{enumerate}}
   
         \column{0.45\textwidth}
   
@@ -278,26 +277,31 @@
             \end{figure}
   
     \end{columns}
-    Just $\pi_1(S^1)=\Z$ implies various famous theorems: fundamental theorem of algebra, Brouwer's fixed point theorem, Borusk-Ulam theorem etc.\\[0.2cm]
 
-    \textbf{Remark:} $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ? Yes, higher-homotopy groups:
-    \begin{equation*}
-        \pi_n(X,x_0)=\{\text{$S^n$ based at $x_0$}\}/\sim.
-    \end{equation*}
+    \visible<2->{\textbf{Remarks:} 
+    \begin{itemize}
+        \item $\pi_1(S^1)=\Z$ implies various famous theorems: fundamental theorem of algebra, Brouwer's fixed point theorem, Borusk-Ulam theorem etc.
+        \item $\pi_1(\R^2\backslash\{p\})=\Z$ but $\pi_1(\R^3\backslash\{p\})=0$, higher homotopy groups for higher-dimensional holes ? Yes, \textit{$n$th homotopy group}:
+        \begin{equation*}
+            \pi_n(X,x_0)=\{\text{$S^n$ based at $x_0$}\}/\sim.
+        \end{equation*}
+    \end{itemize}}
+
 \end{frame}
 
 \begin{frame}{Homotopy groups of spheres}
 
     Good example of the complexity of homotpy groups:\\[0.2cm]
     \quad $\triangleright$ embedding a sphere in a higher-dimensional one: always trivial \\[0.2cm]
-    \quad $\triangleright$ embedding a sphere in itself always: always $\Z$ ways \\ \hspace{0.5cm} regardless of the dimension \\[0.2cm]
-    \quad $\triangleright$ embedding a sphere in lower-dimensional one: \\ \hspace{0.5cm}  much more complicated, periodic for a bit, then completely chaotic
+    \quad $\triangleright$ embedding a sphere in itself: always $\Z$ ways \\[0.2cm]
+    \quad $\triangleright$ embedding a sphere in lower-dimensional one: much more complicated, \\ \hspace{0.5cm} periodic for a bit, then completely chaotic
 
+    \visible<2->{
     \begin{figure}
         \centering
         \includegraphics[scale=0.2]{Pictures/homotpoygroupsphere.png}
         \caption{Homotopy groups of spheres.}
-    \end{figure}
+    \end{figure}}
 
 
 \end{frame}
@@ -305,21 +309,25 @@
 \begin{frame}{Back to $\SO(3)$}
     \textbf{Question we had:} are all loops in $\SO(3)$ contractible ?\\
     In homotopy language: is $\pi_1(\SO(3))$ trivial ?\\[0.2cm]
-    \textbf{Answer:} \emph{NO}, one can show that
-    \begin{equation*}
-        \boxed{\pi_1(\SO(3))=\Z_2}
-    \end{equation*}
-    $\Rightarrow$ There only two ``fundamentally different'' loops in $\SO(3)$ !\\
-    $\Rightarrow$ there is only one kind of non-contractible loop !\\[0.2cm]
+    \visible<2->{
+        \textbf{Answer:} \emph{NO}, one can show that
+        \begin{equation*}
+            \boxed{\pi_1(\SO(3))=\Z_2}
+        \end{equation*}
+        $\Rightarrow$ There only two ``fundamentally different'' loops in $\SO(3)$ !\\
+        $\Rightarrow$ there is only one kind of non-contractible loop !\\[0.2cm]
 
-    Indeed, there only two different initial configurations (i.e. two possible loops in $\SO(3)$):
-    \begin{itemize}
-        \item $4\pi k$-twists which are all equivalent
-        \item $(4\pi k+2\pi)$-twists which are all equivalent
-    \end{itemize}
-    with $k\in\Z$.\\[0.2cm]
+        Indeed, there only two different initial configurations (i.e. two possible loops in $\SO(3)$):
+        \begin{itemize}
+            \item $4\pi k$-twists which are all equivalent
+            \item $(4\pi k+2\pi)$-twists which are all equivalent
+        \end{itemize}
+        with $k\in\Z$.
+    }\\[0.2cm]
 
-    We have a better understanding Dirac's belt trick. \textbf{But still no proof !} Homotopy theory allowed us to understand the ways of embedding loops in some spaces, we now need a tool to lift this ambiguity: \emph{covering space} !
+    \visible<3->{
+        We have a better understanding Dirac's belt trick. \textbf{But still no proof !} Homotopy theory allowed us to understand the ways of embedding loops in some spaces, we now need a tool to lift this ambiguity: \emph{covering space} !
+    }
 
 \end{frame}
 
@@ -334,49 +342,56 @@
                 For a topological space $X$, a \textit{covering space} is a topological space $\tilde{X}$ with a \textit{projection map} $p:\tilde{X}\to X$ such that there exists an open cover $\{\U_\alpha\}$ for which $p^{-1}(U_\alpha)$ is a disjoint union of open sets in $\tilde{X}$, each of which is mapped by $p$ homeomorphically on $U_\alpha$. \\
                 If $X$ is connected, $|p^{-1}(x)|$ is constant and called the number of \textit{sheets}.
             \end{block}
+
+            \textbf{\underline{Examples}}\\
+            There are many possibilities to cover the circle:
+            \begin{itemize}
+                \item $\R$ covers $S^1$ with $p_1(t)=(\cos(2\pi t),\sin(2\pi t))$,
+                \item $\R$ covers $S^1$ with $p_2(t)=(\cos(5 t),\sin(5 t))$,
+                \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$.
+            \end{itemize}
   
         \column{0.25\textwidth}
   
             \begin{figure}
                 \centering
-                \includegraphics[scale=0.5]{Pictures/Covering_map.png}
+                \includegraphics[scale=0.35]{Pictures/Covering_space_diagram.png}
+            \end{figure}
+
+            \begin{figure}
+                \centering
+                \includegraphics[scale=0.35]{Pictures/UniversalCoveringOfCircle.png}
             \end{figure}
   
     \end{columns}
-
-    \textbf{Example:} covering the circle. Many possibilities:
-        \begin{itemize}
-            \item $\R$ covers $S^1$ with $p_1(t)=(\cos(2\pi t),\sin(2\pi t))$,
-            \item $\R$ covers $S^1$ with $p_2(t)=(\cos(5 t),\sin(5 t))$,
-            \item $S^1$ covers $S^1$ in several ways, with $p(z)=z^n$, $n\in\N$.
-        \end{itemize}
     
 \end{frame}
 
 \begin{frame}{General properties}
 
     \begin{itemize}
-        \item \textbf{Some covering spaces are ``equivalent'':}
+        \visible<1->{
+        \item \textbf{Some covering spaces are equivalent:}
             \begin{minipage}{10cm}
                 \begin{block}{Isomorphisms}
                     Two covering space $\tilde{X}$ and $\tilde{X}'$ of $X$ are \textit{isomorphic} if there exists a homeomorphism $h:\tilde{X}\to \tilde{X}'$ such that $p_2\circ h=p_1$.
                 \end{block}
             \end{minipage}
-            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}\\[0.1cm]
-        \item \textbf{The lifting of point can, by definition, be ambiguous.}
+            \textcolor{blue}{For $S^1$, $p_1$ and $p_2$ are isomorphic.}}\\[0.1cm]
+        \item \visible<2->{\textbf{The lifting of point can, by definition, be ambiguous:}
             \begin{minipage}{10cm}
                 \begin{block}{Deck transformations}
                     A \textit{Deck transformation} is a homeomorphism $d:\tilde{X}\to \tilde{X}$ such that $p\circ d=p$. With composition, they form a group $G(\tilde{X})$.
                 \end{block}
             \end{minipage}
-            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}\\[0.1cm]
-        \item \textbf{Many covering spaces for the same base space:}
+            \textcolor{blue}{For $S^1$, $G(\R)=\Z$ and $G(S^1)=\Z_n$.}}\\[0.1cm]
+        \item \visible<3->{\textbf{Many covering spaces for the same base space:}
             \begin{minipage}{10cm}
             \begin{block}{Universal covering space}
                 If $\tilde{X}$ is simply connected and $X$ is (locally) path-connected, there exists covering space of any other covering space. It is maximal, unique and called \textit{universal covering space} (UCS).
             \end{block}
             \end{minipage}
-            \textcolor{blue}{$\R$ is the UCS of $S^1$.}
+            \textcolor{blue}{$\R$ is the UCS of $S^1$.}}
     \end{itemize}
 
 \end{frame}
@@ -389,18 +404,18 @@
         Observation:
 
         \begin{enumerate}
-            \item lifting points is ambiguous
-            \item lifting path is not ambiguous if the starting point is fixed
-            \item constant paths are lifted to constant paths
-            \item the projection of a homotopy is a homotopy for the projected paths
-            \item the lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}
+            \item Lifting points is ambiguous.
+            \item Lifting path is not ambiguous if the starting point is fixed.
+            \item Constant paths are lifted to constant paths.
+            \item The projection of a homotopy is a homotopy for the projected paths.
+            \item The lifts of homotopy-equivalent paths are homotopically equivalent! \textcolor{blue}{$\to$ relation between $\pi_1(X)$ and $\tilde{X}$ ?}
         \end{enumerate}
 
-        If $\tilde{X}$ is the UCS of $X$, we actually have
+        \visible<2->{If $\tilde{X}$ is the UCS of $X$, we actually have
         \begin{equation*}
             \boxed{\pi_1(X)=G(\tilde{X}).}
         \end{equation*}
-        $\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.
+        }
 
         \column{0.2\textwidth}
   
@@ -415,6 +430,8 @@
   
     \end{columns}
 
+        \visible<2->{$\Rightarrow$ algebraic features of $\pi_1(X)$ can be seen as geometric features of $\tilde{X}$.}
+
 \end{frame}
 
 \begin{frame}{Covering space of $\SO(3)$}
@@ -427,7 +444,7 @@
     \begin{block}{Special unitary group}
         $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
     \end{block}
-    \textbf{\underline{Properties of $\SU(2)$:}}\\
+    \visible<2->{\textbf{\underline{Properties of $\SU(2)$:}}\\
     What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
     \begin{equation}
         U=
@@ -436,14 +453,14 @@
             -Z+iY & X-iY
         \end{bmatrix}
     \end{equation}
-    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$\\[0.2cm]
-    \textbf{\underline{$\SU(2)$ and $\SO(3)$:}}
+    with $X^2+Y^2+Z^2+W^2=1$ $\Rightarrow \SU(2)\cong S^3$.}\\[0.1cm]
+    \visible<3->{\textbf{\underline{$\SU(2)$ and $\SO(3)$:}}
     \begin{enumerate}
         \item both of dimension three
         \item both are connected
         \item both isometry groups
         \item $-\mathbbm{1}\in\SU(2)$ but $-\mathbbm{1}\notin\SO(3)$
-    \end{enumerate}
+    \end{enumerate}}
 \end{frame}
 
 \begin{frame}{Representating $\SU(2)$}
@@ -457,9 +474,9 @@
 
         Similarly, $S^3$ is equivalent to balls glued along their boundary.\\[0.2cm]
 
-        \textbf{Question:} are those balls related to $\SO(3)$ ?\\
+        \textbf{Question:} are those balls related to $\SO(3)$ ?\\[0.2cm]
 
-        In other words: how are the two notions of rotations related ? They are the sheets!
+        \visible<2->{They are the \emph{sheets} !}
             
         \column{0.35\textwidth}
   
@@ -470,7 +487,7 @@
   
     \end{columns}
 
-    The projection map is
+    \visible<2->{The projection map is
     \begin{equation*}
         p\left(\begin{bmatrix}
             x & y \\
@@ -482,7 +499,7 @@
             2\Re(x\bar{y}) & 2\Im(x\bar{y}) & \abs{x}^2-\abs{y}^2
         \end{bmatrix}
     \end{equation*}
-    with $\abs{x}^2+\abs{y}^2=1$.
+    with $\abs{x}^2+\abs{y}^2=1$.}
     
 \end{frame}
 
@@ -500,13 +517,13 @@
     \end{equation*}
     where the quotient means exactly that we identity $U$ with $-U$.\\[0.2cm]
 
-    \textbf{\underline{Other formulation:}}\\[0.2cm]
+    \visible<2->{\textbf{\underline{Other formulation:}}\\[0.2cm]
 
     We saw that $S^3$ is a universal double-sheeted cover of $\R\P^3$, $\pi_1(S^3)=\{e\}$, and $\pi_1(\R\P^3)=\Z_2$. This makes sense since 
     \begin{equation*}
         \R\P^3=S^3/\{(x,y,z)\sim(-x,-y,-z)\}=S^3/\Z_2=\SU(2)/\Z_2,
     \end{equation*}
-    we get the previous group relation.
+    we get the previous group relation.}
 
 \end{frame}
 
@@ -515,27 +532,27 @@
     What are the lifts of the $2\pi$-twist and the $4\pi$-twist ?
     \begin{align*}
         \text{$2\pi$-twist} &\to \text{path from $I$ to $-I$}\\
-        \text{$4\pi$-twist} &\to \text{path from $I$ to $-I$ to $I$ again}\\
+        \text{$4\pi$-twist} &\to \text{path from $I$ to $-I$ to $I$ again}
     \end{align*}
-    \textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
+    \visible<2->{\textbf{\underline{Proof that $2\pi$-twist is non-contractible in $\SO(3)$:}}
     \begin{flushright}
     \begin{minipage}{10.5cm}
         Let us suppose that the $2\pi$-twist is contractible. At each step of its contraction, we can lift the path to $\SU(2)$. This provides us with a contraction of the lifted $2\pi$-twist. However, the lifted $2\pi$-twist does not have the same start and endpoint, therefore it is not contractible, and so is the non-lifted path.
     \end{minipage}
-    \end{flushright}
-    \textbf{\underline{Proof that $4\pi$-twist is contractible in $\SO(3)$:}}
+    \end{flushright}}
+    \visible<3->{\textbf{\underline{Proof that $4\pi$-twist is contractible in $\SO(3)$:}}
     \begin{flushright}
     \begin{minipage}{10.5cm}
         The lift of the $4\pi$-twist is a loop. Since $\pi_1(\SU(2))=\pi_1(S^3)=0$, this loop is necessarily contractible. Projecting each step of its contraction provides us with a contraction of the $4\pi$-twist path in $\SO(3)$.
     \end{minipage}
-    \end{flushright}
+    \end{flushright}}
 
 \end{frame}
 
 \begin{frame}{Summary of the analysis of Dirac's belt trick}
 
     \begin{itemize}
-        \item Belt configurations are equivalent to paths in $\SO(3)$. New question: we want to classify the contractable and non-contractable loop.
+        \item Belt configurations are equivalent to paths in $\SO(3)$. New question: we want to classify the contractable and non-contractable loops.
         \item Fundamental groups and covering spaces: $\pi_1(X)$ and $\tilde{X}$ are two pictures of the same thing. $\tilde{X}$ is the space that contains the same information plus the topological information of non-equivalent paths, i.e. it ``solves'' the homotopy ambiguity.
         \item The UCS of $\SO(3)$ is $\SU(2)$, and it is a double cover.
         \item There only two kinds topologically-distinguishable loops: $[4\pi k\text{-twists}]$ is contractible and the $[(4\pi k+2\pi)\text{-twists}]$ is not contractible.
@@ -548,10 +565,10 @@
         \end{tabular}
     \end{center}
     
-    \textbf{Are there other manifestations of homotopy in our practical world ?}\\[0.2cm]
+    \visible<2->{\textbf{Are there other manifestations of homotopy in our practical world ?}\\[0.2cm]
 
-    Yes: the \emph{spin} ! (You don't need a belt, but you need an electron.)\\
-    Initially, this trick was a demonstration invented by P. Dirac (1902-1984) to explain the notion of spin to his students.
+    Yes: the \emph{spin} ! (You don't need a belt, but you need an electron.)\\[0.1cm]
+    Initially, this trick was a demonstration invented by Paul Dirac (1902-1984) to explain the notion of spin to his students.}
 
 \end{frame}
 
@@ -638,22 +655,22 @@
     \textbf{\underline{How to rotate a spin vector ?}}\\[0.2cm]
     We need to leave the probabilities conserved $\Rightarrow$ scalar product invariant:
     \begin{equation*}
-        \boxed{\text{Spin vectors transform under the isometry group of $\C^2$, i.e. $\SU(2)$ !}}
+        \boxed{\text{Spin vectors transform under $\SU(2)$ !}}
     \end{equation*}
 
     \textbf{\underline{How do space rotations act on spin vectors ?}}\\[0.2cm]
-     The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
+    \visible<2->{The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
 
-     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.\\[0.2cm]
+    This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.}\\[0.2cm]
 
-    \textbf{\underline{Interpretation !?}}\\[0.2cm]
+    \visible<3->{\textbf{\underline{Interpretation ?}}\\[0.2cm]
 
     The $2\pi$-twist is not closed $\Rightarrow$ \emph{walking around} such a particle would not give back the particle in the same states, it would \emph{negate the spin state}. Very odd property ... Could such exotic particles exist ? Error of interpretation ?\\[0.2cm]
-    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been observed experimentally.
+    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been observed experimentally.}
 
 \end{frame}
 
-\begin{frame}{The bizarre natre of fermions}
+\begin{frame}{The bizarre nature of fermions}
 
     \begin{figure}
         \centering
@@ -673,19 +690,19 @@
 \begin{frame}{Generalizations}
 
     \textbf{Other spins:} $s\in\frac{1}{2}\N$.\\[0.1cm]
-    \textbf{Other dimensions:} $\SO(3)\to\SO(n)$ and $\SU(2)\to\Spin(n)$ (UCS of $\SO(n)$)\\[0.1cm]
+    \textbf{Other dimensions:} $\SO(3)\to\SO(n)$ and $\SU(2)\to\Spin(n)$.\\[0.1cm]
     \begin{block}{Spinor}
         A \emph{spinor} of spin $s$ in dimension $n$ is an a element of $\C^{2s+1}$ transforming under a (complex) linear representation of $\Spin(n)$.
     \end{block}
 
-    \textbf{\underline{Summary on spinors:}}
+    \visible<2->{\textbf{\underline{Summary on spinors:}}
 
     \begin{enumerate}
         \item There are two topologically distinguishable classes of paths through rotations that result in the same overall rotation. (True in any dimension, $\Spin(n)$ is always double-sheeted.) 
         \item The most general object should take that difference into account: spinors.
         \item A spinor is characterized by its \emph{spin}. Depending on the dimension of the space, the dimensions of the spin representations vary but all spins are always possible.
         \item Other approach: Clifford algebra !
-    \end{enumerate}
+    \end{enumerate}}
 
     % we discussed something for in three dimensions (with SO(3) and SU(2)), how can we generalize this ?
     % motivation: any rotation in R^3 can be achived in two topologically inequivalent ways, why should objects be blind to that ? The most general object is spinors
@@ -714,7 +731,7 @@
     \end{itemize}
     %modern fundamental physics is relativistic so we use a pseudo-scalar product. The isometry group becomes $\SO(1,3)$. The spinor theory we depicted can be generalized to $\SO(p,q)$.
 
-    \textbf{\underline{Behind quantum mechanics:}} \\[0.2cm]
+    \visible<2->{\textbf{\underline{Behind quantum mechanics:}} \\[0.2cm]
 
     The spinors we encountered previously are spinors in Quantum Mechanics, which is non-relativistic. Modern Physics is relativistic therefore we mainly care about the \emph{indefinite rotation groups} rather than the usual rotation groups, because of \emph{special relativity}. The whole theory can be generalized accordingly:
 
@@ -725,11 +742,11 @@
             rotation group & $\SO(3)$ & $\SO(1,3)$ \\
             UCS & $\Spin(3)=\SU(2)$ & $\Spin(1,3)=\SL(2,\C)$
         \end{tabular}
-    \end{figure}
+    \end{figure}}
 
 \end{frame}
 
-\section{More belts and fun facts}
+\section{More belts, more fun}
 
 {
 \setbeamercolor{background canvas}{bg=black!100}
@@ -758,6 +775,7 @@
     {\small\textcolor{white}{A more extreme example demonstrating that this works with any number of strings. In the limit, a piece of solid continuous space can rotate in place like this without tearing or intersecting itself.}}
 \end{frame}
 }
+
 % https://bloerg.net/posts/beamer-movies-and-linux/
 
 \begin{frame}{Fun facts}
@@ -807,9 +825,45 @@
 
 \appendix
 
-\begin{frame}{Construction of the projeciton map}
+\begin{frame}{More on rotations}
 
-    \textbf{What is the projection map ?}\\[0.2cm]
+    Three ``fundamental'' rotations:
+    \begin{equation*}
+      {\tiny
+      x:
+      \begin{bmatrix}
+          1 & 0 & 0 \\
+          0 & \cos\theta & -\sin\theta \\
+          0 & \sin\theta & \cos\theta
+      \end{bmatrix}\qquad
+      y:
+      \begin{bmatrix}
+          \cos\theta & 0 & -\sin\theta \\
+          0 & 1 & 0 \\
+          \sin\theta & 0 & \cos\theta
+      \end{bmatrix}\qquad
+      z:
+      \begin{bmatrix}
+          \cos\theta & -\sin\theta & 0 \\
+          \sin\theta & \cos\theta & 0 \\
+          0 & 0 & 1
+      \end{bmatrix}}
+    \end{equation*}
+    any rotation can be obtained by composing those three rotation.\\[0.2cm]
+    Bijection between rotations and unit quaternions:
+    \begin{equation*}
+        (\overrightarrow{n},\theta)\qquad\Leftrightarrow\qquad e^{\frac{\theta}{2}(n_x\textbf{i}+n_y\textbf{j}+n_z\textbf{k})}=\cos\frac{\theta}{2}+(n_x\textbf{i}+n_y\textbf{j}+n_z\textbf{k})\sin\frac{\theta}{2}
+    \end{equation*}
+    using an extension of Euler's formula. Then,
+    \begin{itemize}
+        \item rotation of a vector $\overrightarrow{r}$: $\textbf{p}'\to \textbf{q}\textbf{p}\textbf{q}^{-1}$ with $\textbf{p}=r_x\textbf{i}+r_y\textbf{j}+r_z\textbf{k}$,
+        \item composition of rotations: $\textbf{q}=\textbf{q}_1\textbf{q}_2$.
+    \end{itemize}
+    
+\end{frame}
+
+
+\begin{frame}{Construction of the projection map}
     
     We introduce the \textit{Pauli matrices}(generators of $\mathfrak{su}(2)$):
     \begin{equation}
@@ -850,7 +904,6 @@
 
 \begin{frame}{More on homotpy}
 
-    Which space have the same fundamental groups ? Evidently, homeomorphic ones, but we can be less restrictive:
     \begin{block}{Proposition}
         If $\vp:X\to Y$ are is a homotopy equivalence, then the induced homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ is an isomorphism for all $x_0\in X$.
     \end{block}
@@ -868,34 +921,9 @@
     
 \end{frame}
 
-\begin{frame}{Covering spaces and paths}
-
-    Three ``fundamental'' rotations:
-    \begin{equation*}
-      {\tiny
-      x:
-      \begin{bmatrix}
-          1 & 0 & 0 \\
-          0 & \cos\theta & -\sin\theta \\
-          0 & \sin\theta & \cos\theta
-      \end{bmatrix}\qquad
-      y:
-      \begin{bmatrix}
-          \cos\theta & 0 & -\sin\theta \\
-          0 & 1 & 0 \\
-          \sin\theta & 0 & \cos\theta
-      \end{bmatrix}\qquad
-      z:
-      \begin{bmatrix}
-          \cos\theta & -\sin\theta & 0 \\
-          \sin\theta & \cos\theta & 0 \\
-          0 & 0 & 1
-      \end{bmatrix}}
-    \end{equation*}
-    any rotation can be obtained by composing those three rotation.
-    
+\begin{frame}{More belts}
+    We can see that
 \end{frame}
-
 
 \begin{frame}{References}
 
