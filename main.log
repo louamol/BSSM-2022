@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  22 AUG 2022 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  31 AUG 2022 17:43
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
@@ -1326,7 +1326,13 @@ Overfull \vbox (3.0135pt too high) detected at line 671
 [48
 
 ]
-<Pictures/SM.png, id=431, 1204.5pt x 904.37875pt>
+Overfull \vbox (3.0135pt too high) detected at line 671
+ []
+
+[49
+
+]
+<Pictures/SM.png, id=438, 1204.5pt x 904.37875pt>
 File: Pictures/SM.png Graphic file (type png)
 <use Pictures/SM.png>
 Package pdftex.def Info: Pictures/SM.png  used on input line 688.
@@ -1335,17 +1341,11 @@ Package pdftex.def Info: Pictures/SM.png  used on input line 688.
 Overfull \vbox (3.5586pt too high) detected at line 688
  []
 
-[49
+[50
 
- <./Pictures/SM.png>] [50
+ <./Pictures/SM.png>] [51
 
-] [51
-
-]
-Overfull \vbox (8.89594pt too high) detected at line 747
- []
-
-[52
+] [52
 
 ]
 Overfull \vbox (8.89594pt too high) detected at line 747
@@ -1353,39 +1353,45 @@ Overfull \vbox (8.89594pt too high) detected at line 747
 
 [53
 
-] [54
+]
+Overfull \vbox (8.89594pt too high) detected at line 747
+ []
+
+[54
+
+] [55
 
 ]
-<Pictures/poster2belts.jpg, id=470, 642.4pt x 343.2825pt>
+<Pictures/poster2belts.jpg, id=477, 642.4pt x 343.2825pt>
 File: Pictures/poster2belts.jpg Graphic file (type jpg)
 <use Pictures/poster2belts.jpg>
 Package pdftex.def Info: Pictures/poster2belts.jpg  used on input line 758.
 (pdftex.def)             Requested size: 160.59961pt x 85.8204pt.
- [55
+ [56
 
  <./Pictures/poster2belts.jpg>]
-<Pictures/poster1.jpg, id=479, 857.2025pt x 481.8pt>
+<Pictures/poster1.jpg, id=485, 857.2025pt x 481.8pt>
 File: Pictures/poster1.jpg Graphic file (type jpg)
 <use Pictures/poster1.jpg>
 Package pdftex.def Info: Pictures/poster1.jpg  used on input line 767.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
- [56
+ [57
 
  <./Pictures/poster1.jpg>]
-<Pictures/poster2.jpg, id=487, 857.2025pt x 481.8pt>
+<Pictures/poster2.jpg, id=493, 857.2025pt x 481.8pt>
 File: Pictures/poster2.jpg Graphic file (type jpg)
 <use Pictures/poster2.jpg>
 Package pdftex.def Info: Pictures/poster2.jpg  used on input line 776.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
- [57
+ [58
 
  <./Pictures/poster2.jpg>]
-<Pictures/Tangloids.jpeg, id=495, 542.025pt x 204.765pt>
+<Pictures/Tangloids.jpeg, id=501, 542.025pt x 204.765pt>
 File: Pictures/Tangloids.jpeg Graphic file (type jpg)
 <use Pictures/Tangloids.jpeg>
 Package pdftex.def Info: Pictures/Tangloids.jpeg  used on input line 803.
 (pdftex.def)             Requested size: 108.40308pt x 40.95227pt.
-<Pictures/balinesedance.jpg, id=496, 560.0925pt x 602.25pt>
+<Pictures/balinesedance.jpg, id=502, 560.0925pt x 602.25pt>
 File: Pictures/balinesedance.jpg Graphic file (type jpg)
 <use Pictures/balinesedance.jpg>
 Package pdftex.def Info: Pictures/balinesedance.jpg  used on input line 803.
@@ -1394,37 +1400,39 @@ Package pdftex.def Info: Pictures/balinesedance.jpg  used on input line 803.
 Overfull \vbox (10.27916pt too high) detected at line 803
  []
 
-[58
+[59
 
- <./Pictures/Tangloids.jpeg> <./Pictures/balinesedance.jpg>] [59
+ <./Pictures/Tangloids.jpeg> <./Pictures/balinesedance.jpg>] [60
 
-] [60
+] [61
+
+] [62
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 826.
+(hyperref)                removing `\translate ' on input line 827.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 863.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 864.
 
-[61
+[63
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 903.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 904.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \vbox (0.14014pt too high) detected at line 903
+Overfull \vbox (0.14014pt too high) detected at line 904
  []
 
-[62
+[64
 
-] [63
+] [65
 
-] [64
+] [66
 
-] (main.bbl) [65
+] (main.bbl) [67
 
  </home/louan/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1441,17 +1449,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C40F246FD32BD87E31BE831F4EE88F29;940.
  ) 
 Here is how much of TeX's memory you used:
- 39430 strings out of 478362
- 946535 string characters out of 2842112
- 1280922 words of memory out of 3000000
+ 39434 strings out of 478362
+ 946573 string characters out of 2842112
+ 1279922 words of memory out of 3000000
  56906 multiletter control sequences out of 15000+600000
  483425 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,1963b,993s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (65 pages, 3391352 bytes).
+Output written on main.pdf (67 pages, 3395980 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 738 PDF objects out of 1000 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,5 +2,5 @@
 \beamer@sectionintoc {2}{Homotopy theory}{13}{0}{2}
 \beamer@sectionintoc {3}{Covering spaces}{24}{0}{3}
 \beamer@sectionintoc {4}{Quantum spin}{43}{0}{4}
-\beamer@sectionintoc {5}{More belts, more fun}{54}{0}{5}
-\beamer@sectionintoc {6}{Conclusion}{59}{0}{6}
+\beamer@sectionintoc {5}{More belts, more fun}{55}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{60}{0}{6}

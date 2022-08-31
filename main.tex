@@ -76,8 +76,8 @@
     
     The torsion in the belt rotates two times faster than the ends of the belt.\\[0.2cm]
     
-    How to explain this ?\\ [0.2cm]
-    Very interesting mathematics are hiding behind this simple demonstrations.}
+    How can we explain that ?\\ [0.2cm]
+    Very interesting mathematics are hiding behind this simple demonstration.}
 
 \end{frame}
 
@@ -239,13 +239,13 @@
     \end{itemize}
     Important fact: if $X$ is path-connected, $\pi_1(X,x_0)$ does not depend on $x_0$, up to isomorphism. \\ $\Rightarrow$ we denote it as $\pi_1(X)$, it is called the \emph{fundamental group} of $X$.\\[0.2cm]
     
-    \visible<2->{Contractible loops are $\sim$ to a point, i.e. they are the element of $[e]$.\\[0.2cm]
+    \visible<2->{Contractible loops are $\sim$ to a point, i.e. they are the elements of $[e]$.\\[0.2cm]
 
     \begin{block}{Proposition (product of spaces)}
         If $X$ and $Y$ are path-connected, $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$.
     \end{block}
     \begin{block}{Proposition (maps between spaces)}
-        If $\vp:X\to Y$ is a continuous map, is induces a homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ though $\vp_*([\gamma])=[\vp\circ\gamma]$.
+        If $\vp:X\to Y$ is a continuous map, it induces a homomorphism $\vp_*:\pi_1(X,x_0)\to\pi_1(Y,\vp(x_0))$ though $\vp_*([\gamma])=[\vp\circ\gamma]$.
     \end{block}}
 
 \end{frame}
@@ -326,7 +326,7 @@
     }\\[0.2cm]
 
     \visible<3->{
-        We have a better understanding Dirac's belt trick. \textbf{But still no proof !} Homotopy theory allowed us to understand the ways of embedding loops in some spaces, we now need a tool to lift this ambiguity: \emph{covering space} !
+        We have a better understanding Dirac's belt trick. \textbf{But still no proof !} Homotopy theory allowed us to understand the ways of embedding loops in some spaces, we now need a tool to lift this ambiguity: \emph{covering spaces} !
     }
 
 \end{frame}
@@ -445,7 +445,7 @@
         $\SU(2)$ is the set of $2\times 2$ complex matrices such that $U^\dagger U=\mathbbm{1}$ and $\det U=1$.
     \end{block}
     \visible<2->{\textbf{\underline{Properties of $\SU(2)$:}}\\
-    What is the most general for of $U\in\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
+    What is the most general element of $\SU(2)$ ? Imposing $U^\dagger=U^{-1}$ and $\det U=1$, we find
     \begin{equation}
         U=
         \begin{bmatrix}
@@ -596,7 +596,7 @@
               \item discrete value $s_{\text{obs.}}\in\{s,s-1,\dots,0,\dots,-s+1,-s\}$\\
               \textcolor{blue}{in our case, $s_{\text{obs.}}\in\{1/2,-1/2\}$ that we denote $\uparrow$ and $\downarrow$}
               \item given a direction, e.g. $i=x,y,z$
-              \item outcome is random, we can only compute de probabilities of the different outcomes
+              \item outcome is random, QM predicts the probability of each outcome
             \end{itemize}
         \end{enumerate}
     \end{block}
@@ -658,15 +658,15 @@
         \boxed{\text{Spin vectors transform under $\SU(2)$ !}}
     \end{equation*}
 
-    \textbf{\underline{How do space rotations act on spin vectors ?}}\\[0.2cm]
-    \visible<2->{The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
+    \visible<2->{\textbf{\underline{How do space rotations act on spin vectors ?}}\\[0.2cm]
+    The rotation group of euclidean space is still $\SO(3)$, so we need a way of doing an $\SO(3)$ rotation through $\SU(2)$ transformations.\\[0.2cm]
 
     This is exactly what the covering technology provides us: a unique way to lift a rotation from $\SO(3)$ to $\SU(2)$.}\\[0.2cm]
 
     \visible<3->{\textbf{\underline{Interpretation ?}}\\[0.2cm]
 
-    The $2\pi$-twist is not closed $\Rightarrow$ \emph{walking around} such a particle would not give back the particle in the same states, it would \emph{negate the spin state}. Very odd property ... Could such exotic particles exist ? Error of interpretation ?\\[0.2cm]
-    \emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been observed experimentally.}
+    The $2\pi$-twist is not closed $\Rightarrow$ \emph{walking around} such a particle would not give back the particle in the same states, it would \emph{negate the spin state}. Very odd property ... Could such exotic particles exist ? Error of interpretation ?\\[0.2cm]}
+    \visible<4->{\emph{Yes}, they do exist! Out of the $18$ elementary particles, $12$ of them have spin $1/2$ ! And this have been observed experimentally.}
 
 \end{frame}
 
@@ -754,7 +754,7 @@
     \begin{center}
         \movie[width=10cm,height=5.5cm,showcontrols,loop]{\includegraphics[scale=0.25]{Pictures/poster2belts.jpg}}{Videos/2belts.wmv}
     \end{center}
-    {\small\textcolor{white}{Expanding the Dirac's belt trick setup, one can attach two belts to an object and rotate it by 720° without it getting tangled. Combining the two movements,the object can spin continuously without becoming tangled.}}
+    {\small\textcolor{white}{Expanding the Dirac's belt trick setup, one can attach two belts to an object and rotate it by 720° without it getting tangled. Combining the two movements, the object can spin continuously without becoming tangled.}}
 \end{frame}}
 
 {
@@ -817,9 +817,10 @@
         \item Spinors are fundamental in modern theories of fundamental interactions. Spinors model most of elementary particles. In particular, exactly like Dirac's belt, electrons rotate through the lift in $\SU(2)$ thus taking into account the homotopy class of the rotation, how cool ?!
     \end{enumerate}
     \vspace{0.5cm}
+    \visible<2->{
     \begin{center}
         {\huge\textit{Thank you !}}
-    \end{center}
+    \end{center}}
 
 \end{frame}
 

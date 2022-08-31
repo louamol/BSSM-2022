@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1661183934 "main.aux" "main.bbl" "main" 1661184549
+["bibtex main"] 1661959931 "main.aux" "main.bbl" "main" 1661960595
   "/home/louan/.miktex/texmfs/install/bibtex/bst/bibtex/abbrv.bst" 1623060340 20329 b5fed53e10044d0f8112183785c759b1 ""
   "bibliography.bib" 1657878492 331 8384d74d56b7b808d1a6852d7b9326dc ""
-  "main.aux" 1661184549 9232 362bda08fd75d43ed1a50987338fe560 "pdflatex"
+  "main.aux" 1661960594 9232 ed0965d0d8bdfcf972f92323fe271ca6 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1661184544 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1661184549
+["pdflatex"] 1661960590 "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" "main.pdf" "main" 1661960595
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1639818892 9292 e5d64362a881832ecd3431a32218de5c ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1657189595 10472 dfeec969657b30b42bc18dac97f0af07 ""
   "/home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk" 1657877301 6184 7ed5407a1415c32fe19a359c8edfdcbd ""
@@ -336,7 +336,7 @@
   "/home/louan/.miktex/texmfs/install/tex/latex/url/url.sty" 1623060370 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1658673922 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/home/louan/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1658673922 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1661184541 41385 7ceed557581ca4ed6044accb4d305cf7 ""
+  "/home/louan/Documents/LaTeX/BSSM 2022/main.tex" 1661960589 41405 4d51d840e99c4467896552ce19a8baf1 ""
   "Packages/custom_macros.tex" 1658245832 5423 4a539de273bc11bebde0064f2807b592 ""
   "Pictures/4pibelt.png" 1656666368 62472 cfb14efbe3f9346ac6234f2b66c8401b ""
   "Pictures/4pisphere1.png" 1656666389 127399 0f046cd85cf6779587c666b8befce210 ""
@@ -374,12 +374,12 @@
   "Videos/2belts.wmv" 1658828654 1328895 d3bc961bee3d8ee31b977d4fcd2f18b2 ""
   "Videos/video1.wmv" 1658306277 6961243 48702d32674e70ddaae0e04c9da5d193 ""
   "Videos/video2.wmv" 1658306403 19943643 115df033e8426d0a0ec27a821c4f6bf1 ""
-  "main.aux" 1661184549 9232 362bda08fd75d43ed1a50987338fe560 "pdflatex"
-  "main.bbl" 1661183934 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
-  "main.nav" 1661184549 5666 be50c99c867ee867102a565975b3eee3 "pdflatex"
-  "main.out" 1661184549 940 c40f246fd32bd87e31be831f4ee88f29 "pdflatex"
-  "main.tex" 1661184541 41385 7ceed557581ca4ed6044accb4d305cf7 ""
-  "main.toc" 1661184549 334 01b6496473bc2a7a62d8fc6cf5e55ac9 "pdflatex"
+  "main.aux" 1661960594 9232 ed0965d0d8bdfcf972f92323fe271ca6 "pdflatex"
+  "main.bbl" 1661959931 290 f4365c05ae856a42c7082b1e63e0439a "bibtex main"
+  "main.nav" 1661960594 5666 0f136ad181e8f7c18f0aa3d474880bb8 "pdflatex"
+  "main.out" 1661960594 940 c40f246fd32bd87e31be831f4ee88f29 "pdflatex"
+  "main.tex" 1661960589 41405 4d51d840e99c4467896552ce19a8baf1 ""
+  "main.toc" 1661960594 334 e00aa08924cf504f1d5c18d98116181b "pdflatex"
   (generated)
   "main.aux"
   "main.log"
