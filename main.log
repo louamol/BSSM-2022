@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  1 SEP 2022 18:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  1 SEP 2022 18:45
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
@@ -792,40 +792,42 @@ Package caption Info: Hyperref support is turned off
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
 \c@subfigure=\count383
 \c@subtable=\count384
-) (/home/louan/.miktex/texmfs/install/tex/latex/tools/xspace.sty
+) (/home/louan/.miktex/texmfs/install/tex/latex/comment/comment.sty
+\CommentStream=\write5
+ Excluding comment 'comment') (/home/louan/.miktex/texmfs/install/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 ) (/home/louan/.miktex/texmfs/install/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
 ) (Packages/custom_macros.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 49.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 48.
+(hyperref)                removing `math shift' on input line 49.
 
 (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -880,10 +882,10 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/home/louan/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 49.
  (main.out) (main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
  (/home/louan/.miktex/texmfs/install/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -903,15 +905,15 @@ Package pgfplots notification 'compat/show suggested version=true': you might be
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (main.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \vbox (12.59242pt too high) detected at line 50
+Overfull \vbox (12.59242pt too high) detected at line 51
  []
 
 [1
@@ -928,22 +930,22 @@ Overfull \vbox (12.59242pt too high) detected at line 50
 <Pictures/beltaxis.png, id=95, 847.165pt x 452.69125pt>
 File: Pictures/beltaxis.png Graphic file (type png)
 <use Pictures/beltaxis.png>
-Package pdftex.def Info: Pictures/beltaxis.png  used on input line 100.
+Package pdftex.def Info: Pictures/beltaxis.png  used on input line 101.
 (pdftex.def)             Requested size: 101.65541pt x 54.3206pt.
  [6
 
  <./Pictures/beltaxis.png>]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 141.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 142.
  (/home/louan/.miktex/texmfs/install/tex/latex/bbm/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
 <Pictures/SO3sphere.png, id=104, 712.6625pt x 711.65875pt>
 File: Pictures/SO3sphere.png Graphic file (type png)
 <use Pictures/SO3sphere.png>
-Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 141.
+Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 142.
 (pdftex.def)             Requested size: 71.27042pt x 71.17004pt.
 
-Overfull \vbox (10.07808pt too high) detected at line 141
+Overfull \vbox (10.07808pt too high) detected at line 142
  []
 
 [7
@@ -951,10 +953,10 @@ Overfull \vbox (10.07808pt too high) detected at line 141
  <./Pictures/SO3sphere.png>]
 File: Pictures/SO3sphere.png Graphic file (type png)
 <use Pictures/SO3sphere.png>
-Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 141.
+Package pdftex.def Info: Pictures/SO3sphere.png  used on input line 142.
 (pdftex.def)             Requested size: 71.27042pt x 71.17004pt.
 
-Overfull \vbox (10.07808pt too high) detected at line 141
+Overfull \vbox (10.07808pt too high) detected at line 142
  []
 
 [8
@@ -963,45 +965,45 @@ Overfull \vbox (10.07808pt too high) detected at line 141
 <Pictures/flatbelt.png, id=124, 686.565pt x 196.735pt>
 File: Pictures/flatbelt.png Graphic file (type png)
 <use Pictures/flatbelt.png>
-Package pdftex.def Info: Pictures/flatbelt.png  used on input line 153.
+Package pdftex.def Info: Pictures/flatbelt.png  used on input line 154.
 (pdftex.def)             Requested size: 82.38423pt x 23.60718pt.
 <Pictures/xaxisbelt.png, id=125, 576.1525pt x 207.77625pt>
 File: Pictures/xaxisbelt.png Graphic file (type png)
 <use Pictures/xaxisbelt.png>
-Package pdftex.def Info: Pictures/xaxisbelt.png  used on input line 153.
+Package pdftex.def Info: Pictures/xaxisbelt.png  used on input line 154.
 (pdftex.def)             Requested size: 69.13531pt x 24.93207pt.
 <Pictures/yaxisbelt.png, id=126, 389.455pt x 193.72375pt>
 File: Pictures/yaxisbelt.png Graphic file (type png)
 <use Pictures/yaxisbelt.png>
-Package pdftex.def Info: Pictures/yaxisbelt.png  used on input line 153.
+Package pdftex.def Info: Pictures/yaxisbelt.png  used on input line 154.
 (pdftex.def)             Requested size: 58.41573pt x 29.0573pt.
 <Pictures/zaxisbelt.png, id=127, 274.02374pt x 306.14375pt>
 File: Pictures/zaxisbelt.png Graphic file (type png)
 <use Pictures/zaxisbelt.png>
-Package pdftex.def Info: Pictures/zaxisbelt.png  used on input line 153.
+Package pdftex.def Info: Pictures/zaxisbelt.png  used on input line 154.
 (pdftex.def)             Requested size: 41.10178pt x 45.91957pt.
 <Pictures/4pisphere4.png, id=128, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere4.png Graphic file (type png)
 <use Pictures/4pisphere4.png>
-Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 153.
+Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 154.
 (pdftex.def)             Requested size: 64.14337pt x 64.64528pt.
 <Pictures/xaxissphere.png, id=129, 689.57625pt x 653.44125pt>
 File: Pictures/xaxissphere.png Graphic file (type png)
 <use Pictures/xaxissphere.png>
-Package pdftex.def Info: Pictures/xaxissphere.png  used on input line 153.
+Package pdftex.def Info: Pictures/xaxissphere.png  used on input line 154.
 (pdftex.def)             Requested size: 68.96165pt x 65.34795pt.
 <Pictures/yaxissphere.png, id=130, 685.56125pt x 655.44875pt>
 File: Pictures/yaxissphere.png Graphic file (type png)
 <use Pictures/yaxissphere.png>
-Package pdftex.def Info: Pictures/yaxissphere.png  used on input line 153.
+Package pdftex.def Info: Pictures/yaxissphere.png  used on input line 154.
 (pdftex.def)             Requested size: 68.56013pt x 65.5487pt.
 <Pictures/zaxissphere.png, id=131, 657.45625pt x 646.415pt>
 File: Pictures/zaxissphere.png Graphic file (type png)
 <use Pictures/zaxissphere.png>
-Package pdftex.def Info: Pictures/zaxissphere.png  used on input line 153.
+Package pdftex.def Info: Pictures/zaxissphere.png  used on input line 154.
 (pdftex.def)             Requested size: 65.74947pt x 64.64528pt.
 
-Overfull \hbox (7.71013pt too wide) in paragraph at lines 153--153
+Overfull \hbox (7.71013pt too wide) in paragraph at lines 154--154
 [][]  
  []
 
@@ -1011,32 +1013,32 @@ Overfull \hbox (7.71013pt too wide) in paragraph at lines 153--153
 <Pictures/randomrotbelt.png, id=146, 402.50375pt x 297.11pt>
 File: Pictures/randomrotbelt.png Graphic file (type png)
 <use Pictures/randomrotbelt.png>
-Package pdftex.def Info: Pictures/randomrotbelt.png  used on input line 164.
+Package pdftex.def Info: Pictures/randomrotbelt.png  used on input line 165.
 (pdftex.def)             Requested size: 60.37296pt x 44.56458pt.
 <Pictures/contractiblepathbelt.png, id=147, 584.1825pt x 225.84375pt>
 File: Pictures/contractiblepathbelt.png Graphic file (type png)
 <use Pictures/contractiblepathbelt.png>
-Package pdftex.def Info: Pictures/contractiblepathbelt.png  used on input line 164.
+Package pdftex.def Info: Pictures/contractiblepathbelt.png  used on input line 165.
 (pdftex.def)             Requested size: 58.42166pt x 22.5857pt.
 <Pictures/noncontractiblepathbelt.png, id=148, 406.51875pt x 406.51875pt>
 File: Pictures/noncontractiblepathbelt.png Graphic file (type png)
 <use Pictures/noncontractiblepathbelt.png>
-Package pdftex.def Info: Pictures/noncontractiblepathbelt.png  used on input line 164.
+Package pdftex.def Info: Pictures/noncontractiblepathbelt.png  used on input line 165.
 (pdftex.def)             Requested size: 40.65425pt x 40.65425pt.
 <Pictures/randomrotsphere.png, id=149, 657.45625pt x 646.415pt>
 File: Pictures/randomrotsphere.png Graphic file (type png)
 <use Pictures/randomrotsphere.png>
-Package pdftex.def Info: Pictures/randomrotsphere.png  used on input line 164.
+Package pdftex.def Info: Pictures/randomrotsphere.png  used on input line 165.
 (pdftex.def)             Requested size: 65.74947pt x 64.64528pt.
 <Pictures/contractiblepathsphere.png, id=150, 637.38126pt x 652.4375pt>
 File: Pictures/contractiblepathsphere.png Graphic file (type png)
 <use Pictures/contractiblepathsphere.png>
-Package pdftex.def Info: Pictures/contractiblepathsphere.png  used on input line 164.
+Package pdftex.def Info: Pictures/contractiblepathsphere.png  used on input line 165.
 (pdftex.def)             Requested size: 50.99153pt x 52.19606pt.
 <Pictures/noncontractiblepathsphere.png, id=151, 652.4375pt x 639.38875pt>
 File: Pictures/noncontractiblepathsphere.png Graphic file (type png)
 <use Pictures/noncontractiblepathsphere.png>
-Package pdftex.def Info: Pictures/noncontractiblepathsphere.png  used on input line 164.
+Package pdftex.def Info: Pictures/noncontractiblepathsphere.png  used on input line 165.
 (pdftex.def)             Requested size: 52.19606pt x 51.15213pt.
  [10
 
@@ -1046,63 +1048,63 @@ Package pdftex.def Info: Pictures/noncontractiblepathsphere.png  used on input l
 <Pictures/4pibelt.png, id=170, 641.39626pt x 250.9375pt>
 File: Pictures/4pibelt.png Graphic file (type png)
 <use Pictures/4pibelt.png>
-Package pdftex.def Info: Pictures/4pibelt.png  used on input line 203.
+Package pdftex.def Info: Pictures/4pibelt.png  used on input line 204.
 (pdftex.def)             Requested size: 64.14337pt x 25.09521pt.
 
-Overfull \hbox (7.23787pt too wide) in paragraph at lines 203--203
+Overfull \hbox (7.23787pt too wide) in paragraph at lines 204--204
 []|[]| 
  []
 
 
-Overfull \hbox (2.73186pt too wide) in paragraph at lines 203--203
+Overfull \hbox (2.73186pt too wide) in paragraph at lines 204--204
 []|$\OMS/cmsy/m/n/9  []!$| 
  []
 
 <Pictures/4pisphere1.png, id=171, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere1.png Graphic file (type png)
 <use Pictures/4pisphere1.png>
-Package pdftex.def Info: Pictures/4pisphere1.png  used on input line 203.
+Package pdftex.def Info: Pictures/4pisphere1.png  used on input line 204.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \hbox (0.67632pt too wide) in paragraph at lines 203--203
+Overfull \hbox (0.67632pt too wide) in paragraph at lines 204--204
 []|$[][]\OMS/cmsy/m/n/9 !$| 
  []
 
 <Pictures/4pisphere2.png, id=172, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere2.png Graphic file (type png)
 <use Pictures/4pisphere2.png>
-Package pdftex.def Info: Pictures/4pisphere2.png  used on input line 203.
+Package pdftex.def Info: Pictures/4pisphere2.png  used on input line 204.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 File: Pictures/flatbelt.png Graphic file (type png)
 <use Pictures/flatbelt.png>
-Package pdftex.def Info: Pictures/flatbelt.png  used on input line 203.
+Package pdftex.def Info: Pictures/flatbelt.png  used on input line 204.
 (pdftex.def)             Requested size: 68.66052pt x 19.67464pt.
 
-Overfull \hbox (11.75502pt too wide) in paragraph at lines 203--203
+Overfull \hbox (11.75502pt too wide) in paragraph at lines 204--204
 []|[]| 
  []
 
 
-Overfull \hbox (2.73186pt too wide) in paragraph at lines 203--203
+Overfull \hbox (2.73186pt too wide) in paragraph at lines 204--204
 []|$\OMS/cmsy/m/n/9  []!$| 
  []
 
 File: Pictures/4pisphere4.png Graphic file (type png)
 <use Pictures/4pisphere4.png>
-Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 203.
+Package pdftex.def Info: Pictures/4pisphere4.png  used on input line 204.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \hbox (0.67632pt too wide) in paragraph at lines 203--203
+Overfull \hbox (0.67632pt too wide) in paragraph at lines 204--204
 []|$\OMS/cmsy/m/n/9  [][]$| 
  []
 
 <Pictures/4pisphere3.png, id=173, 641.39626pt x 646.415pt>
 File: Pictures/4pisphere3.png Graphic file (type png)
 <use Pictures/4pisphere3.png>
-Package pdftex.def Info: Pictures/4pisphere3.png  used on input line 203.
+Package pdftex.def Info: Pictures/4pisphere3.png  used on input line 204.
 (pdftex.def)             Requested size: 51.31274pt x 51.71425pt.
 
-Overfull \vbox (7.8002pt too high) detected at line 203
+Overfull \vbox (7.8002pt too high) detected at line 204
  []
 
 [12
@@ -1110,19 +1112,19 @@ Overfull \vbox (7.8002pt too high) detected at line 203
  <./Pictures/4pibelt.png> <./Pictures/4pisphere1.png> <./Pictures/4pisphere2.png> <./Pictures/4pisphere3.png>] [13
 
 ]
-Overfull \vbox (10.83585pt too high) detected at line 229
+Overfull \vbox (10.83585pt too high) detected at line 230
  []
 
 [14
 
 ]
-Overfull \vbox (8.21481pt too high) detected at line 251
+Overfull \vbox (8.21481pt too high) detected at line 252
  []
 
 [15
 
 ]
-Overfull \vbox (8.21481pt too high) detected at line 251
+Overfull \vbox (8.21481pt too high) detected at line 252
  []
 
 [16
@@ -1131,10 +1133,10 @@ Overfull \vbox (8.21481pt too high) detected at line 251
 <Pictures/torushomotopy3.png, id=211, 563.10374pt x 338.26375pt>
 File: Pictures/torushomotopy3.png Graphic file (type png)
 <use Pictures/torushomotopy3.png>
-Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 290.
+Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 291.
 (pdftex.def)             Requested size: 112.61874pt x 67.65154pt.
 
-Overfull \vbox (13.8222pt too high) detected at line 290
+Overfull \vbox (13.8222pt too high) detected at line 291
  []
 
 [17
@@ -1142,10 +1144,10 @@ Overfull \vbox (13.8222pt too high) detected at line 290
  <./Pictures/torushomotopy3.png>]
 File: Pictures/torushomotopy3.png Graphic file (type png)
 <use Pictures/torushomotopy3.png>
-Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 290.
+Package pdftex.def Info: Pictures/torushomotopy3.png  used on input line 291.
 (pdftex.def)             Requested size: 112.61874pt x 67.65154pt.
 
-Overfull \vbox (13.8222pt too high) detected at line 290
+Overfull \vbox (13.8222pt too high) detected at line 291
  []
 
 [18
@@ -1154,15 +1156,15 @@ Overfull \vbox (13.8222pt too high) detected at line 290
 <Pictures/homotpoygroupsphere.png, id=226, 1574.88374pt x 504.88625pt>
 File: Pictures/homotpoygroupsphere.png Graphic file (type png)
 <use Pictures/homotpoygroupsphere.png>
-Package pdftex.def Info: Pictures/homotpoygroupsphere.png  used on input line 307.
+Package pdftex.def Info: Pictures/homotpoygroupsphere.png  used on input line 308.
 (pdftex.def)             Requested size: 314.97118pt x 100.97545pt.
 
-Overfull \hbox (7.6813pt too wide) in paragraph at lines 307--307
+Overfull \hbox (7.6813pt too wide) in paragraph at lines 308--308
  [] 
  []
 
 
-Overfull \vbox (7.27812pt too high) detected at line 307
+Overfull \vbox (7.27812pt too high) detected at line 308
  []
 
 [19
@@ -1170,15 +1172,15 @@ Overfull \vbox (7.27812pt too high) detected at line 307
  <./Pictures/homotpoygroupsphere.png>]
 File: Pictures/homotpoygroupsphere.png Graphic file (type png)
 <use Pictures/homotpoygroupsphere.png>
-Package pdftex.def Info: Pictures/homotpoygroupsphere.png  used on input line 307.
+Package pdftex.def Info: Pictures/homotpoygroupsphere.png  used on input line 308.
 (pdftex.def)             Requested size: 314.97118pt x 100.97545pt.
 
-Overfull \hbox (7.6813pt too wide) in paragraph at lines 307--307
+Overfull \hbox (7.6813pt too wide) in paragraph at lines 308--308
  [] 
  []
 
 
-Overfull \vbox (7.27812pt too high) detected at line 307
+Overfull \vbox (7.27812pt too high) detected at line 308
  []
 
 [20
@@ -1195,29 +1197,29 @@ Overfull \vbox (7.27812pt too high) detected at line 307
 <Pictures/Covering_space_diagram.png, id=265, 198.7425pt x 220.825pt>
 File: Pictures/Covering_space_diagram.png Graphic file (type png)
 <use Pictures/Covering_space_diagram.png>
-Package pdftex.def Info: Pictures/Covering_space_diagram.png  used on input line 368.
+Package pdftex.def Info: Pictures/Covering_space_diagram.png  used on input line 369.
 (pdftex.def)             Requested size: 69.56091pt x 77.2899pt.
 <Pictures/UniversalCoveringOfCircle.png, id=266, 146.5475pt x 289.08pt>
 File: Pictures/UniversalCoveringOfCircle.png Graphic file (type png)
 <use Pictures/UniversalCoveringOfCircle.png>
-Package pdftex.def Info: Pictures/UniversalCoveringOfCircle.png  used on input line 368.
+Package pdftex.def Info: Pictures/UniversalCoveringOfCircle.png  used on input line 369.
 (pdftex.def)             Requested size: 51.29237pt x 101.1795pt.
  [25
 
  <./Pictures/Covering_space_diagram.png> <./Pictures/UniversalCoveringOfCircle.png>]
-Overfull \vbox (11.06856pt too high) detected at line 397
+Overfull \vbox (11.06856pt too high) detected at line 398
  []
 
 [26
 
 ]
-Overfull \vbox (11.06856pt too high) detected at line 397
+Overfull \vbox (11.06856pt too high) detected at line 398
  []
 
 [27
 
 ]
-Overfull \vbox (11.06856pt too high) detected at line 397
+Overfull \vbox (11.06856pt too high) detected at line 398
  []
 
 [28
@@ -1226,40 +1228,40 @@ Overfull \vbox (11.06856pt too high) detected at line 397
 <Pictures/lifting_point.png, id=295, 568.1225pt x 804.00375pt>
 File: Pictures/lifting_point.png Graphic file (type png)
 <use Pictures/lifting_point.png>
-Package pdftex.def Info: Pictures/lifting_point.png  used on input line 435.
+Package pdftex.def Info: Pictures/lifting_point.png  used on input line 436.
 (pdftex.def)             Requested size: 56.81557pt x 80.40508pt.
 <Pictures/lifting_path.png, id=296, 568.1225pt x 804.00375pt>
 File: Pictures/lifting_path.png Graphic file (type png)
 <use Pictures/lifting_path.png>
-Package pdftex.def Info: Pictures/lifting_path.png  used on input line 435.
+Package pdftex.def Info: Pictures/lifting_path.png  used on input line 436.
 (pdftex.def)             Requested size: 56.81557pt x 80.40508pt.
  [29
 
  <./Pictures/lifting_point.png> <./Pictures/lifting_path.png>]
 File: Pictures/lifting_point.png Graphic file (type png)
 <use Pictures/lifting_point.png>
-Package pdftex.def Info: Pictures/lifting_point.png  used on input line 435.
+Package pdftex.def Info: Pictures/lifting_point.png  used on input line 436.
 (pdftex.def)             Requested size: 56.81557pt x 80.40508pt.
 File: Pictures/lifting_path.png Graphic file (type png)
 <use Pictures/lifting_path.png>
-Package pdftex.def Info: Pictures/lifting_path.png  used on input line 435.
+Package pdftex.def Info: Pictures/lifting_path.png  used on input line 436.
 (pdftex.def)             Requested size: 56.81557pt x 80.40508pt.
  [30
 
 ]
-Overfull \vbox (18.41902pt too high) detected at line 464
+Overfull \vbox (18.41902pt too high) detected at line 465
  []
 
 [31
 
 ]
-Overfull \vbox (18.41902pt too high) detected at line 464
+Overfull \vbox (18.41902pt too high) detected at line 465
  []
 
 [32
 
 ]
-Overfull \vbox (18.41902pt too high) detected at line 464
+Overfull \vbox (18.41902pt too high) detected at line 465
  []
 
 [33
@@ -1268,14 +1270,14 @@ Overfull \vbox (18.41902pt too high) detected at line 464
 <Pictures/lifting_su2.png, id=330, 1033.8625pt x 1107.13625pt>
 File: Pictures/lifting_su2.png Graphic file (type png)
 <use Pictures/lifting_su2.png>
-Package pdftex.def Info: Pictures/lifting_su2.png  used on input line 504.
+Package pdftex.def Info: Pictures/lifting_su2.png  used on input line 505.
 (pdftex.def)             Requested size: 103.3923pt x 110.72011pt.
  [34
 
  <./Pictures/lifting_su2.png>]
 File: Pictures/lifting_su2.png Graphic file (type png)
 <use Pictures/lifting_su2.png>
-Package pdftex.def Info: Pictures/lifting_su2.png  used on input line 504.
+Package pdftex.def Info: Pictures/lifting_su2.png  used on input line 505.
 (pdftex.def)             Requested size: 103.3923pt x 110.72011pt.
  [35
 
@@ -1290,13 +1292,13 @@ Package pdftex.def Info: Pictures/lifting_su2.png  used on input line 504.
 ] [40
 
 ]
-Overfull \vbox (3.924pt too high) detected at line 573
+Overfull \vbox (3.924pt too high) detected at line 574
  []
 
 [41
 
 ]
-Overfull \vbox (3.924pt too high) detected at line 573
+Overfull \vbox (3.924pt too high) detected at line 574
  []
 
 [42
@@ -1312,25 +1314,25 @@ Overfull \vbox (3.924pt too high) detected at line 573
 ] [47
 
 ]
-Overfull \vbox (3.0135pt too high) detected at line 611
+Overfull \vbox (3.0135pt too high) detected at line 612
  []
 
 [48
 
 ]
-Overfull \vbox (3.0135pt too high) detected at line 611
+Overfull \vbox (3.0135pt too high) detected at line 612
  []
 
 [49
 
 ]
-Overfull \vbox (3.0135pt too high) detected at line 611
+Overfull \vbox (3.0135pt too high) detected at line 612
  []
 
 [50
 
 ]
-Overfull \vbox (3.0135pt too high) detected at line 611
+Overfull \vbox (3.0135pt too high) detected at line 612
  []
 
 [51
@@ -1339,10 +1341,10 @@ Overfull \vbox (3.0135pt too high) detected at line 611
 <Pictures/SM.png, id=443, 1204.5pt x 904.37875pt>
 File: Pictures/SM.png Graphic file (type png)
 <use Pictures/SM.png>
-Package pdftex.def Info: Pictures/SM.png  used on input line 628.
+Package pdftex.def Info: Pictures/SM.png  used on input line 629.
 (pdftex.def)             Requested size: 168.62885pt x 126.61215pt.
 
-Overfull \vbox (3.5586pt too high) detected at line 628
+Overfull \vbox (3.5586pt too high) detected at line 629
  []
 
 [52
@@ -1352,13 +1354,13 @@ Overfull \vbox (3.5586pt too high) detected at line 628
 ] [54
 
 ]
-Overfull \vbox (8.89594pt too high) detected at line 687
+Overfull \vbox (8.89594pt too high) detected at line 688
  []
 
 [55
 
 ]
-Overfull \vbox (8.89594pt too high) detected at line 687
+Overfull \vbox (8.89594pt too high) detected at line 688
  []
 
 [56
@@ -1369,7 +1371,7 @@ Overfull \vbox (8.89594pt too high) detected at line 687
 <Pictures/poster2belts.jpg, id=483, 642.4pt x 343.2825pt>
 File: Pictures/poster2belts.jpg Graphic file (type jpg)
 <use Pictures/poster2belts.jpg>
-Package pdftex.def Info: Pictures/poster2belts.jpg  used on input line 698.
+Package pdftex.def Info: Pictures/poster2belts.jpg  used on input line 699.
 (pdftex.def)             Requested size: 160.59961pt x 85.8204pt.
  [58
 
@@ -1377,7 +1379,7 @@ Package pdftex.def Info: Pictures/poster2belts.jpg  used on input line 698.
 <Pictures/poster1.jpg, id=491, 857.2025pt x 481.8pt>
 File: Pictures/poster1.jpg Graphic file (type jpg)
 <use Pictures/poster1.jpg>
-Package pdftex.def Info: Pictures/poster1.jpg  used on input line 707.
+Package pdftex.def Info: Pictures/poster1.jpg  used on input line 708.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
  [59
 
@@ -1385,7 +1387,7 @@ Package pdftex.def Info: Pictures/poster1.jpg  used on input line 707.
 <Pictures/poster2.jpg, id=499, 857.2025pt x 481.8pt>
 File: Pictures/poster2.jpg Graphic file (type jpg)
 <use Pictures/poster2.jpg>
-Package pdftex.def Info: Pictures/poster2.jpg  used on input line 716.
+Package pdftex.def Info: Pictures/poster2.jpg  used on input line 717.
 (pdftex.def)             Requested size: 214.3001pt x 120.44969pt.
  [60
 
@@ -1393,15 +1395,15 @@ Package pdftex.def Info: Pictures/poster2.jpg  used on input line 716.
 <Pictures/Tangloids.jpeg, id=507, 542.025pt x 204.765pt>
 File: Pictures/Tangloids.jpeg Graphic file (type jpg)
 <use Pictures/Tangloids.jpeg>
-Package pdftex.def Info: Pictures/Tangloids.jpeg  used on input line 743.
+Package pdftex.def Info: Pictures/Tangloids.jpeg  used on input line 744.
 (pdftex.def)             Requested size: 108.40308pt x 40.95227pt.
 <Pictures/balinesedance.jpg, id=508, 560.0925pt x 602.25pt>
 File: Pictures/balinesedance.jpg Graphic file (type jpg)
 <use Pictures/balinesedance.jpg>
-Package pdftex.def Info: Pictures/balinesedance.jpg  used on input line 743.
+Package pdftex.def Info: Pictures/balinesedance.jpg  used on input line 744.
 (pdftex.def)             Requested size: 112.01651pt x 120.44786pt.
 
-Overfull \vbox (10.27916pt too high) detected at line 743
+Overfull \vbox (10.27916pt too high) detected at line 744
  []
 
 [61
@@ -1415,57 +1417,52 @@ Overfull \vbox (10.27916pt too high) detected at line 743
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 767.
+(hyperref)                removing `\translate ' on input line 768.
 
-
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 804.
-
-[65
-
-]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 844.
+Excluding 'comment' comment.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 849.
  (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \vbox (0.14014pt too high) detected at line 844
+Overfull \vbox (0.14014pt too high) detected at line 849
  []
 
-[66
+[65
+
+] [66
 
 ] [67
 
 ] [68
 
-] [69
-
-] (main.bbl) [70
+] (main.bbl) [69
 
  </home/louan/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
-\tf@nav=\write6
-\openout6 = `main.nav'.
+\tf@nav=\write7
+\openout7 = `main.nav'.
 
-\tf@toc=\write7
-\openout7 = `main.toc'.
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
-\tf@snm=\write8
-\openout8 = `main.snm'.
+\tf@snm=\write9
+\openout9 = `main.snm'.
 
  (main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C40F246FD32BD87E31BE831F4EE88F29;940.
  ) 
 Here is how much of TeX's memory you used:
- 39441 strings out of 478362
- 946641 string characters out of 2842112
- 1280922 words of memory out of 3000000
- 56907 multiletter control sequences out of 15000+600000
+ 39491 strings out of 478362
+ 947718 string characters out of 2842112
+ 1280830 words of memory out of 3000000
+ 56955 multiletter control sequences out of 15000+600000
  483661 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,1963b,993s stack positions out of 10000i,1000n,20000p,200000b,80000s
- </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (70 pages, 3405012 bytes).
+ </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (69 pages, 3391184 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 148 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
