@@ -1984,7 +1984,6 @@ INPUT ./Pictures/lifting_su2.png
 INPUT ./Pictures/lifting_su2.png
 INPUT Pictures/lifting_su2.png
 INPUT ./Pictures/lifting_su2.png
-INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm0800.tfm
 INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
 INPUT Pictures/SM.png
@@ -1992,6 +1991,7 @@ INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
 INPUT ./Pictures/SM.png
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/jknappen/ec/tcrm0800.tfm
 INPUT ./Videos/2belts.wmv
 INPUT Videos/2belts.wmv
 INPUT ./Pictures/poster2belts.jpg
@@ -2042,6 +2042,7 @@ INPUT /home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm7.tfm
 INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm5.tfm
+INPUT /home/louan/.miktex/texmfs/install/fonts/tfm/public/amsfonts/euler/eufm10.tfm
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl
