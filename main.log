@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  1 SEP 2022 18:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  2 SEP 2022 13:20
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
@@ -1454,13 +1454,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  39491 strings out of 478362
  947718 string characters out of 2842112
- 1280830 words of memory out of 3000000
+ 1281830 words of memory out of 3000000
  56955 multiletter control sequences out of 15000+600000
  483661 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,1963b,993s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (69 pages, 3391184 bytes).
+Output written on main.pdf (69 pages, 3391299 bytes).
 PDF statistics:
  747 PDF objects out of 1000 (max. 8388607)
  148 named destinations out of 1000 (max. 500000)
