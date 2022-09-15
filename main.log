@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  2 SEP 2022 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2022.7.24)  15 SEP 2022 18:23
 entering extended mode
 **"/home/louan/Documents/LaTeX/BSSM 2022/main.tex"
 (/home/louan/Documents/LaTeX/BSSM 2022/main.tex
@@ -1419,23 +1419,7 @@ Overfull \vbox (10.27916pt too high) detected at line 744
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\translate ' on input line 768.
 
-Excluding 'comment' comment.
-LaTeX Font Info:    Trying to load font information for U+euf on input line 849.
- (/home/louan/.miktex/texmfs/install/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-Overfull \vbox (0.14014pt too high) detected at line 849
- []
-
-[65
-
-] [66
-
-] [67
-
-] [68
-
-] (main.bbl) [69
+Excluding 'comment' comment. (main.bbl) [65
 
  </home/louan/.miktex/texmfs/install/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write7
@@ -1452,17 +1436,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C40F246FD32BD87E31BE831F4EE88F29;940.
  ) 
 Here is how much of TeX's memory you used:
- 39491 strings out of 478362
- 947718 string characters out of 2842112
- 1281830 words of memory out of 3000000
- 56955 multiletter control sequences out of 15000+600000
- 483661 words of font info for 85 fonts, out of 8000000 for 9000
+ 39433 strings out of 478362
+ 946460 string characters out of 2842112
+ 1270830 words of memory out of 3000000
+ 56911 multiletter control sequences out of 15000+600000
+ 482717 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,122p,1963b,993s stack positions out of 10000i,1000n,20000p,200000b,80000s
- </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy5.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/euler/eufm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (69 pages, 3391299 bytes).
+ 128i,15n,122p,1963b,993s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/public/bbm/dpi600/bbm9.pk> </home/louan/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy6.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></home/louan/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (65 pages, 3321558 bytes).
 PDF statistics:
- 747 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
+ 685 PDF objects out of 1000 (max. 8388607)
+ 140 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 
